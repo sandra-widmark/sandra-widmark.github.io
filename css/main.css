@@ -179,7 +179,7 @@ body {
 /* green header */
 header {
 background: #5fa292;
-border-color: 558188;
+border-color:#558188;
 }
 
 
@@ -199,7 +199,7 @@ nav a, nav a:visited {
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-  color: 558188;
+  color: #558188;
 }
 
 
