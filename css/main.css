@@ -9,7 +9,7 @@ a {
 
 
 body {
-font-family: 'Raleway', sans-serif;
+font-family: 'merryweather', serif;
 
 }
 
@@ -69,6 +69,7 @@ h2 {
 font-size: 0.7em;
 margin: -5px 0 0;
 font-weight: bold;
+font-family: 'Raleway', sans-serif;
 
 
 }
@@ -93,11 +94,13 @@ nav ul {
 
 nav li {
 display: inline;
+font-family: 'Raleway', sans-serif;
 }
 
 nav a {
   font-weight: 300;
   padding: 15px 10px;
+  font-family: 'Raleway', sans-serif;
 }
 
 
