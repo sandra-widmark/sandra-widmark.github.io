@@ -9,7 +9,7 @@ a {
 
 
 body {
-font-family: 'Raleway', sans-serif;
+font-family: 'Merryweather', serif;
 
 }
 
@@ -31,6 +31,7 @@ img {
 h3 {
   margin: 0 0 1em 0;
   font-weight: bold;
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -147,7 +148,7 @@ PAGE CONTACT
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .contact-info a {
