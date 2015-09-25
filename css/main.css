@@ -45,14 +45,6 @@ header {
 }
 
 
- #logo {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;
-  }
-
-/*
 #logo {
   text-align: center;
   margin: 0 auto;
@@ -60,7 +52,7 @@ header {
 }
 
 
-
+/*
   nav {
     background: none;
     float: right;
