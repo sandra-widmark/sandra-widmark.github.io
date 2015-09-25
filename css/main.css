@@ -9,7 +9,7 @@ a {
 
 
 body {
-font-family: 'merryweather', serif;
+font-family: 'raleway', serif;
 
 }
 
@@ -155,7 +155,7 @@ PAGE CONTACT
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .contact-info a {
