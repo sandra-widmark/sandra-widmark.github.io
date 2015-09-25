@@ -91,7 +91,7 @@ NAVIGATION
 **********************************/
 
 nav {
-text-align: center;
+text-align: left;
 padding: 20px;
 margin:0 auto;
 }
@@ -104,7 +104,7 @@ nav ul {
 }
 
 nav li {
-display: none;
+display: inline;
 }
 
 nav a {
