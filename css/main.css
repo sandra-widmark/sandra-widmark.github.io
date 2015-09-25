@@ -45,10 +45,11 @@ header {
   width: 100%;
 }
 
-#logo {
-  text-align: center;
-  margin: 0;
-}
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
 
 h1 {
 font-family: 'Open Sans', sans-serif;
@@ -74,10 +75,13 @@ NAVIGATION
 **********************************/
 
 nav {
-text-align: center;
-padding: 10px 0;
-margin: 20px 0 0;
-}
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
 
 nav ul {
   list-style: none;
