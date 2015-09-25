@@ -44,11 +44,41 @@ header {
   width: 100%;
 }
 
+
+ #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+
+/*
 #logo {
   text-align: center;
   margin: 0 auto;
   padding: 30px;
 }
+
+
+
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+
+
+
+  header {
+    border-bottom: 5px solid #558188;
+    margin-bottom: 80px;
+  }
+
+*/
+
 
 h1 {
 font-family: 'Raleway', sans-serif;
