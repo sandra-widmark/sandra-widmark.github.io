@@ -11,11 +11,11 @@ a {
 body {
 font-family: 'merryweather', serif;
 
-p {
- font-size; 1.3em;  
-  }
-
 }
+
+p {
+ font-size: 1.3em;  
+  }
 
 main {
   max-width: 940px;
