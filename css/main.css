@@ -48,7 +48,7 @@ header {
 #logo {
   text-align: center;
   margin: 0 auto;
-  padding: 0px;
+  padding-top: 30px;
 }
 
 
@@ -71,7 +71,7 @@ h1 {
 font-family: 'Raleway', sans-serif;
 margin: 0 auto;
 font-size: 1.75em;
-font-weight: bold;
+font-weight:300;
 line-height: 0.8em;
 
 }
