@@ -176,14 +176,14 @@ COLORS
 /* site body */
 body {
   background-color: #fff;
-  color: #fff;
+  color:  #b5b5b5;
   
 }
 
 /* green header */
 header {
-background: #5fa292;
-border-color:#558188;
+background: #fff;
+border-color: #b5b5b5;
 }
 
 
