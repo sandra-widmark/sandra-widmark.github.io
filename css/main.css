@@ -71,7 +71,7 @@ h1 {
 font-family: 'Raleway', sans-serif;
 margin: 0 auto;
 font-size: 1.75em;
-font-weight: normal;
+font-weight: bold;
 line-height: 0.8em;
 
 }
@@ -92,7 +92,7 @@ NAVIGATION
 
 nav {
 text-align: center;
-padding: 10px 0;
+padding:0;
 margin:0 auto;
 }
 
