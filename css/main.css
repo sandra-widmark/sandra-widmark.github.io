@@ -64,17 +64,12 @@ header {
 
 
 
-  header {
-    border-bottom: 5px solid #558188;
-    margin-bottom: 80px;
-  }
-
 */
 
 
 h1 {
 font-family: 'Raleway', sans-serif;
-margin-left: 50%;
+margin: 0 auto;
 font-size: 1.75em;
 font-weight: normal;
 line-height: 0.8em;
