@@ -74,7 +74,7 @@ header {
 
 h1 {
 font-family: 'Raleway', sans-serif;
-margin: 0 auto;
+margin-left: 50%;
 font-size: 1.75em;
 font-weight: normal;
 line-height: 0.8em;
@@ -98,7 +98,7 @@ NAVIGATION
 nav {
 text-align: center;
 padding: 10px 0;
-margin-left: 50%;
+margin:0 auto;
 }
 
 nav ul {
