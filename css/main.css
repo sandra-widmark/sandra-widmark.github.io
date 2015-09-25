@@ -20,7 +20,7 @@ main {
 }
 
 a {
-color: #558188;
+color:  #b5b5b5;
 }
 
 img {
@@ -94,7 +94,7 @@ display: inline;
 }
 
 nav a {
-  font-weight: 800;
+  font-weight: 300;
   padding: 15px 10px;
 }
 
@@ -176,7 +176,8 @@ COLORS
 /* site body */
 body {
   background-color: #fff;
-  color: #999;
+  color: #fff;
+  
 }
 
 /* green header */
@@ -187,17 +188,17 @@ border-color:#558188;
 
 
 h1, h2 {
-color: #fff;
+color: #b5b5b5;
 }
 
 /* nav background on mobile */
 nav {
-  background: #558188;
+  background: #fff;
 }
 
 /* nav link */
 nav a, nav a:visited {
-  color: #fff;
+  color:  #b5b5b5;
 }
 
 /* selected nav link */
