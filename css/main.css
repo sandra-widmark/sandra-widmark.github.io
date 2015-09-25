@@ -30,7 +30,7 @@ img {
 
 h3 {
   margin: 0 0 1em 0;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 
@@ -178,7 +178,7 @@ COLORS
 /* site body */
 body {
   background-color: #fff;
-  color:  #3D3C3A;
+  color:  #707070;
   
 }
 
