@@ -153,6 +153,15 @@ PAGE CONTACT
 .contactinfo {
   text-align:center;
   list-style: none;
+  padding: 0px;
+  margin: 0;
+  font-size: 1.2em;
+  color:#707070; 
+}
+
+.contactinfo li {
+  text-align:center;
+  list-style: none;
   padding: 5px;
   margin: 0;
   font-size: 1.2em;
