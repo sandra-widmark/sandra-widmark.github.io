@@ -46,7 +46,7 @@ HEADING
 header {
   float: left; 
   margin: 0 auto;
-  padding: 70px 0 0 0;
+  padding: 70px 0 70px 0;
   width: 100%;
 }
 
@@ -86,7 +86,7 @@ NAVIGATION
 
 nav {
 text-align: center;
-padding: 20px;
+padding: 40px;
 margin:0 auto;
 }
 
