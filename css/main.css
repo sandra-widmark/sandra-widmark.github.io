@@ -150,7 +150,7 @@ PAGE ABOUT
 /*********************************
 PAGE CONTACT
 **********************************/
-.contact-info {
+.contactinfo {
   text-align:center;
   list-style: none;
   padding: 0;
@@ -170,15 +170,6 @@ PAGE CONTACT
 
 }
 
-.contact-info li.phone a {
-  background-image:;
-
-}
-
-.contact-info li.mail a {
-  background-image:;
-
-}
 
 
 /*********************************
