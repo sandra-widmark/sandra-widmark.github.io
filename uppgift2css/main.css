@@ -39,23 +39,23 @@ p {
 
 
 /*********************************
-.Preamble
+#preamble
 **********************************/
 
 
-.preamble {
+#zen-preamble {
     
     background-color: #A5BD8E;
     width: 230px;
     height: 250px;
     margin-left: 40%; 
-    border-radius: 10%; 
+    border-radius: 5%; 
     
 }
 
 
 
-.preamble p {
+#zen-preamble p {
     
   margin: 2.5%; 
     padding-right: 5%;  
@@ -64,12 +64,161 @@ p {
 }
 
 
-.preamble h3 {
+#zen-preamble h3 {
     
     margin: 2.5%; 
     padding: 5%; 
 
 }
+
+
+/*********************************
+#zen-supporting
+**********************************/
+
+
+#zen-supporting {
+    
+    background-color: #A5BD8E;
+    width: 230px;
+    height: 290px;
+    margin-left: 40%; 
+    border-radius: 5%; 
+    
+}
+
+
+
+#zen-supporting p {
+    
+  margin: 2.5%; 
+    padding-right: 5%;  
+    padding-left: 5%;  
+    
+}
+
+
+#zen-supporting h3 {
+    
+    margin: 2.5%; 
+    padding: 5%; 
+
+}
+
+
+/*********************************
+#zen-participation
+**********************************/
+
+
+
+#zen-participation {
+    
+    
+    
+    background-color: #A5BD8E;
+    width: 230px;
+    height: 340px;
+    margin-left: 40%; 
+    border-radius: 5%; 
+    
+}
+
+
+
+#zen-participation p {
+    
+  margin: 2.5%; 
+    padding-right: 5%;  
+    padding-left: 5%;  
+    
+}
+
+
+#zen-participation h3 {
+    
+    margin: 2.5%; 
+    padding: 5%; 
+
+}
+
+
+
+/*********************************
+#zen-benefits
+**********************************/
+
+
+
+#zen-benefits {
+    
+    
+    
+    background-color: #A5BD8E;
+    width: 230px;
+    height: 160px;
+    margin-left: 40%; 
+    border-radius: 5%; 
+    
+}
+
+
+
+#zen-benefits p {
+    
+  margin: 2.5%; 
+    padding-right: 5%;  
+    padding-left: 5%;  
+    
+}
+
+
+#zen-benefits h3 {
+    
+    margin: 2.5%; 
+    padding: 5%; 
+
+}
+
+
+
+/*********************************
+#zen-requirements
+**********************************/
+
+
+#zen-requirements {
+    
+    background-color: #A5BD8E;
+    width: 230px;
+    height: 580px;
+    margin-left: 40%; 
+    border-radius: 5%; 
+    
+}
+
+
+
+#zen-requirements p {
+    
+    margin: 2.5%; 
+    padding-right: 5%;  
+    padding-left: 5%;  
+    
+}
+
+
+#zen-requirements h3 {
+    
+    margin: 2.5%; 
+    padding: 5%; 
+
+}
+
+    
+    
+    
+
 
 
 
