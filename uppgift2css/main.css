@@ -1,0 +1,26 @@
+
+h1 { 
+    font-size: 3.5em; 
+    color: #d5764b; 
+    -webkit-transform: rotate(-30deg);
+    margin: 0 auto; 
+    margin-left: -5%; 
+    margin-top: -11%;
+    padding: 0 auto; 
+}
+
+
+h2 { 
+    font-size: 2em; 
+    color: #51631d; 
+    -webkit-transform: rotate(-30deg);
+    margin: 0 auto; 
+    margin-left: 0%; 
+    margin-top: 2%;
+    padding: 0 auto; 
+}
+
+
+
+
+
