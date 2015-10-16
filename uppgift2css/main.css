@@ -44,8 +44,8 @@ p {
 
 
 #zen-preamble {
-    
-    background-color: #A5BD8E;
+     
+    background-color: rgba(81, 99, 29, 0.4);
     width: 230px;
     height: 250px;
     margin-left: 40%; 
@@ -79,7 +79,7 @@ p {
 
 #zen-supporting {
     
-    background-color: #A5BD8E;
+    background-color: rgba(81, 99, 29, 0.4);
     width: 230px;
     height: 290px;
     margin-left: 40%; 
@@ -116,7 +116,7 @@ p {
     
     
     
-    background-color: #A5BD8E;
+    background-color: rgba(81, 99, 29, 0.4);
     width: 230px;
     height: 340px;
     margin-left: 40%; 
@@ -154,7 +154,7 @@ p {
     
     
     
-    background-color: #A5BD8E;
+    background-color: rgba(81, 99, 29, 0.4);
     width: 230px;
     height: 160px;
     margin-left: 40%; 
@@ -189,7 +189,7 @@ p {
 
 #zen-requirements {
     
-    background-color: #A5BD8E;
+    background-color: rgba(81, 99, 29, 0.4);
     width: 230px;
     height: 580px;
     margin-left: 40%; 
