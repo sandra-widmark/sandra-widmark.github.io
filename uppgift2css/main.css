@@ -51,9 +51,9 @@ p {
 
 
 #zen-summary p { 
-    font-size: 1em; 
+    font-size: 1.2em; 
     color: #eeac48; 
-    font-weight: ; 
+    font-weight:bolder; 
     -webkit-transform: rotate(-25deg);
     margin-left: ; 
    
@@ -116,7 +116,7 @@ p {
     
     height: 260px;
      margin-left: 102%; 
-    margin-top: -202%; 
+    margin-top: -121.5%; 
     
 }
 
@@ -195,10 +195,12 @@ Body
     
 #css-zen-garden {
     
+    background: url('/img/trad.png') ;
     width:100%; 
     height:100%;
 }
     
+
 
 
     
