@@ -6,31 +6,39 @@ h1 {
     font-size: 3.5em; 
     color: #d5764b; 
     -webkit-transform: rotate(-25deg);
-    margin: 0 auto; 
-    margin-top: -10%; 
-    padding-bottom: 1%; 
-    margin-left: -3%; 
-    padding: 0 auto; 
     border-bottom-style: solid;
     border-color: #eeac48;
     border-width: 5px;
+    margin-top: 200px; 
+    position: fixed;    
+  
 }
 
 
 h2 { 
-    font-size: 2.2em; 
+    font-size: 2.25em; 
     color: #51631d; 
     -webkit-transform: rotate(-25deg);
-    margin: 0 auto;  
-    margin-left: -1%;
-    padding: 0 auto; 
-    padding-top: 1%;
+    margin-top: 270px; 
+    margin-left: 31px; 
+   position: fixed;  
+
+}
+
+
+header {
+    
+    margin-top: -200px; 
+    
+    position: fixed; 
+    
 }
 
 
 h3 { 
     font-size: 1em; 
     color: #51631d; 
+
 
 }
 
@@ -45,25 +53,28 @@ p {
 #zen-summary p { 
     font-size: 1em; 
     color: #eeac48; 
-    font-weight: bold; 
+    font-weight: ; 
     -webkit-transform: rotate(-25deg);
-    margin-left: 15%; 
+    margin-left: ; 
+   
 
 }
 
 #zen-summary { 
-    margin-top; 300px; 
-    height: 50px;
-    width: 530px;
+    
+    width: 470px;
+    position: fixed;   
+
+
+    
 
 }
 
-
-
 #zen-summary p:first-child {
     
-    margin-top: 300px; 
-    
+    margin-top: 115px ; 
+    margin-left: 64px;
+      
 }
 
 
@@ -94,30 +105,20 @@ p {
      margin-left: 40%; 
     margin-top: %;
    
-
-    
 }
-
-
 
 
 /*********************************
 #zen-participation
 **********************************/
 
-
-
 #zen-participation {
     
     height: 260px;
      margin-left: 102%; 
-    margin-top: -239%;
-    
+    margin-top: -202%; 
     
 }
-
-
-
 
 
 /*********************************
@@ -129,14 +130,9 @@ p {
 #zen-benefits {
     
     height: 115px;
-    margin-left: 102%; 
-    
+    margin-left: 102%;   
    
 }
-
-
-
-
 
 
 /*********************************
@@ -170,13 +166,6 @@ All Article-boxes
      background-color: rgba(81, 99, 29, 0.4);
      border-radius:1%;
      width: 330px;
-     
-  
-    
-
-    
-
-  
     
 }
 
@@ -190,7 +179,6 @@ All Article-boxes
 }
 
 
-
 #zen-requirements h3, #zen-benefits h3, #zen-participation h3, #zen-supporting h3, #zen-preamble h3 {
     
     margin: 2%; 
@@ -198,8 +186,22 @@ All Article-boxes
     padding-left: 3%; 
     padding-top: 3%;
     
+    }
+    
+
+/*********************************
+Body
+**********************************/
+    
+#css-zen-garden {
+    
+    width:100%; 
+    height:100%;
+}
+    
 
 
+    
     
     
     
