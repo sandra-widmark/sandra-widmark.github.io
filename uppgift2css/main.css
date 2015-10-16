@@ -5,21 +5,23 @@ Heading styling
 h1 { 
     font-size: 3.5em; 
     color: #d5764b; 
-    -webkit-transform: rotate(-30deg);
+    -webkit-transform: rotate(-25deg);
     margin: 0 auto; 
     margin-left: -5%; 
-    margin-top: -11%;
+    margin-top: -15%;
     padding: 0 auto; 
+    border-bottom-style: solid;
+    border-color: #eeac48;
+    border-width: 5px;
 }
 
 
 h2 { 
-    font-size: 2em; 
+    font-size: 2.2em; 
     color: #51631d; 
-    -webkit-transform: rotate(-30deg);
+    -webkit-transform: rotate(-25deg);
     margin: 0 auto; 
-    margin-left: 0%; 
-    margin-top: 2%;
+    margin-left: -3%; 
     padding: 0 auto; 
 }
 
@@ -45,31 +47,12 @@ p {
 
 #zen-preamble {
      
-    background-color: rgba(81, 99, 29, 0.4);
-    width: 230px;
-    height: 250px;
+    height: 190px;
     margin-left: 40%; 
-    border-radius: 5%; 
+    margin-top: 2%; 
     
 }
 
-
-
-#zen-preamble p {
-    
-  margin: 2.5%; 
-    padding-right: 5%;  
-    padding-left: 5%;  
-    
-}
-
-
-#zen-preamble h3 {
-    
-    margin: 2.5%; 
-    padding: 5%; 
-
-}
 
 
 /*********************************
@@ -79,31 +62,12 @@ p {
 
 #zen-supporting {
     
-    background-color: rgba(81, 99, 29, 0.4);
-    width: 230px;
-    height: 290px;
+    height: 220px;
     margin-left: 40%; 
-    border-radius: 5%; 
     
 }
 
 
-
-#zen-supporting p {
-    
-  margin: 2.5%; 
-    padding-right: 5%;  
-    padding-left: 5%;  
-    
-}
-
-
-#zen-supporting h3 {
-    
-    margin: 2.5%; 
-    padding: 5%; 
-
-}
 
 
 /*********************************
@@ -114,33 +78,13 @@ p {
 
 #zen-participation {
     
-    
-    
-    background-color: rgba(81, 99, 29, 0.4);
-    width: 230px;
-    height: 340px;
-    margin-left: 40%; 
-    border-radius: 5%; 
+    height: 260px;
+    margin-left: 103%;
+    margin-top: -121.5%; 
     
 }
 
 
-
-#zen-participation p {
-    
-  margin: 2.5%; 
-    padding-right: 5%;  
-    padding-left: 5%;  
-    
-}
-
-
-#zen-participation h3 {
-    
-    margin: 2.5%; 
-    padding: 5%; 
-
-}
 
 
 
@@ -152,33 +96,13 @@ p {
 
 #zen-benefits {
     
-    
-    
-    background-color: rgba(81, 99, 29, 0.4);
-    width: 230px;
-    height: 160px;
-    margin-left: 40%; 
-    border-radius: 5%; 
+    height: 115px;
+    margin-left: 103%; 
     
 }
 
 
 
-#zen-benefits p {
-    
-  margin: 2.5%; 
-    padding-right: 5%;  
-    padding-left: 5%;  
-    
-}
-
-
-#zen-benefits h3 {
-    
-    margin: 2.5%; 
-    padding: 5%; 
-
-}
 
 
 
@@ -189,31 +113,50 @@ p {
 
 #zen-requirements {
     
-    background-color: rgba(81, 99, 29, 0.4);
-    width: 230px;
-    height: 580px;
-    margin-left: 40%; 
-    border-radius: 5%; 
+    height: 405px;
+    margin-left: 103%; 
     
 }
 
 
 
-#zen-requirements p {
+
+
+/*********************************
+All Article-boxes
+**********************************/
+
+
+
+
+#zen-requirements, #zen-benefits, #zen-participation,#zen-supporting, #zen-preamble {
     
-    margin: 2.5%; 
-    padding-right: 5%;  
-    padding-left: 5%;  
+     background-color: rgba(81, 99, 29, 0.4);
+     border-radius:1%;
+     width: 330px;
+  
     
 }
 
 
-#zen-requirements h3 {
+#zen-requirements p, #zen-benefits p, #zen-participation p,#zen-supporting p, #zen-preamble p {
     
-    margin: 2.5%; 
-    padding: 5%; 
-
+    margin: 2%; 
+    padding-right: 3%;  
+    padding-left: 3%;  
+    
 }
+
+
+
+#zen-requirements h3, #zen-benefits h3, #zen-participation h3, #zen-supporting h3, #zen-preamble h3 {
+    
+    margin: 2%; 
+    padding-right: 3%;  
+    padding-left: 3%; 
+    padding-top: 3%;
+    
+
 
     
     
