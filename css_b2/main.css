@@ -1,5 +1,4 @@
-
-
+@import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
 
 
 
@@ -8,7 +7,9 @@
     background-color: #ffb4c0; 
     width: 700px; 
     margin: 0 auto; 
-
+    padding: 20px; 
+    border-radius: 10px; 
+    border-color: white; 
 }
 
 
@@ -20,13 +21,19 @@ Heading styling
 h1 { 
     
     font-size: 40px; 
-  
-}
+    font-family: "Cabin";
+    color: #f451aa; 
+    -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: white;
+  }
+    
+    
 
 
 h2 { 
     
     font-size: 60px; 
+    font-family: "Cabin";
   
    
 }
@@ -37,11 +44,14 @@ h3 {
     
     
     font-size: 20px;
+    font-family: "Cabin";
    
 }
 
 
 p { 
+    
+    font-family: "Cabin";
     
 
 }
