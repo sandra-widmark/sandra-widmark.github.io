@@ -1,15 +1,25 @@
 
-
+@import url(https://fonts.googleapis.com/css?family=Satisfy|Monoton);
 
 
 #css-zen-garden {
     background-image: url(img/poker.jpg); 
     background-repeat: no-repeat; 
-
-    
+  
     
 }
 
+
+header {
+    width: 700px; 
+    height: 700px; 
+    background-image: url(img/casinoskylt.png); 
+    background-repeat: no-repeat; 
+    background-size: 700px; 
+    margin: 0 auto; 
+    background-position: cover; 
+    text-align: center; 
+}
 
 
 
@@ -22,6 +32,12 @@ Heading styling
 
 h1 { 
     
+    font-family: "satisfy"; 
+     color: darkblue; 
+    font-size: 40px; 
+padding-top: 85px; 
+    margin: 0 auto; 
+    
   
   }
     
@@ -30,8 +46,10 @@ h1 {
 
 h2 { 
     
-
-  
+    font-family: "monoton"; 
+    color: darkred; 
+    font-size: 40px; 
+     margin: 0 auto; 
    
 }
 
