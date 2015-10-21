@@ -2,6 +2,14 @@
 @import url(https://fonts.googleapis.com/css?family=Satisfy|Monoton);
 
 
+
+/*********************************
+Body
+**********************************/
+
+
+
+
 #css-zen-garden {
     background-image: url(img/poker.jpg); 
     background-repeat: no-repeat; 
@@ -10,9 +18,23 @@
 }
 
 
+.page-wrapper {
+
+    margin: 0 auto; 
+  
+    
+    
+}
+
+
+
+/*********************************
+Header
+**********************************/
+
 header {
     width: 700px; 
-    height: 700px; 
+    height: 350px; 
     background-image: url(img/casinoskylt.png); 
     background-repeat: no-repeat; 
     background-size: 700px; 
@@ -20,6 +42,65 @@ header {
     background-position: cover; 
     text-align: center; 
 }
+
+
+
+
+/*********************************
+Summary
+**********************************/
+
+
+.summary {
+    
+    background-color: darkred; 
+    font-family: "satisfy"; 
+    margin: 0 auto; 
+    text-align: center; 
+    width: 1100px;
+    padding: 0.5px; 
+    color: white; 
+    font-size: 20px; 
+    border-radius: 50px; 
+    
+}
+
+
+
+#zen-preamble, #zen-supporting, #zen-participation, #zen-benefits, #zen-benefits, zen-requirements {
+
+    font-family: "sans serif"; 
+    margin: 0 auto; 
+    text-align: center; 
+    width: 1100px;
+    padding: 2px; 
+    color: white; 
+    font-size: 13px; 
+    background-color: darkgreen; 
+
+}
+
+
+
+#zen-preamble p, #zen-supporting p, #zen-participation p, #zen-benefits p, zen-requirements p {
+
+
+    text-align: left; 
+  
+
+}
+
+
+
+
+#zen-preamble h3, #zen-supporting h3, #zen-participation h3, #zen-benefits h3, zen-requirements h3 {
+
+
+    text-align: left; 
+  
+
+}
+
 
 
 
@@ -35,7 +116,7 @@ h1 {
     font-family: "satisfy"; 
      color: darkblue; 
     font-size: 40px; 
-padding-top: 85px; 
+    padding-top: 85px; 
     margin: 0 auto; 
     
   
@@ -68,6 +149,7 @@ p {
   
 
 }
+
 
 
 
