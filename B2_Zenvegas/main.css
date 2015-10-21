@@ -16,14 +16,9 @@ html {
 #css-zen-garden {
    background-color: darkgreen; 
     width: 1100px; 
-    margin: 0 auto; 
-    padding: 10px 30px; 
-   
-
-
+    margin: 0 auto;
+    padding: 10px 30px;    
 }
-
-
 
 
 
@@ -40,8 +35,8 @@ header {
     margin: 0 auto; 
     margin-left: 150px; 
     text-align: center; 
-   
- 
+    position: absolute; 
+    z-index: 2; 
 
 }
 
@@ -54,10 +49,7 @@ header h1 {
     padding-top: 85px; 
     margin: 0 auto; 
      text-align: center; 
-
-  
   }
-    
     
 
 
@@ -67,11 +59,7 @@ header h2 {
     color: darkred; 
     font-size: 40px; 
      margin: 0 auto; 
-     text-align: center;
-    
-
-    
-   
+     text-align: center;   
 }
 
 
@@ -95,13 +83,10 @@ Summary
     border-radius: 50px; 
     border-color: white; 
     border-width: 10px;
-    border-style: double;
-  
-  
-
-
-
-    
+    border-style: double;  
+     position: absolute; 
+    z-index: 1; 
+    margin-top: 320px; 
 }
 
 
@@ -118,10 +103,10 @@ Articles
     width: 1100px;
     padding: 3px;
     color: white; 
-    font-size: 13px; 
-   
-
+    font-size: 13px;
+  
 }
+
 
 
 
@@ -130,8 +115,6 @@ Articles
 
 
 }
-
-
 
 
 #zen-preamble h3, #zen-supporting h3, #zen-participation h3, #zen-benefits h3, #zen-requirements h3 {
