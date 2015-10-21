@@ -7,24 +7,23 @@
 Body
 **********************************/
 
-
-
-
-#css-zen-garden {
+html {
     background-image: url(img/poker.jpg); 
     background-repeat: no-repeat; 
   
-    
 }
 
-
-.page-wrapper {
-
+#css-zen-garden {
+   background-color: darkgreen; 
+    width: 1100px; 
     margin: 0 auto; 
-  
-    
-    
+    padding: 10px 30px; 
+   
+
+
 }
+
+
 
 
 
@@ -39,8 +38,40 @@ header {
     background-repeat: no-repeat; 
     background-size: 700px; 
     margin: 0 auto; 
-    background-position: cover; 
+    margin-left: 150px; 
     text-align: center; 
+   
+ 
+
+}
+
+
+header h1 { 
+    
+    font-family: "satisfy"; 
+     color: darkblue; 
+    font-size: 40px; 
+    padding-top: 85px; 
+    margin: 0 auto; 
+     text-align: center; 
+
+  
+  }
+    
+    
+
+
+header h2 { 
+    
+    font-family: "monoton"; 
+    color: darkred; 
+    font-size: 40px; 
+     margin: 0 auto; 
+     text-align: center;
+    
+
+    
+   
 }
 
 
@@ -57,98 +88,62 @@ Summary
     font-family: "satisfy"; 
     margin: 0 auto; 
     text-align: center; 
-    width: 1100px;
+    width: 1050px;
     padding: 0.5px; 
     color: white; 
     font-size: 20px; 
     border-radius: 50px; 
+    border-color: white; 
+    border-width: 10px;
+    border-style: double;
+  
+  
+
+
+
     
 }
-
-
-
-#zen-preamble, #zen-supporting, #zen-participation, #zen-benefits, #zen-benefits, zen-requirements {
-
-    font-family: "sans serif"; 
-    margin: 0 auto; 
-    text-align: center; 
-    width: 1100px;
-    padding: 2px; 
-    color: white; 
-    font-size: 13px; 
-    background-color: darkgreen; 
-
-}
-
-
-
-#zen-preamble p, #zen-supporting p, #zen-participation p, #zen-benefits p, zen-requirements p {
-
-
-    text-align: left; 
-  
-
-}
-
-
-
-
-#zen-preamble h3, #zen-supporting h3, #zen-participation h3, #zen-benefits h3, zen-requirements h3 {
-
-
-    text-align: left; 
-  
-
-}
-
-
-
-
 
 
 
 /*********************************
-Heading styling
+Articles
 **********************************/
 
-h1 { 
-    
-    font-family: "satisfy"; 
-     color: darkblue; 
-    font-size: 40px; 
-    padding-top: 85px; 
-    margin: 0 auto; 
-    
-  
-  }
-    
-    
 
+#zen-preamble, #zen-supporting, #zen-participation, #zen-benefits, #zen-requirements {
 
-h2 { 
-    
-    font-family: "monoton"; 
-    color: darkred; 
-    font-size: 40px; 
-     margin: 0 auto; 
+    font-family: "sans serif"; 
+    margin: 0 auto;
+    width: 1100px;
+    padding: 3px;
+    color: white; 
+    font-size: 13px; 
    
+
+}
+
+
+
+#zen-preamble p, #zen-supporting p, #zen-participation p, #zen-benefits p, #zen-requirements p {
+
+
+
 }
 
 
 
-h3 { 
-    
-    
 
-  
-   
+#zen-preamble h3, #zen-supporting h3, #zen-participation h3, #zen-benefits h3, #zen-requirements h3 {
+
+
 }
 
 
-p { 
-  
 
-}
+
+
+
 
 
 
