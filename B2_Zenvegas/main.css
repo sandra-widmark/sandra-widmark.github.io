@@ -10,11 +10,14 @@ html {
 
 #css-zen-garden {
  
-    max-width: 65%; 
+    width: 85%; 
+    height: 95%; 
     margin: 100px auto;
     padding: 5px 20px; 
     background-color: darkgreen;
     border-radius: 15px; 
+
+    
   
    
 }
@@ -24,7 +27,7 @@ Header
 **********************************/
 header {
     position: relative; 
-    max-width: 700px; 
+    max-width: 700px;  
     height: 350px; 
     background-image: url(img/casinoskylt.png); 
     background-repeat: no-repeat; 
@@ -32,6 +35,8 @@ header {
     text-align: center;  
     z-index: 2; 
     margin: -100px auto; 
+    float: none; 
+    
    
 }
 
@@ -59,7 +64,7 @@ Summary
 .summary {
     position: relative; 
     z-index: 1;
-    max-width: 100%; 
+    max-width: 1000px; 
     background-color: darkred;
     font-family: "satisfy";
     text-align: center;
@@ -69,8 +74,9 @@ Summary
     border-color: white;
     border-width: 10px;
     border-style: double;
-    margin-top: 65px; 
-
+    margin: 65px auto; 
+    padding: 10px; 
+ 
     
 }
 
@@ -82,17 +88,23 @@ Articles
 #zen-preamble, #zen-supporting, #zen-participation, #zen-benefits, #zen-requirements {
 
     font-family: "sans serif"; 
-    margin: 10px 0 0 0;
-    max-width: 100%; 
     color: white; 
     font-size: 13px;
     background-image: url(img/tarning.png);
-    background-repeat: no-repeat; 
-    background-position: ; 
-    margin-top: 30px; 
-    height: 100px; 
+    background-repeat: no-repeat;  
+    background-size: 50px; 
+    max-width: 1000px; 
+    margin: 0px auto; 
    
-  
+    
+}
+
+
+#zen-preamble {
+    
+    
+    
+    
 }
 
 
@@ -100,17 +112,64 @@ Articles
 
 #zen-preamble p, #zen-supporting p, #zen-participation p, #zen-benefits p, #zen-requirements p {
 
- margin: 0 0 0 100px;
+ margin: 0 0 0 70px;
+ padding: 10px; 
 
 }
 
 
 #zen-preamble h3, #zen-supporting h3, #zen-participation h3, #zen-benefits h3, #zen-requirements h3 {
     
-     margin: 0 0 0 100px;
-
-
+     margin: 0 0 0 70px;
+     padding: 10px; 
+    font-size: 20px; 
 }
+
+
+
+.design-selection {
+    
+    width: 200px; 
+    height: 800px; 
+    float: left;   
+    position: absolute;
+    top: 2px; 
+}
+
+
+
+.design-archives {
+    
+   width: 200px; 
+    float: right; 
+    position: absolute; 
+    top: 2px; 
+    right: 5px; 
+    
+}
+    
+    
+
+    
+
+.zen-resources {
+    
+    width: 200px; 
+    float: right; 
+     position: absolute; 
+    top: 200px; 
+    right: 5px; 
+   
+    }
+
+
+footer {
+    text-align: center; 
+    margin-top: 30px; 
+  
+}
+    
+
 
 
 
