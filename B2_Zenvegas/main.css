@@ -5,27 +5,34 @@ html {
     background-image: url(img/poker.jpg); 
     background-repeat: no-repeat; 
   
+  
 }
 
 #css-zen-garden {
-    background-color: darkgreen; 
-    width: 1100px; 
-    margin: 0 auto;
-    padding: 10px 30px;    
+ 
+    max-width: 65%; 
+    margin: 100px auto;
+    padding: 5px 20px; 
+    background-color: darkgreen;
+    border-radius: 15px; 
+  
+   
 }
 
 /*********************************
 Header
 **********************************/
 header {
-    width: 700px; 
+    position: relative; 
+    max-width: 700px; 
     height: 350px; 
     background-image: url(img/casinoskylt.png); 
     background-repeat: no-repeat; 
     background-size: 700px; 
     text-align: center;  
-    z-index: 2;
-    position: relative; 
+    z-index: 2; 
+    margin: -100px auto; 
+   
 }
 
 header h1 { 
@@ -52,9 +59,7 @@ Summary
 .summary {
     position: relative; 
     z-index: 1;
-    width: 1050px;
-    margin-top: -100px;
-    padding: 0.5px;
+    max-width: 100%; 
     background-color: darkred;
     font-family: "satisfy";
     text-align: center;
@@ -64,6 +69,9 @@ Summary
     border-color: white;
     border-width: 10px;
     border-style: double;
+    margin-top: 65px; 
+
+    
 }
 
 /*********************************
@@ -74,12 +82,16 @@ Articles
 #zen-preamble, #zen-supporting, #zen-participation, #zen-benefits, #zen-requirements {
 
     font-family: "sans serif"; 
-    margin: 0 auto;
-    #margin-top: 100px; 
-    width: 1100px;
-    padding: 3px;
+    margin: 10px 0 0 0;
+    max-width: 100%; 
     color: white; 
     font-size: 13px;
+    background-image: url(img/tarning.png);
+    background-repeat: no-repeat; 
+    background-position: ; 
+    margin-top: 30px; 
+    height: 100px; 
+   
   
 }
 
@@ -88,12 +100,14 @@ Articles
 
 #zen-preamble p, #zen-supporting p, #zen-participation p, #zen-benefits p, #zen-requirements p {
 
-
+ margin: 0 0 0 100px;
 
 }
 
 
 #zen-preamble h3, #zen-supporting h3, #zen-participation h3, #zen-benefits h3, #zen-requirements h3 {
+    
+     margin: 0 0 0 100px;
 
 
 }
