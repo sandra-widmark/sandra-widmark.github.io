@@ -77,6 +77,77 @@ Summary
 Article boxes 
 **********************************/
 
+
+
+
+#zen-requirements, #zen-benefits, #zen-participation,#zen-supporting, #zen-preamble {
+
+
+}
+
+
+#zen-requirements p, #zen-benefits p, #zen-participation p,#zen-supporting p, #zen-preamble p {
+    
+    font-family: "Open Sans Condensed";
+    font-size: 0.8em; 
+    color: white; 
+    margin: 0px 0px 0px 0px; 
+
+}
+
+
+#zen-requirements h3, #zen-benefits h3, #zen-participation h3, #zen-supporting h3, #zen-preamble h3 {
+    
+    font-family: "sail"; 
+    font-size: 1.5em; 
+    color: white; 
+     margin: 0px 0px 0px 0px; 
+
+    
+    }
+
+
+#zen-requirements {
+    
+    background-color: #eeac48; 
+    width: 400px; 
+    height: 400px; 
+ 
+
+}
+
+#zen-benefits {
+    
+    background-color: #482833; 
+    width: 400px; 
+    height: 100px; 
+
+
+}
+
+#zen-participation {
+    
+    background-color: #9a270c; 
+    width: 400px; 
+    height: 250px; 
+
+}
+
+#zen-supporting {
+    
+    background-color: #482833; 
+    width: 400px; 
+    height: 200px; 
+
+}
+
+#zen-preamble {
+    
+    background-color: #4f8b8e;
+    width: 400px; 
+    height: 200px; 
+
+}
    
 
 
