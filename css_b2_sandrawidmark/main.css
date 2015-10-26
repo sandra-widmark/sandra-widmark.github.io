@@ -2,8 +2,22 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Sail|Lobster+Two:400,400italic,700,700italic);
   
 
+html {
+    background-color: #4f8b8e; 
+    
+    
+}
+
+
+
 #css-zen-garden {
-    background-image: url(img/bakgrund.jpg) 
+    background-image: url(img/bakgrund.jpg); 
+    background-repeat: no-repeat; 
+    margin: 5% auto; 
+    max-width: 80%; 
+    max-height: 80%; 
+    border: 15px solid #2c1608; 
+   
 }
 
 
@@ -20,11 +34,17 @@ header {
 
 header h1 { 
     font-family: "sail"; 
+    font-size: 6em; 
+    color: #4f8b8e; 
+    margin: 20px 50px 0px 100px; 
  
 }
 
 header h2 {
     font-family: "lobster two";
+    font-size: 4em; 
+    color: #482833; 
+    margin: 0px 50px 0px 100px; 
   
 }
 
@@ -37,10 +57,20 @@ Summary
     
     
     font-family: "Open Sans Condensed";
-
-    
+    font-size: 1.3em; 
+    color: #9a270c; 
+    margin: 10px 10px 0px 30px;  
+    width: 600px; 
+    font-weight: normal; 
 }
 
+
+.summary p {
+    
+    
+    margin: 0px 0px 0px 0px;   
+    display: inline; 
+}
 
 
 /*********************************
