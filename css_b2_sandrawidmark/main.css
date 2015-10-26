@@ -14,8 +14,8 @@ html {
     background-image: url(img/bakgrund.jpg); 
     background-repeat: no-repeat; 
     margin: 5% auto; 
-    width: 900px; 
-    height: 1000px; 
+    width: 1000px; 
+    height: 1400px; 
     border: 15px solid #2c1608; 
    
 }
@@ -59,7 +59,7 @@ Summary
     font-family: "Open Sans Condensed";
     font-size: 1.3em; 
     color: #9a270c; 
-    margin: 10px 10px 50px 30px;  
+    margin: 10px 10px 80px 30px;  
     width: 600px; 
     font-weight: normal; 
 }
@@ -91,7 +91,8 @@ Article boxes
     font-family: "Open Sans Condensed";
     font-size: 0.8em; 
     color: white; 
-    margin: 0px 0px 0px 0px; 
+    margin: 0px 0px 0px 0px;
+    padding: 15px; 
 
 }
 
@@ -99,9 +100,10 @@ Article boxes
 #zen-requirements h3, #zen-benefits h3, #zen-participation h3, #zen-supporting h3, #zen-preamble h3 {
     
     font-family: "sail"; 
-    font-size: 1.5em; 
+    font-size: 1em; 
     color: white; 
-     margin: 0px 0px 0px 0px; 
+    margin: 0px 0px 0px 0px; 
+    padding: 15px 0 0 15px; 
 
     
     }
@@ -110,9 +112,11 @@ Article boxes
 #zen-requirements {
     
     background-color: #eeac48; 
-    width: 400px; 
-    height: 170px; 
+    width: 350px; 
+    height: 620px;
     float: left; 
+    margin-top: 20px; 
+    
     
  
 
@@ -121,11 +125,11 @@ Article boxes
 #zen-benefits {
     
     background-color: #482833; 
-    width: 400px; 
-    height: 170px; 
+    width: 400px;
+    height: 240px; 
     float: left; 
-    margin-top: 250px; 
-    margin-left: -400px; 
+    margin-left: -400px;
+    margin-top: 400px; 
 
 
 }
@@ -133,28 +137,32 @@ Article boxes
 #zen-participation {
     
     background-color: #9a270c; 
-    width: 400px; 
-    height: 170px; 
+    width: 350px; 
+    height: 380px; 
     float: left; 
-    margin-left: -400px; 
+    margin-left: -350px; 
+    margin-top: 20px;
+    
 
 }
 
 #zen-supporting {
     
     background-color: #482833; 
-    width: 400px; 
-    height: 170px; 
+    width: 350px; 
+    height: 300px; 
     float: left; 
+   
 
 }
 
 #zen-preamble {
     
     background-color: #4f8b8e;
-    width: 400px; 
-    height: 170px; 
+    width: 350px;
+    height: 300px; 
     float: left; 
+    margin-left: 100px; 
    
 
 }
@@ -164,12 +172,11 @@ Article boxes
     
     background-color: #9a270c; 
     height: 600px; 
-    width: 200px; 
+    width: 160px; 
     font-family: "Open Sans Condensed"; 
     color: white; 
     float: right; 
-    clear: both; 
-    margin-top: -200px; 
+    margin-top: ; 
  
 
      
@@ -179,6 +186,16 @@ Article boxes
 .sidebar h3 {
     
 font-family: "lobster two"; 
+    
+}
+
+
+
+
+footer {
+    
+font-family: "lobster two";
+clear: both; 
     
 }
    
