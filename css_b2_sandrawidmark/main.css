@@ -11,8 +11,13 @@ html {
 
 
 #css-zen-garden {
-    background-image: url(img/bakgrund.jpg); 
-    background-repeat: no-repeat; 
+
+    background-image: url(img/bakgrund.jpg), url(img/orm.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    
+    
+    
     margin: 5% auto; 
     width: 1000px; 
     height: 1400px; 
@@ -59,9 +64,19 @@ Summary
     font-family: "Open Sans Condensed";
     font-size: 1.3em; 
     color: #9a270c; 
-    margin: 10px 10px 80px 30px;  
+    margin: 10px 10px 0px 30px;  
     width: 600px; 
+    height:80px; 
     font-weight: normal; 
+    padding-right: 150px; 
+    
+    background-image: url(img/apa.png);
+    background-size: 150px;  
+    background-repeat: no-repeat;
+    overflow: visible; 
+    background-position: right top; 
+    
+    
 }
 
 
@@ -157,6 +172,10 @@ color: black;
     height: 310px; 
     float: left; 
 
+
+    
+    
+
 }
 
 
@@ -172,15 +191,21 @@ color: black;
 }
 
 
+/*********************************
+Sidebar
+**********************************/
+
+
 .sidebar {
     
     background-color: #9a270c; 
-    height: 600px; 
+    height: 850px; 
     width: 160px; 
-    font-family: "Open Sans Condensed"; 
+    font-family: "Open Sans Condensed";  
     color: white; 
     float: right; 
-    margin-top: ; 
+    margin-top:-100px; 
+    text-align: center; 
  
 
      
@@ -188,16 +213,58 @@ color: black;
 
 
 
-/*********************************
-Sidebar
-**********************************/
-
-
 .sidebar h3 {
     
 font-family: "lobster two"; 
     
 }
+
+
+
+.sidebar a {
+    
+text-decoration: none;  
+color: white;
+font-weight: normal; 
+    
+}
+
+
+.sidebar a:hover {
+    
+text-decoration: none;  
+color: black;
+font-weight: normal; 
+    
+}
+
+
+.sidebar a:visited {
+    
+text-decoration: none;  
+color: black;
+font-weight: normal; 
+    
+}
+
+.sidebar ul {
+    
+list-style: none; 
+margin: 0 auto;
+padding: 10px;
+font-size: 0.9em; 
+    
+}
+
+.sidebar ul li {
+    
+list-style: none; 
+margin: 0 auto;
+padding: 5px;
+font-size: 1em; 
+    
+}
+
 
 
 
@@ -218,6 +285,24 @@ footer a:link {
     
 text-decoration: none; 
 color: black; 
+font-weight: bold; 
+    
+}
+
+
+footer a:hover {
+    
+text-decoration: none; 
+color: #4f8b8e; 
+font-weight: bold; 
+    
+}
+
+
+footer a:visited {
+    
+text-decoration: none; 
+color: #9a270c; 
 font-weight: bold; 
     
 }
