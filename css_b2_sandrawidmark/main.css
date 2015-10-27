@@ -79,20 +79,13 @@ Article boxes
 
 
 
-
-#zen-requirements, #zen-benefits, #zen-participation,#zen-supporting, #zen-preamble {
-
-
-}
-
-
 #zen-requirements p, #zen-benefits p, #zen-participation p,#zen-supporting p, #zen-preamble p {
     
     font-family: "Open Sans Condensed";
-    font-size: 0.8em; 
+    font-size: 0.9em; 
     color: white; 
     margin: 0px 0px 0px 0px;
-    padding: 15px; 
+    padding: 15px 15px 3px 15px; 
 
 }
 
@@ -113,35 +106,46 @@ Article boxes
     
     background-color: #eeac48; 
     width: 350px; 
-    height: 620px;
+    height: 640px;
     float: left; 
-    margin-top: 20px; 
+    margin-top: 10px; 
     
-    
- 
-
 }
+
+
+#zen-requirements p {
+    
+color: black; 
+    
+}
+
+#zen-requirements h3 {
+    
+color: black; 
+    
+}
+
 
 #zen-benefits {
     
     background-color: #482833; 
-    width: 400px;
-    height: 240px; 
+    width: 350px;
+    height: 220px; 
     float: left; 
-    margin-left: -400px;
-    margin-top: 400px; 
-
-
+    margin-left: -350px;
+    margin-top: 410px; 
+    padding-top: 20px
 }
+
 
 #zen-participation {
     
     background-color: #9a270c; 
     width: 350px; 
-    height: 380px; 
+    height: 400px; 
     float: left; 
     margin-left: -350px; 
-    margin-top: 20px;
+    margin-top: 10px; 
     
 
 }
@@ -150,17 +154,17 @@ Article boxes
     
     background-color: #482833; 
     width: 350px; 
-    height: 300px; 
+    height: 310px; 
     float: left; 
-   
 
 }
+
 
 #zen-preamble {
     
     background-color: #4f8b8e;
     width: 350px;
-    height: 300px; 
+    height: 310px; 
     float: left; 
     margin-left: 100px; 
    
@@ -183,6 +187,12 @@ Article boxes
 }
 
 
+
+/*********************************
+Sidebar
+**********************************/
+
+
 .sidebar h3 {
     
 font-family: "lobster two"; 
@@ -192,12 +202,26 @@ font-family: "lobster two";
 
 
 
+/*********************************
+Footer
+**********************************/
+
 footer {
-    
 font-family: "lobster two";
-clear: both; 
+font-size: 2em; 
+margin: 700px -25% 0; 
+  
+}
+
+
+footer a:link {
+    
+text-decoration: none; 
+color: black; 
+font-weight: bold; 
     
 }
+   
    
 
 
