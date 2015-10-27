@@ -1,4 +1,8 @@
 
+/*********************************
+General
+**********************************/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Sail|Lobster+Two:400,400italic,700,700italic);
   
 
@@ -12,11 +16,10 @@ html {
 
 #css-zen-garden {
 
-    background-image: url(img/bakgrund.jpg), url(img/orm.png);
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
-    
-    
+    background-image: url(img/fisk.png),url(img/fagel.png),url(img/orm.png), url(img/bakgrund.jpg);
+    background-position: 10px 770px,770px 1240px,-50px 245px, center ;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 240px, 220px,350px, 2000px; 
     
     margin: 5% auto; 
     width: 1000px; 
@@ -65,13 +68,13 @@ Summary
     font-size: 1.3em; 
     color: #9a270c; 
     margin: 10px 10px 0px 30px;  
-    width: 600px; 
-    height:80px; 
+    width: 620px; 
+    height:115px; 
     font-weight: normal; 
     padding-right: 150px; 
     
     background-image: url(img/apa.png);
-    background-size: 150px;  
+    background-size: 170px;  
     background-repeat: no-repeat;
     overflow: visible; 
     background-position: right top; 
@@ -108,7 +111,7 @@ Article boxes
 #zen-requirements h3, #zen-benefits h3, #zen-participation h3, #zen-supporting h3, #zen-preamble h3 {
     
     font-family: "sail"; 
-    font-size: 1em; 
+    font-size: 1.1em; 
     color: white; 
     margin: 0px 0px 0px 0px; 
     padding: 15px 0 0 15px; 
@@ -165,30 +168,31 @@ color: black;
 
 }
 
+
+
 #zen-supporting {
     
     background-color: #482833; 
     width: 350px; 
     height: 310px; 
     float: left; 
-
-
-    
-    
-
 }
 
 
 #zen-preamble {
     
-    background-color: #4f8b8e;
+    background-color: #4f8b8e; 
     width: 350px;
     height: 310px; 
     float: left; 
     margin-left: 100px; 
    
-
 }
+
+
+
+
+
 
 
 /*********************************
@@ -206,8 +210,6 @@ Sidebar
     float: right; 
     margin-top:-100px; 
     text-align: center; 
- 
-
      
 }
 
@@ -274,9 +276,17 @@ Footer
 **********************************/
 
 footer {
-font-family: "lobster two";
-font-size: 2em; 
-margin: 700px -25% 0; 
+    font-family: "lobster two";
+    font-size: 1.5em; 
+    margin-top: 700px ; 
+    margin-left: -185px; 
+    background-image: url(img/orm.png), url(img/orm2.png);
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat; 
+    background-size: 120px, 120px;  
+    width: 450px; 
+    height:40px; 
+    text-align: center;
   
 }
 
@@ -306,11 +316,110 @@ color: #9a270c;
 font-weight: bold; 
     
 }
+
+
+
+
+
+/*********************************
+Links
+**********************************/
+
    
    
 
 
+ #zen-requirements a {
+    
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    
+    
+    }
 
+
+ #zen-requirements a:hover {
+    
+    color: #9a270c; 
+    font-weight: bold; 
+    
+    
+    }
+
+
+ #zen-requirements a:visited {
+    
+    text-decoration: none; 
+    color: #9a270c; 
+    font-weight: bold; 
+    
+    
+    }
+
+
+
+#zen-participation a  {
+    
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+    
+    
+    }
+
+
+
+#zen-participation a:hover {
+    
+    color: black; 
+    font-weight: bold; 
+    
+    
+    }
+
+
+#zen-participation a:visited {
+    
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    
+    
+    }
+
+
+
+
+.summary a  {
+    
+    font-family: "lobster two";
+    text-decoration: none; 
+    color: #9a270c; 
+    font-weight: bold; 
+    
+    
+    }
+
+
+
+.summary a:hover {
+    
+    color: black; 
+    font-weight: bold; 
+    
+    
+    }
+
+
+.summary a:visited {
+    
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    
+    
+    }
 
    
 
