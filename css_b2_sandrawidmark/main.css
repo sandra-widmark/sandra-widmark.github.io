@@ -17,7 +17,7 @@ html {
 #css-zen-garden {
 
     background-image: url(img/fisk.png),url(img/fagel.png),url(img/orm.png), url(img/bakgrund.jpg);
-    background-position: 10px 770px,770px 1240px,-50px 245px, center ;
+    background-position: 10px 770px,770px 1240px,-50px 220px, center;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 240px, 220px,350px, 2000px; 
     
