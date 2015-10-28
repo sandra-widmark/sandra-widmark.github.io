@@ -83,7 +83,7 @@ Article boxes
     font-size: 0.9em; 
     color: white; 
     margin: 0px 0px 0px 0px;
-    padding: 15px 15px 3px 15px; 
+    padding: 10px; 
 
 }
 
@@ -93,16 +93,15 @@ Article boxes
     font-size: 1.1em; 
     color: white; 
     margin: 0px 0px 0px 0px; 
-    padding: 15px 0 0 15px; 
+    padding: 10px 0 0 10px; 
  }
 
 
 #zen-requirements {
     background-color: #eeac48; 
     width: 350px; 
-    height: 640px;
-    float: left; 
-    margin-top: 10px;    
+    height: 650px;
+    float: left;    
 }
 
 
@@ -118,22 +117,22 @@ Article boxes
 
 #zen-benefits {
     background-color: #482833; 
-    width: 350px;
-    height: 220px; 
+    width: 310px;
+    height: 200px; 
     float: left; 
     margin-left: -350px;
     margin-top: 410px; 
-    padding-top: 20px
+    padding: 20px
 }
 
 
 #zen-participation {
     background-color: #9a270c; 
     width: 350px; 
-    height: 400px; 
+    height: 420px; 
     float: left; 
     margin-left: -350px; 
-    margin-top: 10px; 
+
 }
 
 
@@ -141,7 +140,7 @@ Article boxes
 #zen-supporting {
     background-color: #482833; 
     width: 350px; 
-    height: 310px; 
+    height: 340px; 
     float: left; 
 }
 
@@ -149,7 +148,7 @@ Article boxes
 #zen-preamble {
     background-color: #4f8b8e; 
     width: 350px;
-    height: 310px; 
+    height: 340px; 
     float: left; 
     margin-left: 100px;  
 }
