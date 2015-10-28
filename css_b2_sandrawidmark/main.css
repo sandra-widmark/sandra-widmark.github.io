@@ -1,26 +1,22 @@
 
 /*********************************
-General
+General / body
 **********************************/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Sail|Lobster+Two:400,400italic,700,700italic);
   
 
 html {
-    background-color: #4f8b8e; 
-    
-    
+    background-color: #4f8b8e;     
 }
 
 
 
 #css-zen-garden {
-
     background-image: url(img/fisk.png),url(img/fagel.png),url(img/orm.png), url(img/bakgrund.jpg);
     background-position: 10px 770px,770px 1240px,-50px 220px, center;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 240px, 220px,350px, 2000px; 
-    
     margin: 5% auto; 
     width: 1000px; 
     height: 1400px; 
@@ -35,25 +31,18 @@ html {
 Header
 **********************************/
 
-
-header {
-      
-}
-
 header h1 { 
-    font-family: "sail"; 
+    font-family:"sail"; 
     font-size: 6em; 
     color: #4f8b8e; 
     margin: 20px 50px 0px 100px; 
- 
-}
+ }
 
 header h2 {
     font-family: "lobster two";
     font-size: 4em; 
     color: #482833; 
-    margin: 0px 50px 0px 100px; 
-  
+    margin: 0px 50px 0px 100px;  
 }
 
 
@@ -62,8 +51,6 @@ Summary
 **********************************/
 
 .summary {
-    
-    
     font-family: "Open Sans Condensed";
     font-size: 1.3em; 
     color: #9a270c; 
@@ -72,20 +59,14 @@ Summary
     height:115px; 
     font-weight: normal; 
     padding-right: 150px; 
-    
     background-image: url(img/apa.png);
     background-size: 170px;  
     background-repeat: no-repeat;
-    overflow: visible; 
-    background-position: right top; 
-    
-    
+    background-position: right top;    
 }
 
 
 .summary p {
-    
-    
     margin: 0px 0px 0px 0px;   
     display: inline; 
 }
@@ -98,7 +79,6 @@ Article boxes
 
 
 #zen-requirements p, #zen-benefits p, #zen-participation p,#zen-supporting p, #zen-preamble p {
-    
     font-family: "Open Sans Condensed";
     font-size: 0.9em; 
     color: white; 
@@ -109,43 +89,34 @@ Article boxes
 
 
 #zen-requirements h3, #zen-benefits h3, #zen-participation h3, #zen-supporting h3, #zen-preamble h3 {
-    
     font-family: "sail"; 
     font-size: 1.1em; 
     color: white; 
     margin: 0px 0px 0px 0px; 
     padding: 15px 0 0 15px; 
-
-    
-    }
+ }
 
 
 #zen-requirements {
-    
     background-color: #eeac48; 
     width: 350px; 
     height: 640px;
     float: left; 
-    margin-top: 10px; 
-    
+    margin-top: 10px;    
 }
 
 
 #zen-requirements p {
-    
-color: black; 
-    
+    color: black;    
 }
 
 #zen-requirements h3 {
-    
-color: black; 
+    color: black; 
     
 }
 
 
 #zen-benefits {
-    
     background-color: #482833; 
     width: 350px;
     height: 220px; 
@@ -157,21 +128,17 @@ color: black;
 
 
 #zen-participation {
-    
     background-color: #9a270c; 
     width: 350px; 
     height: 400px; 
     float: left; 
     margin-left: -350px; 
     margin-top: 10px; 
-    
-
 }
 
 
 
 #zen-supporting {
-    
     background-color: #482833; 
     width: 350px; 
     height: 310px; 
@@ -180,19 +147,12 @@ color: black;
 
 
 #zen-preamble {
-    
     background-color: #4f8b8e; 
     width: 350px;
     height: 310px; 
     float: left; 
-    margin-left: 100px; 
-   
+    margin-left: 100px;  
 }
-
-
-
-
-
 
 
 /*********************************
@@ -201,7 +161,6 @@ Sidebar
 
 
 .sidebar {
-    
     background-color: #9a270c; 
     height: 850px; 
     width: 160px; 
@@ -210,66 +169,49 @@ Sidebar
     float: right; 
     margin-top:-100px; 
     text-align: center; 
-     
 }
 
 
 
 .sidebar h3 {
-    
-font-family: "lobster two"; 
-    
+    font-family: "lobster two";    
 }
 
 
 
 .sidebar a {
-    
-text-decoration: none;  
-color: white;
-font-weight: normal; 
-    
+    text-decoration: none;  
+    color: white;
+    font-weight: normal;   
 }
 
 
 .sidebar a:hover {
-    
-text-decoration: none;  
-color: black;
-font-weight: normal; 
-    
+    text-decoration: none;  
+    color: black;
+    font-weight: normal;   
 }
 
 
 .sidebar a:visited {
-    
-text-decoration: none;  
-color: black;
-font-weight: normal; 
-    
+    text-decoration: none;  
+    color: black;
+    font-weight: normal;    
 }
 
 .sidebar ul {
-    
-list-style: none; 
-margin: 0 auto;
-padding: 10px;
-font-size: 0.9em; 
-    
+    list-style: none; 
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 0.9em;  
 }
 
 .sidebar ul li {
-    
-list-style: none; 
-margin: 0 auto;
-padding: 5px;
-font-size: 1em; 
-    
+    list-style: none; 
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 1em; 
 }
-
-
-
-
 
 /*********************************
 Footer
@@ -287,37 +229,29 @@ footer {
     width: 450px; 
     height:40px; 
     text-align: center;
-  
 }
 
 
 footer a:link {
-    
-text-decoration: none; 
-color: black; 
-font-weight: bold; 
-    
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold;    
 }
 
 
 footer a:hover {
-    
-text-decoration: none; 
-color: #4f8b8e; 
-font-weight: bold; 
+    text-decoration: none; 
+    color: #4f8b8e; 
+    font-weight: bold; 
     
 }
 
 
 footer a:visited {
-    
-text-decoration: none; 
-color: #9a270c; 
-font-weight: bold; 
-    
+    text-decoration: none; 
+    color: #9a270c; 
+    font-weight: bold; 
 }
-
-
 
 
 
@@ -326,99 +260,67 @@ Links
 **********************************/
 
    
-   
-
-
- #zen-requirements a {
-    
+#zen-requirements a {
     text-decoration: none; 
     color: black; 
-    font-weight: bold; 
-    
-    
-    }
+    font-weight: bold;   
+}
 
 
  #zen-requirements a:hover {
-    
     color: #9a270c; 
-    font-weight: bold; 
-    
-    
-    }
+    font-weight: bold;  
+}
 
 
  #zen-requirements a:visited {
-    
     text-decoration: none; 
     color: #9a270c; 
     font-weight: bold; 
-    
-    
-    }
+}
 
 
 
 #zen-participation a  {
-    
     text-decoration: none; 
     color: white; 
     font-weight: bold; 
-    
-    
-    }
+}
 
 
 
 #zen-participation a:hover {
-    
     color: black; 
     font-weight: bold; 
-    
-    
-    }
+}
 
 
 #zen-participation a:visited {
-    
     text-decoration: none; 
     color: black; 
     font-weight: bold; 
-    
-    
-    }
-
-
+}
 
 
 .summary a  {
-    
     font-family: "lobster two";
     text-decoration: none; 
     color: #9a270c; 
     font-weight: bold; 
-    
-    
     }
 
 
 
 .summary a:hover {
-    
     color: black; 
     font-weight: bold; 
-    
-    
-    }
+}
 
 
 .summary a:visited {
-    
     text-decoration: none; 
     color: black; 
     font-weight: bold; 
-    
-    
     }
 
    
