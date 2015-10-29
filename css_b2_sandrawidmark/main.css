@@ -77,13 +77,16 @@ Article boxes
 **********************************/
 
 
+    
+
+
 
 #zen-requirements p, #zen-benefits p, #zen-participation p,#zen-supporting p, #zen-preamble p {
     font-family: "Open Sans Condensed";
     font-size: 0.9em; 
     color: white; 
     margin: 0px 0px 0px 0px;
-    padding: 10px; 
+  padding: 15px 15px 0 15px; 
 
 }
 
@@ -93,15 +96,16 @@ Article boxes
     font-size: 1.1em; 
     color: white; 
     margin: 0px 0px 0px 0px; 
-    padding: 10px 0 0 10px; 
+    padding: 15px 15px 0 15px; 
  }
 
 
 #zen-requirements {
     background-color: #eeac48; 
     width: 350px; 
-    height: 650px;
-    float: left;    
+    height: 670px;
+    float: left; 
+    margin-top: 20px;
 }
 
 
@@ -117,12 +121,13 @@ Article boxes
 
 #zen-benefits {
     background-color: #482833; 
-    width: 310px;
-    height: 200px; 
+    width: 350px;
+    height: 250px; 
     float: left; 
     margin-left: -350px;
-    margin-top: 410px; 
-    padding: 20px
+    margin-top: 440px; 
+    
+   
 }
 
 
@@ -132,6 +137,7 @@ Article boxes
     height: 420px; 
     float: left; 
     margin-left: -350px; 
+    margin-top: 20px; 
 
 }
 
