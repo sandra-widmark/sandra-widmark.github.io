@@ -167,7 +167,7 @@ Sidebar
 
 .sidebar {
     background-color: #9a270c; 
-    height: 790px; 
+    height: 820px; 
     width: 160px; 
     font-family: "Open Sans Condensed";  
     color: white; 
@@ -179,7 +179,8 @@ Sidebar
 
 
 .sidebar h3 {
-    font-family: "lobster two";    
+    font-family: "lobster two";   
+    margin-top: 20px; 
 }
 
 
