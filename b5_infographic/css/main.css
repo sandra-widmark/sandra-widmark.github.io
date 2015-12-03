@@ -237,7 +237,7 @@ First section
     height: 200px;
     text-align: center;
     margin: 0 auto;
-    width: 20%; 
+    width: 100%; 
      
 }
 
@@ -245,6 +245,7 @@ First section
 /*********************************
 Second section
 **********************************/
+
 
 .circle-container {
     
@@ -366,8 +367,6 @@ transform: rotate(305deg);
     
 }
 
-
-
 /*********************************
 Third section
 **********************************/
@@ -440,6 +439,321 @@ top: 80px;
 }
 
 
+
+/*********************************
+Media queries tablet size
+**********************************/
+
+@media screen and (min-width: 768px) {
+    
+
+/*********************************
+Font styling
+**********************************/
+
+h1 {
+  
+    font-size: 3.5em;
+    
+    
+}
+
+
+h2 {
+
+    font-size: 2em;
+   
+    
+}
+
+
+h3 {
+    
+    font-size: 1.5em; 
+  
+    }
+
+p {
+  
+    font-size: 1.2em; 
+   
+}
+
+
+.questionmark {
+
+    font-size: 1.5em; 
+    
+}
+
+
+/*********************************
+First section text
+**********************************/
+ .termometer-section {
+width: 80%; 
+  margin: 0 auto; 
+     
+    }
+    
+    .termometer-section::after {
+       content:""; 
+    display: table; 
+     clear:both;    
+     
+    }
+
+    .termometer-section1 {
+        float:left; 
+      width: 30%;
+        padding: 10px; 
+      
+        } 
+    
+    
+    .termometer-section2 {
+        float:left; 
+     width: 20%; 
+          padding: 10px; 
+     } 
+    
+    .termometer-section3 {
+        float:left; 
+        width: 30%;
+          padding: 10px; 
+         
+    }
+
+
+.termometer {
+    text-align; center; 
+     
+}
+   
+.temperaturerise {
+    padding:0;  
+      padding-top: 30px; 
+}
+    
+.twodegreesgoal {
+    padding:0;
+    padding-top: 50px; 
+     
+}
+    
+ /*********************************
+Second section circle 
+**********************************/
+    
+    
+
+/*********************************
+Second section
+**********************************/
+
+
+.circle-container {
+    
+width: 100%; 
+text-align: center; 
+position: relative;
+margin-top: 150px; 
+
+}
+
+
+
+.circle {
+    width: 400px;
+     position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+
+.circle-icon {
+    
+width: 100px;
+position: absolute;
+  left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+.home {
+top: -65px; 
+left: -140px;
+-ms-transform: rotate(-15deg); /* IE 9 */
+-webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+transform: rotate(-15deg);
+    
+
+}
+
+
+.transmission-tower {
+top: -50px; 
+left: 130px; 
+-ms-transform: rotate(15deg); /* IE 9 */
+-webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+transform: rotate(15deg);
+    
+
+}
+
+
+.industritorn {
+top: 10px; 
+left: 370px;
+-ms-transform: rotate(57deg); /* IE 9 */
+-webkit-transform: rotate(57deg); /* Chrome, Safari, Opera */
+transform: rotate(57deg);
+    
+ 
+
+}
+
+
+.tree68 {
+top: 220px; 
+left: 450px;
+-ms-transform: rotate(118deg); /* IE 9 */
+-webkit-transform: rotate(118deg); /* Chrome, Safari, Opera */
+transform: rotate(118deg);
+    
+}
+
+
+.tractor6 {
+top: 320px; 
+left: 300px; 
+-ms-transform: rotate(145deg); /* IE 9 */
+-webkit-transform: rotate(145deg); /* Chrome, Safari, Opera */
+transform: rotate(145deg);
+    
+}
+
+
+.industries{
+width: 120px; 
+top: 350px; 
+left: -200px; 
+-ms-transform: rotate(205deg); /* IE 9 */
+-webkit-transform: rotate(205deg); /* Chrome, Safari, Opera */
+transform: rotate(205deg);
+    
+}
+
+
+.truck{ 
+top: 200px; 
+left: -450px;
+-ms-transform: rotate(255deg); /* IE 9 */
+-webkit-transform: rotate(255deg); /* Chrome, Safari, Opera */
+transform: rotate(255deg);
+}
+
+
+
+.industrial26{
+width: 120px; 
+top: 10px; 
+left: -390px; 
+-ms-transform: rotate(305deg); /* IE 9 */
+-webkit-transform: rotate(305deg); /* Chrome, Safari, Opera */
+transform: rotate(305deg);
+    
+}
+
+
+    
+    
+    
+    
+    
+    
+  
+/*********************************
+Circle diagram text
+**********************************/
+
+
+.circle-text{
+    color: #00a99d;
+    font-weight: 700;  
+    font-size: 1.2em;
+    text-align: center;
+    
+
+
+}
+
+
+.circle-text-paragraph {
+    padding-top: 260px;  
+}
+
+
+.percent-text{
+    color: #f15a24;
+    font-weight: 700; 
+    font-size: 1.5em; 
+    display: block; 
+}
+
+
+
+.buildings{
+       
+}
+
+.buildings span{
+    font-size: 1em;
+       
+}
+
+.production{
+       
+}
+
+.agriculture{
+       
+}
+
+.wood, .hectars{
+    font-size: 0.8em;
+    display: block; 
+       
+}
+
+
+.industry{
+       
+}
+
+
+.transports{
+       
+}
+
+
+.energy{
+       
+}
+
+.energy span{
+       font-size: 1em;
+}  
+    
+   
+}
 
 
 
