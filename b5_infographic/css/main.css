@@ -1,0 +1,351 @@
+
+/*********************************
+General / body
+**********************************/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900italic,900,700italic,500italic,400italic,300italic,300);
+  
+
+body {
+    background-color: #f6ead5;
+    font-family: "roboto";
+    font-weight: 400; 
+    box-sizing: border-box; 
+}
+
+
+
+/*********************************
+Header
+**********************************/
+
+header {
+    background-color: #4d4d4d;
+    border: 15px solid #4d4d4d; 
+    
+}
+
+
+/*********************************
+Font styling
+**********************************/
+
+h1 {
+    color: #f6ead5; 
+    font-weight: 400;
+    font-size: 1.4em;
+    margin: 0; 
+    
+}
+
+
+h2 {
+    color: #4d4d4d;
+    font-weight: 400; 
+    font-size: 1em;
+   
+    
+}
+
+
+h3 {
+    color: #00a99d;
+    font-weight: 400;
+    font-size: 0.8em; 
+    font-weight: 700; 
+    margin: 0;
+    padding: 10px; 
+    
+    }
+
+p {
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 0.9em; 
+    margin: 10px 7% 10px 7%;
+    
+    }
+
+
+.temperaturerise {
+    color: #f15a24; 
+    text-align: center; 
+    
+}
+
+.degrees {
+    color: #f15a24;
+    font-weight: 800; 
+    text-align: center; 
+    
+}
+
+
+.year {
+    color: #00a99d;
+    text-align: center;
+    font-size: 1.3em; 
+    
+}
+
+
+.twodegreesgoal{
+    color: #00a99d;
+    text-align: center;
+    font-weight: 700; 
+    fontsize: 0.8em; 
+}
+
+
+.twodegrees{
+    color: #00a99d;
+    font-weight: 900; 
+    text-align: center; 
+    font-size: 2em; 
+    
+}
+
+
+
+
+h1, h2, h3 {
+    text-align: center; 
+}
+
+.questionmark {
+    color: #f15a24;
+    display: inline;
+    font-size: 1.5em; 
+    margin: 0; 
+}
+
+
+/*********************************
+Section styling
+**********************************/
+
+.first-section, .second-section {
+    
+    margin:; 
+  
+    
+}
+
+
+.third-section {
+    
+    margin-top: 300px; 
+  
+    
+}
+
+/*********************************
+Images
+**********************************/
+
+.image-container {
+    
+width: 100%; 
+text-align: center; 
+
+}
+
+
+
+
+.globe-container {
+    
+height:200px;
+width: 100%; 
+overflow:hidden;
+text-align: center; 
+
+}
+.termometer {
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    width: 20%; 
+     
+}
+
+
+
+
+.globe {
+    
+height:300px;
+width: 100%; 
+text-align: center; 
+margin: 0 auto; 
+
+}
+
+
+
+.globe-container {
+    
+height:100px;
+width: 100%; 
+overflow:hidden;
+text-align: center; 
+
+}
+
+
+
+.sun {
+    
+height:100px;
+margin: 0 auto; 
+
+}
+
+
+
+
+.circle-container {
+    
+width: 100%; 
+text-align: center; 
+position: relative;
+    margin-top: 60px; 
+
+}
+
+
+
+.circle {
+    width: 200px;
+     position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+
+.circle-icon {
+    
+width: 50px;
+position: absolute;
+  left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+.home {
+top: -35px; 
+left: -70px;
+-ms-transform: rotate(-15deg); /* IE 9 */
+-webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+transform: rotate(-15deg);
+    
+
+}
+
+
+.transmission-tower {
+top: -30px; 
+left: 70px; 
+-ms-transform: rotate(15deg); /* IE 9 */
+-webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+transform: rotate(15deg);
+    
+
+}
+
+
+.industritorn {
+top: 10px; 
+left: 200px;
+-ms-transform: rotate(57deg); /* IE 9 */
+-webkit-transform: rotate(57deg); /* Chrome, Safari, Opera */
+transform: rotate(57deg);
+    
+ 
+
+}
+
+
+.tree68 {
+top: 120px; 
+left: 220px;
+-ms-transform: rotate(118deg); /* IE 9 */
+-webkit-transform: rotate(118deg); /* Chrome, Safari, Opera */
+transform: rotate(118deg);
+    
+}
+
+
+.tractor6 {
+top: 170px; 
+left: 130px; 
+-ms-transform: rotate(145deg); /* IE 9 */
+-webkit-transform: rotate(145deg); /* Chrome, Safari, Opera */
+transform: rotate(145deg);
+    
+}
+
+
+.industries{
+width: 70px; 
+top: 170px; 
+left: -100px;
+-ms-transform: rotate(205deg); /* IE 9 */
+-webkit-transform: rotate(205deg); /* Chrome, Safari, Opera */
+transform: rotate(205deg);
+    
+}
+
+
+.truck{ 
+top: 100px; 
+left: -220px;
+-ms-transform: rotate(255deg); /* IE 9 */
+-webkit-transform: rotate(255deg); /* Chrome, Safari, Opera */
+transform: rotate(255deg);
+}
+
+
+
+.industrial26{
+width: 70px; 
+top: 0px; 
+left: -200px;
+-ms-transform: rotate(305deg); /* IE 9 */
+-webkit-transform: rotate(305deg); /* Chrome, Safari, Opera */
+transform: rotate(305deg);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
