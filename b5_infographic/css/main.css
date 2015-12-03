@@ -488,8 +488,9 @@ p {
 First section text
 **********************************/
  .termometer-section {
-width: 80%; 
-  margin: 0 auto; 
+width: 500px; 
+margin: 0 auto;
+    padding-top: 50px; 
      
     }
     
@@ -504,20 +505,23 @@ width: 80%;
         float:left; 
       width: 30%;
         padding: 10px; 
+    
       
         } 
     
     
     .termometer-section2 {
         float:left; 
-     width: 20%; 
-          padding: 10px; 
+     width: 20%;
+         padding: 10px; 
+    
      } 
     
     .termometer-section3 {
         float:left; 
         width: 30%;
-          padding: 10px; 
+         padding: 10px; 
+         
          
     }
 
@@ -537,6 +541,7 @@ width: 80%;
     padding-top: 50px; 
      
 }
+        
     
  /*********************************
 Second section circle 
@@ -859,7 +864,7 @@ body {
 p {
     color: #4d4d4d;
     font-weight: 400;
-    font-size: 0.9em; 
+    font-size: 1.2em; 
     margin: 0 auto;
     padding: 5px 20% 5px 20%;
     text-align: center;
@@ -871,7 +876,7 @@ p {
     
 h2 {
     
-    padding-top: 20px;
+    padding-top: 40px;
     
    
 
@@ -891,7 +896,7 @@ Third section
 overflow:hidden;
 margin-top: 30px;
 position: relative;
-height: 600px; 
+height: 650px; 
 }
 
 
@@ -952,58 +957,7 @@ top: 110px;
 /*********************************
 First section text
 **********************************/
- .termometer-section {
-width: 80%; 
-  margin: 30px auto; 
-     
-    }
-    
-    .termometer-section::after {
-       content:""; 
-    display: table; 
-     clear:both;    
-     
-    }
 
-    .termometer-section1 {
-        float:left; 
-      width: 30%;
-        padding: 10px; 
-      
-        } 
-    
-    
-    .termometer-section2 {
-        float:left; 
-     width: 20%; 
-          padding: 10px; 
-     } 
-    
-    .termometer-section3 {
-        float:left; 
-        width: 30%;
-          padding: 10px; 
-         
-    }
-
-
-.termometer {
-    text-align; center; 
-     
-}
-   
-.temperaturerise {
-    padding:0;  
-      padding-top: 30px; 
-}
-    
-.twodegreesgoal {
-    padding:0;
-    padding-top: 50px; 
-     
-}
-        
-    
     
     
     
