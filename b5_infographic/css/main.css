@@ -154,7 +154,7 @@ Circle diagram text
 }
 
 
-.circle-text-paragraph {
+.circle-text-paragraph{
     padding-top: 260px;  
 }
 
@@ -169,7 +169,7 @@ Circle diagram text
 
 
 .buildings{
-       
+      padding-top: 270px;  
 }
 
 .buildings span{
@@ -251,7 +251,8 @@ Second section
 width: 100%; 
 text-align: center; 
 position: relative;
-margin-top: 70px; 
+margin-top: 70px;
+
 
 }
 
@@ -264,6 +265,7 @@ margin-top: 70px;
     right:0;
     margin-left:auto;
     margin-right:auto;
+  
 
 }
 
@@ -679,16 +681,12 @@ Circle diagram text
     color: #00a99d;
     font-weight: 700;  
     font-size: 1.2em;
-    position: absolute; 
+    position: relative; 
     
 
 
 }
 
-
-.circle-text-paragraph {
-    padding-top: 260px;  
-}
 
 
 .percent-text{
@@ -701,8 +699,10 @@ Circle diagram text
 
 
 .buildings{
-     top: -120px; 
-    left: 180px; 
+     top: -110px; 
+    left: -70px;
+    padding-top: 0;  
+
 }
 
 .buildings span{
@@ -711,14 +711,14 @@ Circle diagram text
 }
 
 .production{
-     top: -90px; 
-    left: 470px; 
+     top: -130px; 
+    left: 230px; 
        
 }
 
 .agriculture{
-    top: 340px; 
-    left: 530px; 
+    top: 260px; 
+    left: 260px; 
 }
 
 .wood, .hectars{
@@ -729,21 +729,21 @@ Circle diagram text
 
 
 .industry{
-    top: 450px; 
-    left: 150px; 
+     top: 250px; 
+    left: -130px; 
        
 }
 
 
 .transports{
-      top: 330px; 
-    left: 10px;  
+      top: 30px; 
+    left: -280px;  
 }
 
 
 .energy{
-     top: 100px; 
-    left: -30px;
+     top: -250px; 
+    left: -300px;
        
 }
 
@@ -757,7 +757,7 @@ Section styling
 **********************************/
 
 .third-section {
-    margin-top: 280px; 
+    margin-top: 150px; 
 }
    
 
