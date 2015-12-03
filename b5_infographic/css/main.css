@@ -62,50 +62,13 @@ p {
     color: #4d4d4d;
     font-weight: 400;
     font-size: 0.9em; 
-    margin: 10px 7% 10px 7%;
+    margin: 0 auto;
+    padding: 5px 7% 5px 7%;
+    text-align: left;
+   
+
     
     }
-
-
-.temperaturerise {
-    color: #f15a24; 
-    text-align: center; 
-    
-}
-
-.degrees {
-    color: #f15a24;
-    font-weight: 800; 
-    text-align: center; 
-    
-}
-
-
-.year {
-    color: #00a99d;
-    text-align: center;
-    font-size: 1.3em; 
-    
-}
-
-
-.twodegreesgoal{
-    color: #00a99d;
-    text-align: center;
-    font-weight: 700; 
-    fontsize: 0.8em; 
-}
-
-
-.twodegrees{
-    color: #00a99d;
-    font-weight: 900; 
-    text-align: center; 
-    font-size: 2em; 
-    
-}
-
-
 
 
 h1, h2, h3 {
@@ -120,24 +83,140 @@ h1, h2, h3 {
 }
 
 
+
+
+
+/*********************************
+First section text
+**********************************/
+
+
+
+.temperaturerise {
+    color: #f15a24; 
+    text-align: center;
+    font-size: 1.2em; 
+    padding-top: 20px; 
+    
+}
+
+.degrees {
+    color: #f15a24;
+    font-weight: 800; 
+    text-align: center;
+    font-size: 1.2em; 
+    
+}
+
+
+.year {
+    color: #00a99d;
+    text-align: center;
+    font-size: 1.3em; 
+    font-size: 1.2em; 
+    
+}
+
+
+.twodegreesgoal{
+    color: #00a99d;
+    text-align: center;
+    font-weight: 700; 
+    font-size: 1.3em; 
+}
+
+
+.twodegrees{
+    color: #00a99d;
+    font-weight: 900; 
+    text-align: center; 
+    font-size: 2em; 
+    
+}
+
+
+
+
+
+/*********************************
+Circle diagram text
+**********************************/
+
+
+.circle-text{
+    color: #00a99d;
+    font-weight: 700;  
+    font-size: 1.2em;
+    text-align: center;
+    
+
+
+}
+
+
+.circle-text-paragraph {
+    padding-top: 260px;  
+}
+
+
+.percent-text{
+    color: #f15a24;
+    font-weight: 700; 
+    font-size: 1.5em; 
+    display: block; 
+}
+
+
+
+.buildings{
+       
+}
+
+.buildings span{
+    font-size: 1em;
+       
+}
+
+.production{
+       
+}
+
+.agriculture{
+       
+}
+
+.wood, .hectars{
+    font-size: 0.8em;
+    display: block; 
+       
+}
+
+
+.industry{
+       
+}
+
+
+.transports{
+       
+}
+
+
+.energy{
+       
+}
+
+.energy span{
+       font-size: 1em;
+}
+
+
+
 /*********************************
 Section styling
 **********************************/
 
-.first-section, .second-section {
-    
-    margin:; 
-  
-    
-}
 
-
-.third-section {
-    
-    margin-top: 300px; 
-  
-    
-}
 
 /*********************************
 Images
@@ -150,17 +229,10 @@ text-align: center;
 
 }
 
+/*********************************
+First section
+**********************************/
 
-
-
-.globe-container {
-    
-height:200px;
-width: 100%; 
-overflow:hidden;
-text-align: center; 
-
-}
 .termometer {
     height: 200px;
     text-align: center;
@@ -170,46 +242,16 @@ text-align: center;
 }
 
 
-
-
-.globe {
-    
-height:300px;
-width: 100%; 
-text-align: center; 
-margin: 0 auto; 
-
-}
-
-
-
-.globe-container {
-    
-height:100px;
-width: 100%; 
-overflow:hidden;
-text-align: center; 
-
-}
-
-
-
-.sun {
-    
-height:100px;
-margin: 0 auto; 
-
-}
-
-
-
+/*********************************
+Second section
+**********************************/
 
 .circle-container {
     
 width: 100%; 
 text-align: center; 
 position: relative;
-    margin-top: 60px; 
+margin-top: 70px; 
 
 }
 
@@ -323,6 +365,82 @@ left: -200px;
 transform: rotate(305deg);
     
 }
+
+
+
+/*********************************
+Third section
+**********************************/
+
+
+
+.globe-container {
+    
+overflow:hidden;
+margin-top: 30px;
+position: relative;
+height: 270px; 
+}
+
+
+
+.globe {
+width: 100%;
+
+
+
+
+}
+
+
+
+.sun {
+height: 100px; 
+width: 50%;
+
+    
+}
+
+
+.sun-arrow {
+height: 100px; 
+width: 50%;
+position: absolute; 
+z-index: 1;
+left: 30px; 
+top: 60px; 
+    
+
+    
+}
+
+
+
+.heat-arrow1 {
+
+height: 100px; 
+width: 50%;
+position: absolute;
+z-index: 1;
+left: 80px; 
+top: 30px; 
+}
+
+
+.heat-arrow2 {
+    
+height: 50px; 
+width: 50%;
+text-align: right;
+display: inline;
+position: absolute; 
+z-index: 1;
+left: 95px; 
+top: 80px; 
+}
+
+
+
 
 
 
