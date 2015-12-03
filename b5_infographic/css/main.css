@@ -839,9 +839,175 @@ top: 110px;
 }
 
 
+/*******************************************************************************************************************
+Media queries desktop size
+******************************************************************************************************************/
+
+
+@media screen and (min-width: 992px) {
+    
+ html {
+  background-color: #00a99d; 
+}
+    
+body {
+   width: 80%;
+    margin: 0 auto; 
+}
+    
+    
+p {
+    color: #4d4d4d;
+    font-weight: 400;
+    font-size: 0.9em; 
+    margin: 0 auto;
+    padding: 5px 20% 5px 20%;
+    text-align: center;
+   
+
+    
+    }
+    
+    
+h2 {
+    
+    padding-top: 20px;
+    
+   
+
+    
+    }
+
+    
+    
+
+/*********************************
+Third section
+**********************************/
+
+
+.globe-container {
+    
+overflow:hidden;
+margin-top: 30px;
+position: relative;
+height: 600px; 
+}
 
 
 
+.globe {
+width: 100%;
+ 
+}
+
+
+
+.sun {
+height:150px; 
+width: 50%;
+
+    
+}
+
+
+.sun-arrow {
+height: 270px; 
+width: 50%;
+position: absolute; 
+z-index: 1;
+left: 50px; 
+top: 20px; 
+    
+
+    
+}
+
+
+
+.heat-arrow1 {
+
+height: 270px; 
+width: 50%;
+position: absolute;
+z-index: 1;
+left: 200px; 
+top: 10px; 
+}
+
+
+.heat-arrow2 {
+    
+height: 150px; 
+width: 50%;
+text-align: right;
+display: inline;
+position: absolute; 
+z-index: 1;
+left: 260px; 
+top: 110px; 
+}
+
+
+/*********************************
+First section text
+**********************************/
+ .termometer-section {
+width: 80%; 
+  margin: 30px auto; 
+     
+    }
+    
+    .termometer-section::after {
+       content:""; 
+    display: table; 
+     clear:both;    
+     
+    }
+
+    .termometer-section1 {
+        float:left; 
+      width: 30%;
+        padding: 10px; 
+      
+        } 
+    
+    
+    .termometer-section2 {
+        float:left; 
+     width: 20%; 
+          padding: 10px; 
+     } 
+    
+    .termometer-section3 {
+        float:left; 
+        width: 30%;
+          padding: 10px; 
+         
+    }
+
+
+.termometer {
+    text-align; center; 
+     
+}
+   
+.temperaturerise {
+    padding:0;  
+      padding-top: 30px; 
+}
+    
+.twodegreesgoal {
+    padding:0;
+    padding-top: 50px; 
+     
+}
+        
+    
+    
+    
+    
+}
 
 
 
