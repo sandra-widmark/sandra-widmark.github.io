@@ -123,6 +123,7 @@ First section text
     text-align: center;
     font-weight: 700; 
     font-size: 1.3em; 
+    padding-top: 20px; 
 }
 
 
@@ -131,7 +132,7 @@ First section text
     font-weight: 900; 
     text-align: center; 
     font-size: 2em; 
-    
+    padding-top: 0; 
 }
 
 
