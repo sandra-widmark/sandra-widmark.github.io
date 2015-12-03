@@ -217,7 +217,6 @@ Section styling
 **********************************/
 
 
-
 /*********************************
 Images
 **********************************/
@@ -385,16 +384,12 @@ height: 270px;
 
 .globe {
 width: 100%;
-
-
-
-
 }
 
 
 
 .sun {
-height: 100px; 
+height:120px; 
 width: 50%;
 
     
@@ -417,7 +412,7 @@ top: 60px;
 
 .heat-arrow1 {
 
-height: 100px; 
+height: 130px; 
 width: 50%;
 position: absolute;
 z-index: 1;
@@ -428,21 +423,21 @@ top: 30px;
 
 .heat-arrow2 {
     
-height: 50px; 
+height: 70px; 
 width: 50%;
 text-align: right;
 display: inline;
 position: absolute; 
 z-index: 1;
-left: 95px; 
-top: 80px; 
+left: 100px; 
+top: 90px; 
 }
 
 
 
-/*********************************
+/*******************************************************************************************************************
 Media queries tablet size
-**********************************/
+******************************************************************************************************************/
 
 @media screen and (min-width: 768px) {
     
@@ -674,12 +669,7 @@ transform: rotate(305deg);
 
 
     
-    
-    
-    
-    
-    
-  
+ 
 /*********************************
 Circle diagram text
 **********************************/
@@ -689,7 +679,7 @@ Circle diagram text
     color: #00a99d;
     font-weight: 700;  
     font-size: 1.2em;
-    text-align: center;
+    position: absolute; 
     
 
 
@@ -711,7 +701,8 @@ Circle diagram text
 
 
 .buildings{
-       
+     top: -120px; 
+    left: 180px; 
 }
 
 .buildings span{
@@ -720,11 +711,14 @@ Circle diagram text
 }
 
 .production{
+     top: -90px; 
+    left: 470px; 
        
 }
 
 .agriculture{
-       
+    top: 340px; 
+    left: 530px; 
 }
 
 .wood, .hectars{
@@ -735,34 +729,114 @@ Circle diagram text
 
 
 .industry{
+    top: 450px; 
+    left: 150px; 
        
 }
 
 
 .transports{
-       
+      top: 330px; 
+    left: 10px;  
 }
 
 
 .energy{
+     top: 100px; 
+    left: -30px;
        
 }
 
 .energy span{
        font-size: 1em;
 }  
+
     
+/*********************************
+Section styling
+**********************************/
+
+.third-section {
+    margin-top: 280px; 
+}
    
+
+
+/*********************************
+Third section
+**********************************/
+
+
+
+
+
+
+.globe-container {
+    
+overflow:hidden;
+margin-top: 30px;
+position: relative;
+height: 500px; 
+}
+
+
+
+.globe {
+width: 100%;
+ 
+}
+
+
+
+.sun {
+height:150px; 
+width: 50%;
+
+    
+}
+
+
+.sun-arrow {
+height: 200px; 
+width: 50%;
+position: absolute; 
+z-index: 1;
+left: 50px; 
+top: 53px; 
+    
+
+    
+}
+
+
+
+.heat-arrow1 {
+
+height: 210px; 
+width: 50%;
+position: absolute;
+z-index: 1;
+left: 150px; 
+top: 30px; 
+}
+
+
+.heat-arrow2 {
+    
+height: 110px; 
+width: 50%;
+text-align: right;
+display: inline;
+position: absolute; 
+z-index: 1;
+left: 190px; 
+top: 110px; 
 }
 
 
 
 
-
-
-
-
-
+}
 
 
 
