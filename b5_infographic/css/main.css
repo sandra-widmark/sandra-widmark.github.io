@@ -221,26 +221,70 @@ Section styling
 /*********************************
 Images
 **********************************/
-
 .image-container {
-    
-width: 100%; 
-text-align: center; 
-
+    width: 100%;
+    text-align: center;
 }
+
 
 /*********************************
 First section
 **********************************/
+.thermometer-component {
+    background-image: url("../img/termometer.png");
+    background-size: 67px 200px;
+    background-repeat: no-repeat; 
+    width: 67px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
 
-.termometer {
+}
+
+.thermometer-component div {
+    background-color: #f15a24;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 16px;
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+}
+    
+/*    animation-name: upanddown;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+
+
+@keyframes upanddown {
+    from {
+        height: 60px;
+    }
+    
+    to {
+        height: 120px;
+    }
+}
+
+
+/*
+.termometer{
     height: 200px;
     text-align: center;
     margin: 0 auto;
-    width: 100%; 
-     
+     width: 100%; 
+
 }
 
+.matare {
+    height: 100px;
+    position: relative; 
+    top: -130px;
+    left: 40px; 
+     
+}
+*/
 
 /*********************************
 Second section
@@ -280,6 +324,7 @@ position: absolute;
     right:0;
     margin-left:auto;
     margin-right:auto;
+    
 
 }
 
@@ -401,11 +446,11 @@ width: 50%;
 
 .sun-arrow {
 height: 100px; 
-width: 50%;
 position: absolute; 
 z-index: 1;
 left: 30px; 
 top: 60px; 
+width: 50%;
     
 
     
@@ -419,23 +464,22 @@ height: 130px;
 width: 50%;
 position: absolute;
 z-index: 1;
-left: 80px; 
-top: 30px; 
+left: 100px; 
+top: -20px; 
 }
 
 
 .heat-arrow2 {
     
-height: 70px; 
+height: 60px; 
 width: 50%;
 text-align: right;
 display: inline;
 position: absolute; 
 z-index: 1;
-left: 100px; 
-top: 90px; 
+left: 120px; 
+top: 50px; 
 }
-
 
 
 /*******************************************************************************************************************
@@ -489,43 +533,36 @@ p {
 First section text
 **********************************/
  .termometer-section {
-width: 500px; 
+width: 100%; 
 margin: 0 auto;
-    padding-top: 50px; 
+padding-top: 50px; 
+
      
     }
     
     .termometer-section::after {
        content:""; 
     display: table; 
-     clear:both;    
-     
+     clear:both;     
     }
 
-    .termometer-section1 {
-        float:left; 
-      width: 30%;
-        padding: 10px; 
+.termometer-section1 {
+    float: left;
+    width: 20%;
+    margin-left: 20%;
+} 
     
-      
-        } 
+.termometer-section2 {
+    float: left;
+    width: 20%;
+}
     
-    
-    .termometer-section2 {
-        float:left; 
-     width: 20%;
-         padding: 10px; 
-    
-     } 
-    
-    .termometer-section3 {
-        float:left; 
-        width: 30%;
-         padding: 10px; 
-         
-         
-    }
+.termometer-section3 {
+    float: left;
+    width: 20%;
+    margin-right: 20%;
 
+}
 
 .termometer {
     text-align; center; 
@@ -644,8 +681,7 @@ transform: rotate(145deg);
 }
 
 
-.industries{
-width: 120px; 
+.industries{ 
 top: 350px; 
 left: -200px; 
 -ms-transform: rotate(205deg); /* IE 9 */
@@ -665,8 +701,7 @@ transform: rotate(255deg);
 
 
 
-.industrial26{
-width: 120px; 
+.industrial26{ 
 top: 10px; 
 left: -390px; 
 -ms-transform: rotate(305deg); /* IE 9 */
@@ -774,9 +809,6 @@ Third section
 
 
 
-
-
-
 .globe-container {
     
 overflow:hidden;
@@ -789,13 +821,12 @@ height: 500px;
 
 .globe {
 width: 100%;
- 
 }
 
 
 
 .sun {
-height:150px; 
+height:200px; 
 width: 50%;
 
     
@@ -804,11 +835,11 @@ width: 50%;
 
 .sun-arrow {
 height: 200px; 
-width: 50%;
 position: absolute; 
 z-index: 1;
 left: 50px; 
-top: 53px; 
+top: 230px; 
+width: 50%;
     
 
     
@@ -822,25 +853,22 @@ height: 210px;
 width: 50%;
 position: absolute;
 z-index: 1;
-left: 150px; 
-top: 30px; 
+left: 200px; 
+top: 50px; 
 }
 
 
 .heat-arrow2 {
     
-height: 110px; 
+height: 120px; 
 width: 50%;
 text-align: right;
 display: inline;
 position: absolute; 
 z-index: 1;
-left: 190px; 
-top: 110px; 
+left: 250px; 
+top: 200px; 
 }
-
-
-
 
 }
 
@@ -867,7 +895,7 @@ p {
     font-weight: 400;
     font-size: 1.2em; 
     margin: 0 auto;
-    padding: 5px 20% 5px 20%;
+    padding: 5px 17% 5px 17%;
     text-align: center;
    
 
@@ -892,25 +920,25 @@ Third section
 **********************************/
 
 
+
 .globe-container {
     
 overflow:hidden;
 margin-top: 30px;
 position: relative;
-height: 650px; 
+height: 600px; 
 }
 
 
 
 .globe {
 width: 100%;
- 
 }
 
 
 
 .sun {
-height:150px; 
+height:200px; 
 width: 50%;
 
     
@@ -918,12 +946,12 @@ width: 50%;
 
 
 .sun-arrow {
-height: 270px; 
-width: 50%;
+height: 220px; 
 position: absolute; 
 z-index: 1;
 left: 50px; 
-top: 20px; 
+top: 230px; 
+width: 50%;
     
 
     
@@ -933,34 +961,26 @@ top: 20px;
 
 .heat-arrow1 {
 
-height: 270px; 
+height: 230px; 
 width: 50%;
 position: absolute;
 z-index: 1;
 left: 200px; 
-top: 10px; 
+top: 50px; 
 }
 
 
 .heat-arrow2 {
     
-height: 150px; 
+height: 140px; 
 width: 50%;
 text-align: right;
 display: inline;
 position: absolute; 
 z-index: 1;
-left: 260px; 
-top: 110px; 
+left: 259px; 
+top: 200px; 
 }
-
-
-/*********************************
-First section text
-**********************************/
-
-    
-    
     
 }
 
