@@ -3,10 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>B5 interactive infographic</title>
-    <link rel="stylesheet" media="screen" href="css/normalize.css">
-	<link rel="stylesheet" media="screen" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Sandra Widmark">
+    <meta name="author" content="Sandra Widmark">
+    <link rel="stylesheet" media="screen" href="css/normalize.css">
+    <link rel="stylesheet" media="screen" href="css/main.css">
+     <link rel="stylesheet" href="css/animate.css">
+
+
+
 </head>
 <body>
     <header>
@@ -40,35 +44,33 @@
         </div>
     </section>
     
-<section class="second-section">
+ <section class="second-section wow bounceInUp">
     
 <h2>VARIFRÅN KOMMER UTSLÄPPEN<span class="questionmark">?</span></h2> 
 
-  <div class="circle-container"> 
+  <div class="circle-container wow zoomIn"> 
       
 <img src="img/cirkel.svg" alt="Cirkel" class="circle">
 
-<img src="img/home.svg" alt="Hus" class="home circle-icon"> 
-<img src="img/transmission-tower.svg" alt="Torn" class="transmission-tower circle-icon"> 
-<img src="img/industrial5.svg" alt="Industribyggnad" class="industritorn circle-icon"> 
-<img src="img/tree68.svg" alt="Träd" class="tree68 circle-icon"> 
-<img src="img/tractor6.svg" alt="Traktor" class="tractor6 circle-icon"> 
-<img src="img/industries.svg" alt="Industrier" class="industries circle-icon"> 
-<img src="img/truck.svg" alt="Lastbil" class="truck circle-icon">
-<img src="img/industrial26.svg" alt="Industribyggnad" class="industrial26 circle-icon">   
+<a id="home" href="javascript:toggle1('home-text', 'home');"><img src="img/home.svg" alt="Hus" class="home circle-icon wow pulse" data-wow-iteration="5"></a>
+<a id="industrial5" href="javascript:toggle3('industrial5-text', 'industrial5');"><img src="img/industrial5.svg" alt="Industribyggnad" class="industritorn circle-icon wow pulse" data-wow-iteration="5"></a> 
+<a id="tractor6" href="javascript:toggle5('tractor6-text', 'tractor6');"><img src="img/tractor6.svg" alt="Traktor" class="tractor6 circle-icon wow pulse" data-wow-iteration="5"></a> 
+<a id="industries" href="javascript:toggle6('industries-text', 'industries');"><img src="img/industries.svg" alt="Industrier" class="industries circle-icon wow pulse" data-wow-iteration="5"></a> 
+<a id="truck" href="javascript:toggle7('truck-text', 'truck');"><img src="img/truck.svg" alt="Lastbil" class="truck circle-icon wow pulse" data-wow-iteration="5"></a>
+<a id="industrial26" href="javascript:toggle8('industrial26-text', 'industrial26');"><img src="img/industrial26.svg" alt="Industribyggnad" class="industrial26 circle-icon wow pulse" data-wow-iteration="5"></a>  
 
-
-<p class="buildings circle-text">BYGGNADER <span class="percent-text">6.4%</span></p>
-<p class="production circle-text">EL- &amp; VÄRMEPRODUKTION <span class="percent-text">25%</span></p>
-<p class="agriculture circle-text">JORDBRUK <span class="wood">SKOGSSKÖVLING</span> <span class="hectars">MARKANVÄNDNING</span> <span class="percent-text">24%</span></p>
-<p class="industry circle-text">INDUSTRI <span class="percent-text">21%</span></p>
-<p class="transports circle-text">TRANSPORTER <span class="percent-text">14%</span></p>
-<p class="energy circle-text">ÖVRIG ENERGI <span class="percent-text">9.6%</span></p>
-
+ <div class="circle-text-container"> 
+<div id="home-text" style="display: none;"><p class="buildings circle-text">BYGGNADER <span class="percent-text">6.4%</span></p></div>
+<div id="industrial5-text" style="display: none;"><p class="production circle-text">EL- &amp; VÄRMEPRODUKTION <span class="percent-text">25%</span></p></div>
+<div id="tractor6-text" style="display: none;"><p class="agriculture circle-text">JORDBRUK<span class="wood">SKOGSSKÖVLING</span> <span class="hectars">MARKANVÄNDNING</span> <span class="percent-text">24%</span></p></div>
+<div id="industries-text" style="display: none;"><p class="industry circle-text">INDUSTRI <span class="percent-text">21%</span></p></div>
+<div id="truck-text" style="display: none;"><p class="transports circle-text">TRANSPORTER <span class="percent-text">14%</span></p></div>
+<div id="industrial26-text" style="display: none;"><p class="energy circle-text">ÖVRIG ENERGI <span class="percent-text">9.6%</span></p></div>
 </div>
-     
+</div>
 </section>
-    
+
+
 
 <section class="third-section">
     
@@ -88,17 +90,12 @@
 </div> 
 </section>
     
-    
-    
-    
-    
-    
- <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
-<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
- <script src="scripts.js"></script>   
-    
-    
-    
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="js/wow/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+ <script src="js/scripts.js"></script>  
     
     
     

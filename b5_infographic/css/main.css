@@ -143,7 +143,16 @@ First section text
 Circle diagram text
 **********************************/
 
+.circle-text-container{
+    color: #00a99d;
+    font-weight: 700;  
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 280px;
+    
 
+
+}
 .circle-text{
     color: #00a99d;
     font-weight: 700;  
@@ -154,10 +163,6 @@ Circle diagram text
 
 }
 
-
-.circle-text-paragraph{
-    padding-top: 260px;  
-}
 
 
 .percent-text{
@@ -170,7 +175,8 @@ Circle diagram text
 
 
 .buildings{
-      padding-top: 270px;  
+    
+    
 }
 
 .buildings span{
@@ -310,7 +316,7 @@ margin-top: 70px;
     right:0;
     margin-left:auto;
     margin-right:auto;
-  
+  z-index: 1;
 
 }
 
@@ -324,7 +330,7 @@ position: absolute;
     right:0;
     margin-left:auto;
     margin-right:auto;
-    
+    z-index: 0;
 
 }
 
@@ -340,45 +346,26 @@ transform: rotate(-15deg);
 }
 
 
-.transmission-tower {
-top: -30px; 
-left: 70px; 
--ms-transform: rotate(15deg); /* IE 9 */
--webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
-transform: rotate(15deg);
-    
-
-}
-
-
 .industritorn {
-top: 10px; 
-left: 200px;
--ms-transform: rotate(57deg); /* IE 9 */
--webkit-transform: rotate(57deg); /* Chrome, Safari, Opera */
-transform: rotate(57deg);
+top: -6px; 
+left: 170px;
+-ms-transform: rotate(45deg); /* IE 9 */
+-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+transform: rotate(45deg);
     
  
 
 }
 
 
-.tree68 {
-top: 120px; 
-left: 220px;
--ms-transform: rotate(118deg); /* IE 9 */
--webkit-transform: rotate(118deg); /* Chrome, Safari, Opera */
-transform: rotate(118deg);
-    
-}
 
 
 .tractor6 {
-top: 170px; 
-left: 130px; 
--ms-transform: rotate(145deg); /* IE 9 */
--webkit-transform: rotate(145deg); /* Chrome, Safari, Opera */
-transform: rotate(145deg);
+top: 150px; 
+left: 167px; 
+-ms-transform: rotate(135deg); /* IE 9 */
+-webkit-transform: rotate(135deg); /* Chrome, Safari, Opera */
+transform: rotate(135deg);
     
 }
 
@@ -482,9 +469,9 @@ top: 50px;
 }
 
 
-/*******************************************************************************************************************
+/********************************************************
 Media queries tablet size
-******************************************************************************************************************/
+************************************************************/
 
 @media screen and (min-width: 768px) {
     
@@ -565,7 +552,7 @@ padding-top: 50px;
 }
 
 .termometer {
-    text-align; center; 
+    text-align:center; 
      
 }
    
@@ -579,13 +566,10 @@ padding-top: 50px;
     padding-top: 50px; 
      
 }
+
+
         
-    
- /*********************************
-Second section circle 
-**********************************/
-    
-    
+
 
 /*********************************
 Second section
@@ -623,60 +607,41 @@ position: absolute;
     right:0;
     margin-left:auto;
     margin-right:auto;
-
+ z-index: 1;
 }
 
 
 .home {
 top: -65px; 
-left: -140px;
--ms-transform: rotate(-15deg); /* IE 9 */
--webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
-transform: rotate(-15deg);
+left: -150px;
+-ms-transform: rotate(-18deg); /* IE 9 */
+-webkit-transform: rotate(-18deg); /* Chrome, Safari, Opera */
+transform: rotate(-18deg);
     
 
 }
 
-
-.transmission-tower {
-top: -50px; 
-left: 130px; 
--ms-transform: rotate(15deg); /* IE 9 */
--webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
-transform: rotate(15deg);
-    
-
-}
 
 
 .industritorn {
-top: 10px; 
-left: 370px;
--ms-transform: rotate(57deg); /* IE 9 */
--webkit-transform: rotate(57deg); /* Chrome, Safari, Opera */
-transform: rotate(57deg);
+top: -8px; 
+left: 350px;
+-ms-transform: rotate(47deg); /* IE 9 */
+-webkit-transform: rotate(47deg); /* Chrome, Safari, Opera */
+transform: rotate(47deg);
     
  
 
 }
 
 
-.tree68 {
-top: 220px; 
-left: 450px;
--ms-transform: rotate(118deg); /* IE 9 */
--webkit-transform: rotate(118deg); /* Chrome, Safari, Opera */
-transform: rotate(118deg);
-    
-}
-
 
 .tractor6 {
-top: 320px; 
-left: 300px; 
--ms-transform: rotate(145deg); /* IE 9 */
--webkit-transform: rotate(145deg); /* Chrome, Safari, Opera */
-transform: rotate(145deg);
+top: 300px; 
+left: 340px; 
+-ms-transform: rotate(135deg); /* IE 9 */
+-webkit-transform: rotate(135deg); /* Chrome, Safari, Opera */
+transform: rotate(135deg);
     
 }
 
@@ -717,13 +682,14 @@ transform: rotate(305deg);
 Circle diagram text
 **********************************/
 
+.circle-text-container{
+ 
+    padding-top: 500px;
+     
+
+}
 
 .circle-text{
-    color: #00a99d;
-    font-weight: 700;  
-    font-size: 1.2em;
-    position: relative; 
-    
 
 
 }
@@ -735,61 +701,72 @@ Circle diagram text
     font-weight: 700; 
     font-size: 1.5em; 
     display: block; 
+    padding: 0;
+    margin: 0; 
 }
+
 
 
 
 .buildings{
-     top: -110px; 
-    left: -70px;
-    padding-top: 0;  
-
+     top: -120px; 
+    left: -100px; 
+  
 }
 
 .buildings span{
     font-size: 1em;
-       
+  
+  
 }
 
 .production{
-     top: -130px; 
-    left: 230px; 
-       
-}
+     top: -100px; 
+    left: 300px;
+  
+} 
+
 
 .agriculture{
-    top: 260px; 
-    left: 260px; 
+  top: 450px; 
+    left: 200px;
+  
 }
+
 
 .wood, .hectars{
     font-size: 0.8em;
     display: block; 
-       
+       padding: 0; 
 }
 
 
 .industry{
-     top: 250px; 
-    left: -130px; 
-       
-}
+      top: 200px; 
+    left: -100px;
+  
+} 
+
 
 
 .transports{
-      top: 30px; 
-    left: -280px;  
-}
+    top: 350px; 
+    left: -300px;
+  
+}   
 
 
 .energy{
-     top: -250px; 
-    left: -300px;
-       
+      top: 50px; 
+    left: -30px;
+  
 }
+       
+
 
 .energy span{
        font-size: 1em;
+       padding: 0; 
 }  
 
     
@@ -797,10 +774,7 @@ Circle diagram text
 Section styling
 **********************************/
 
-.third-section {
-    margin-top: 150px; 
-}
-   
+
 
 
 /*********************************
@@ -870,7 +844,9 @@ left: 250px;
 top: 200px; 
 }
 
+
 }
+
 
 
 /*******************************************************************************************************************
