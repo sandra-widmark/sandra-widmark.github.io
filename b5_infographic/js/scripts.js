@@ -69,11 +69,11 @@ function toggle1(showHideDiv, switchImgTag) {
         var imageEle = document.getElementById(switchImgTag);
         if(ele.style.display == "block") {
                 ele.style.display = "none";
-        imageEle.innerHTML = '<img src="img/home.svg" class="home circle-icon">';
+        imageEle.innerHTML = '<img src="img/home.png" class="home circle-icon">';
         }
         else {
                 ele.style.display = "block";
-                imageEle.innerHTML = '<img src="img/home-click.svg" class="home circle-icon">';
+                imageEle.innerHTML = '<img src="img/home-clicked.png" class="home circle-icon">';
         }
 }
 
@@ -90,11 +90,11 @@ function toggle3(showHideDiv, switchImgTag) {
         var imageEle = document.getElementById(switchImgTag);
         if(ele.style.display == "block") {
                 ele.style.display = "none";
-        imageEle.innerHTML = '<img src="img/industrial5.svg" class="industritorn circle-icon">';
+        imageEle.innerHTML = '<img src="img/industrial5.png" class="industritorn circle-icon">';
         }
         else {
                 ele.style.display = "block";
-                imageEle.innerHTML = '<img src="img/industrial5-click.svg" class="industritorn circle-icon">';
+                imageEle.innerHTML = '<img src="img/industrial5-clicked.png" class="industritorn circle-icon">';
         }
 }
 
@@ -110,11 +110,11 @@ function toggle5(showHideDiv, switchImgTag) {
         var imageEle = document.getElementById(switchImgTag);
         if(ele.style.display == "block") {
                 ele.style.display = "none";
-        imageEle.innerHTML = '<img src="img/tractor6.svg" class="tractor6 circle-icon">';
+        imageEle.innerHTML = '<img src="img/tractor6.png" class="tractor6 circle-icon">';
         }
         else {
                 ele.style.display = "block";
-                imageEle.innerHTML = '<img src="img/tractor6-click.svg" class="tractor6 circle-icon">';
+                imageEle.innerHTML = '<img src="img/tractor6-clicked.png" class="tractor6 circle-icon">';
         }
 }
 
@@ -127,11 +127,11 @@ function toggle6(showHideDiv, switchImgTag) {
         var imageEle = document.getElementById(switchImgTag);
         if(ele.style.display == "block") {
                 ele.style.display = "none";
-        imageEle.innerHTML = '<img src="img/industries.svg" class="industries circle-icon">';
+        imageEle.innerHTML = '<img src="img/industries.png" class="industries circle-icon">';
         }
         else {
                 ele.style.display = "block";
-                imageEle.innerHTML = '<img src="img/industries-click.svg" class="industries circle-icon">';
+                imageEle.innerHTML = '<img src="img/industries-clicked.png" class="industries circle-icon">';
         }
 }
 
@@ -143,11 +143,11 @@ function toggle7(showHideDiv, switchImgTag) {
         var imageEle = document.getElementById(switchImgTag);
         if(ele.style.display == "block") {
                 ele.style.display = "none";
-        imageEle.innerHTML = '<img src="img/truck.svg" class="truck circle-icon">';
+        imageEle.innerHTML = '<img src="img/truck.png" class="truck circle-icon">';
         }
         else {
                 ele.style.display = "block";
-                imageEle.innerHTML = '<img src="img/truck-click.svg" class="truck circle-icon">';
+                imageEle.innerHTML = '<img src="img/truck-clicked.png" class="truck circle-icon">';
         }
 }
 
@@ -158,11 +158,11 @@ function toggle8(showHideDiv, switchImgTag) {
         var imageEle = document.getElementById(switchImgTag);
         if(ele.style.display == "block") {
                 ele.style.display = "none";
-        imageEle.innerHTML = '<img src="img/industrial26.svg" class="industrial26 circle-icon">';
+        imageEle.innerHTML = '<img src="img/industrial26.png" class="industrial26 circle-icon">';
         }
         else {
                 ele.style.display = "block";
-                imageEle.innerHTML = '<img src="img/industrial26-click.svg" class="industrial26 circle-icon">';
+                imageEle.innerHTML = '<img src="img/industrial26-clicked.png" class="industrial26 circle-icon">';
         }
 }
 
