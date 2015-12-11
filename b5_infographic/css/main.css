@@ -404,6 +404,23 @@ Third section
 **********************************/
 
 
+.showme {
+background-color: #00a99d;
+color: white;
+border: none;
+padding: 10px; 
+text-align: center;
+margin: 20px auto;
+display: block; 
+width: 250px;
+border-radius: 5px;
+}
+
+
+
+.third-section-facts {
+display: none;
+}
 
 .globe-container {
     
@@ -411,6 +428,7 @@ overflow:hidden;
 margin-top: 30px;
 position: relative;
 height: 270px; 
+display: none;
 }
 
 
@@ -838,6 +856,17 @@ section styling
 /*********************************
 Circle diagram text
 **********************************/
+.circle-text-container{
+    width: 50%;
+    padding-top: 0px;
+    float: right;
+    margin-right: 200px; 
+
+
+    
+
+
+}
 
 
 /*********************************

@@ -8,7 +8,7 @@ function indicator() {
         duration: 2000, 
         complete: function() {
             $('.indicator').animate({top: '30'}, {
-                duration: 2000, 
+                duration: 2000,  
                 complete: indicator()});
         }});
 }
@@ -168,8 +168,13 @@ function toggle8(showHideDiv, switchImgTag) {
 
 
 
+//jquery - show information when clicking on button "visa mig"
 
 
 
-
-
+$('.showme').click(function (e) {
+    e.preventDefault();
+    $('.showme').hide();
+    $('.third-section-facts, .globe-container').show();
+    $(window).scrollTop($('.third-section-facts').offset().top);
+});
