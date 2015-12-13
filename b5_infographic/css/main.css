@@ -27,6 +27,56 @@ header {
 
 
 /*********************************
+Lightbox
+**********************************/
+
+ul {
+    list-style:none;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    max-width: 780px;
+    text-align: center;
+}
+ul li {
+    display: inline-block;
+    padding: 8px;
+    background:#f15a24;
+    margin:10px;
+    margin-top: 20px;
+}
+ul li img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+
+#overlay {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+#overlay img {
+   margin-top: 200%;
+}
+
+#overlay p {
+   color: white;
+}
+
+
+
+
+
+
+/*********************************
 Font styling
 **********************************/
 
@@ -43,6 +93,7 @@ h2 {
     color: #4d4d4d;
     font-weight: 400; 
     font-size: 1em;
+    margin-top: 30px;
    
     
 }
@@ -149,6 +200,7 @@ Circle diagram text
     font-size: 1.2em;
     text-align: center;
     padding-top: 280px;
+   
     
 
 
@@ -490,6 +542,22 @@ Media queries tablet size
 ************************************************************/
 
 @media screen and (min-width: 768px) {
+
+/*********************************
+lightbox
+**********************************/
+
+    #overlay {
+    
+    height: 150%;
+ 
+}
+
+#overlay img {
+   margin-top: 100%;
+}
+
+
     
 
 /*********************************
@@ -515,6 +583,7 @@ h2 {
 h3 {
     
     font-size: 1.5em; 
+
   
     }
 
@@ -536,27 +605,25 @@ p {
 /*********************************
 Section styling
 **********************************/
-.third-section {
-    
+.first-section {
+   margin: 100px 0 100px 0;
 }
 
 
 
 .second-section {
-   height: 500px;
+   height: 550px;
     background-image: url("../img/bubble2.svg");
     background-repeat: no-repeat;
     background-position: 60% 60%;
     background-size: 200px;
-
-
  
 
     }
 
 
     .third-section {
-  
+ 
 
     }
 
@@ -567,7 +634,8 @@ First section text
  .termometer-section {
 width: 100%; 
 margin: 0 auto;
-padding-top: 50px; 
+padding-top: 50px;
+padding-bottom: 70px; 
 
      
     }
@@ -596,10 +664,7 @@ padding-top: 50px;
 
 }
 
-.termometer {
-    text-align:center; 
-     
-}
+
    
 .temperaturerise {
     padding:0;  
@@ -625,7 +690,7 @@ Second section
 width: 50%;
 text-align: left; 
 position: relative;
-margin-top: 70px;
+margin-top: 30px;
 
 
 
@@ -640,12 +705,15 @@ Circle diagram text
     padding-top: 0px;
     float: right;
     margin-right: 40px; 
+     background-color: #4d4d4d;
+    border-radius: 8px; 
+
+}
+
 
 
     
 
-
-}
 
 .circle-text{
 
@@ -847,6 +915,22 @@ h2 {
     }
 
 
+/*********************************
+lightbox
+**********************************/
+
+    #overlay {
+    
+    height: 190%;
+ 
+}
+
+#overlay img {
+   margin-top: 50%;
+}
+
+
+
 /****************************************
 section styling
 ***************************************/
@@ -860,7 +944,7 @@ Circle diagram text
     width: 50%;
     padding-top: 0px;
     float: right;
-    margin-right: 200px; 
+    margin-right: 150px; 
 
 
     
@@ -874,7 +958,7 @@ Second section
 **********************************/
 
 .second-section {
-   height: 500px;
+   height: 550px;
     background-image: url("../img/bubble2.svg");
     background-repeat: no-repeat;
     background-position: 55% 70%;
