@@ -519,7 +519,7 @@ Section styling
     height: 550px;
     background-image: url("../img/bubble2.svg");
     background-repeat: no-repeat;
-    background-position: 60% 60%;
+    background-position: 70% 60%;
     background-size: 200px;
  }
 
@@ -580,8 +580,8 @@ Second section
 **********************************/
 
 .circle-container {
-    width: 50%;
-    text-align: left; 
+    width: 70%;
+    text-align: center; 
     position: relative;
     margin-top: 30px;
 }
@@ -591,10 +591,10 @@ Second section
 Circle diagram text
 **********************************/
 .circle-text-container{
-    width: 50%;
+    width: 30%;
     padding-top: 0px;
     float: right;
-    margin-right: 40px; 
+    margin-right: 130px; 
     border-radius: 8px; 
 
 }
@@ -784,13 +784,25 @@ lightbox
 
 
 /*********************************
+circle container
+**********************************/
+
+.circle-container {
+    width: 75%;
+    text-align: center; 
+    position: relative;
+    margin-top: 30px;
+}
+
+ 
+/*********************************
 Circle diagram text
 **********************************/
 .circle-text-container{
-    width: 50%;
+    width: 20%;
     padding-top: 0px;
     float: right;
-    margin-right: 150px; 
+    margin-right: 270px; 
 }
 
 
@@ -802,7 +814,7 @@ Second section
     height: 550px;
     background-image: url("../img/bubble2.svg");
     background-repeat: no-repeat;
-    background-position: 55% 70%;
+    background-position: 65% 70%;
     background-size: 200px;
 }
     
