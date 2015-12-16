@@ -7,10 +7,7 @@
     <meta name="author" content="Sandra Widmark">
     <link rel="stylesheet" media="screen" href="css/normalize.css">
     <link rel="stylesheet" media="screen" href="css/main.css">
-     <link rel="stylesheet" href="css/animate.css">
-
-
-
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
     <header>
@@ -18,88 +15,66 @@
         <h1>LILLA KLIMATSKOLAN</h1>
         <h3>3 FRÅGOR &amp; SVAR OM KLIMATHOTET!</h3>
     </header>
-    
-    <section class="first-section">
-        <h2>VAD INNEBÄR TVÅGRADERSMÅLET<span class="questionmark">?</span></h2>
+    <section class="first-section wow bounceInUp">
+        <h2>VAD INNEBÄR TVÅGRADERSMÅLET<span class="questionmark wow flash" data-wow-duration="2s">?</span></h2>
         <p>För att undvika en temperaturhöjning på 4 till 5 grader fram till år 2100, har världens länder enats om att sträva efter det så kallade tvågradersmålet. Det innebär att jordens utsläpp av växthusgaser ska minskas så mycket att jordens medeltemperatur, räknat från år 1880, inte ska stiga mer än två grader till år 2100. </p>
         <div class="termometer-section"> 
             <div class="termometer-section1">
-                <p class="temperaturerise columns">Temperaturhöjning</p> <br>
-                <p class="degrees columns">+4°C till +5°C</p> <br>
-                <p class="year columns">År 2100</p> <br>
+                <p class="temperaturerise columns wow bounceIn" data-wow-delay="4s">Temperaturhöjning</p> <br>
+                <p class="degrees columns wow bounceIn" data-wow-delay="5s">+4°C till +5°C</p> <br>
+                <p class="year columns wow bounceIn" data-wow-delay="6s">År 2100</p> <br>
             </div>   
             <div class="termometer-section2"> 
-                <div class="thermometer-component">
-                    <div class="indicator"></div>
-                </div>
-                <!--
-                <img src="img/termometer.svg" alt="Termometer" class="termometer columns">
-                <img src="img/matare.svg" alt="Termometer" class="matare">
-                -->
+                <div class="thermometer-component wow bounceIn" data-wow-delay="0s">
+                <div class="indicator wow bounceIn" data-wow-delay="0s"></div>
+            </div>
             </div>  
             <div class="termometer-section3">   
-                <p class="twodegreesgoal columns">Tvågradersmålet</p> <br>
-                <p class="twodegrees columns">2.0°C</p> <br>
+                <p class="twodegreesgoal columns wow bounceIn" data-wow-delay="7s">Tvågradersmålet</p> <br>
+                <p class="twodegrees columns wow bounceIn" data-wow-delay="8s">2.0°C</p> <br>
             </div>
         </div>
- <h3>Klicka på bilden för att se graf över medeltemperaturen.</h3> 
+        <h3>Klicka på bilden för att se graf över medeltemperaturen.</h3> 
          <ul id="imageGallery">
-        <li><a href="img/temperaturgraf.png"><img src="img/temperaturgraf.png" width="100" alt=""></a></li>
-    </ul>
+            <li><a href="img/temperaturgraf.png"><img src="img/temperaturgraf.png" width="100" alt=""></a></li>
+        </ul>
     </section>
-
-
-    
-
-    
-    
- <section class="second-section wow bounceInUp">
-    
-<h2>VARIFRÅN KOMMER UTSLÄPPEN<span class="questionmark">?</span></h2> 
-
-<h3>Klicka på ikonerna för att få information!</h3> 
-  
-  <div class="circle-container wow zoomIn"> 
-      <a id="home" href="javascript:toggle1('home-text', 'home');"><img src="img/home.png" alt="Hus" class="home circle-icon wow" data-wow-iteration="5"></a>
-<a id="industrial5" href="javascript:toggle3('industrial5-text', 'industrial5');"><img src="img/industrial5.png" alt="Industribyggnad" class="industritorn circle-icon wow" data-wow-iteration="5"></a> 
-<a id="tractor6" href="javascript:toggle5('tractor6-text', 'tractor6');"><img src="img/tractor6.png" alt="Traktor" class="tractor6 circle-icon wow" data-wow-iteration="5"></a> 
-<a id="industries" href="javascript:toggle6('industries-text', 'industries');"><img src="img/industries.png" alt="Industrier" class="industries circle-icon wow" data-wow-iteration="5"></a> 
-<a id="truck" href="javascript:toggle7('truck-text', 'truck');"><img src="img/truck.png" alt="Lastbil" class="truck circle-icon wow" data-wow-iteration="5"></a>
-<a id="industrial26" href="javascript:toggle8('industrial26-text', 'industrial26');"><img src="img/industrial26.png" alt="Industribyggnad" class="industrial26 circle-icon wow" data-wow-iteration="5"></a>  
-</div>
- <div class="circle-text-container"> 
-<div id="home-text" style="display: none;"><p class="buildings circle-text">BYGGNADER <span class="percent-text">6.4%</span></p></div>
-<div id="industrial5-text" style="display: none;"><p class="production circle-text">EL- &amp; VÄRMEPRODUKTION <span class="percent-text">25%</span></p></div>
-<div id="tractor6-text" style="display: none;"><p class="agriculture circle-text">JORDBRUK<span class="wood">SKOGSSKÖVLING</span> <span class="hectars">MARKANVÄNDNING</span> <span class="percent-text">24%</span></p></div>
-<div id="industries-text" style="display: none;"><p class="industry circle-text">INDUSTRI <span class="percent-text">21%</span></p></div>
-<div id="truck-text" style="display: none;"><p class="transports circle-text">TRANSPORTER <span class="percent-text">14%</span></p></div>
-<div id="industrial26-text" style="display: none;"><p class="energy circle-text">ÖVRIG ENERGI <span class="percent-text">9.6%</span></p></div>
-</div>
+    <section class="second-section wow bounceInUp">
+        <h2>VARIFRÅN KOMMER UTSLÄPPEN<span class="questionmark wow flash" data-wow-duration="2s">?</span></h2> 
+        <h3>Klicka på ikonerna för att få information!</h3> 
+        <div class="circle-container wow zoomIn"> 
+            <a id="home" href="javascript:toggle1('home-text', 'home');"><img src="img/home.png" alt="Hus" class="home circle-icon wow" data-wow-iteration="5"></a>
+            <a id="industrial5" href="javascript:toggle3('industrial5-text', 'industrial5');"><img src="img/industrial5.png" alt="Industribyggnad" class="industritorn circle-icon wow" data-wow-iteration="5"></a> 
+            <a id="tractor6" href="javascript:toggle5('tractor6-text', 'tractor6');"><img src="img/tractor6.png" alt="Traktor" class="tractor6 circle-icon wow" data-wow-iteration="5"></a> 
+            <a id="industries" href="javascript:toggle6('industries-text', 'industries');"><img src="img/industries.png" alt="Industrier" class="industries circle-icon wow" data-wow-iteration="5"></a> 
+            <a id="truck" href="javascript:toggle7('truck-text', 'truck');"><img src="img/truck.png" alt="Lastbil" class="truck circle-icon wow" data-wow-iteration="5"></a>
+            <a id="industrial26" href="javascript:toggle8('industrial26-text', 'industrial26');"><img src="img/industrial26.png" alt="Industribyggnad" class="industrial26 circle-icon wow" data-wow-iteration="5"></a>  
+        </div>
+        <div class="circle-text-container"> 
+            <div id="home-text" style="display: none;"><p class="buildings circle-text">BYGGNADER <span class="percent-text">6.4%</span></p></div>
+            <div id="industrial5-text" style="display: none;"><p class="production circle-text">EL- &amp; VÄRMEPRODUKTION <span class="percent-text">25%</span></p></div>
+            <div id="tractor6-text" style="display: none;"><p class="agriculture circle-text">JORDBRUK<span class="wood">SKOGSSKÖVLING</span> <span class="hectars">MARKANVÄNDNING</span> <span class="percent-text">24%</span></p></div>
+            <div id="industries-text" style="display: none;"><p class="industry circle-text">INDUSTRI <span class="percent-text">21%</span></p></div>
+            <div id="truck-text" style="display: none;"><p class="transports circle-text">TRANSPORTER <span class="percent-text">14%</span></p></div>
+            <div id="industrial26-text" style="display: none;"><p class="energy circle-text">ÖVRIG ENERGI <span class="percent-text">9.6%</span></p></div>
+        </div>
 </section>
-
-
-
-<section class="third-section">
-    
-    <h2>VARFÖR STIGER TEMPERATUREN<span class="questionmark">?</span></h2>
-    <button class="showme">Visa mig!</button> 
-
-    
- 
-<div class="third-section-facts">
-    <p>1. Strålningen från solen når ytan och värmer upp luften.</p>
-    <p>2. En del av strålningen sänds tillbaka som värmestrålning. </p>
-    <p>3. Gaser i atmosfären släpper igenom det mesta av värmestrålningen, men en del reflekteras tillbaka till jorden.</p>
-    <p>4. När människan släpper ut växthusgaser som till exempel koldioxid och metan i  atmosfären så förstärks återstrålningen av värme till jorden och temperaturen stiger. </p>
-</div> 
-  
-<div class="globe-container">
-    <img src="img/sol.svg" alt="Sol" class="sun">
-    <img src="img/solpil.svg" alt="Solpil" class="sun-arrow">
-    <img src="img/varmepil1.svg" alt="Värmepil" class="heat-arrow1 heat-arrow">
-    <img src="img/varmepil2.svg" alt="Värmepil" class="heat-arrow2 heat-arrow">
-    <img src="img/jordglob.svg" alt="Jordglob" class="globe">
-</div> 
+    <section class="third-section wow bounceInUp">
+        <h2>VARFÖR STIGER TEMPERATUREN<span class="questionmark wow flash" data-wow-duration="2s">?</span></h2>
+        <button class="showme">Visa mig!</button> 
+        <div class="third-section-facts">
+            <p class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0s">1. Strålningen från solen når ytan och värmer upp luften.</p>
+           <p class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="3s">2. En del av strålningen sänds tillbaka som värmestrålning. </p>
+            <p class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="6s">3. Gaser i atmosfären släpper igenom det mesta av värmestrålningen, men en del reflekteras tillbaka till jorden.</p>
+            <p class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="9s">4. När människan släpper ut växthusgaser som till exempel koldioxid och metan i  atmosfären så förstärks återstrålningen av värme till jorden och temperaturen stiger. </p>
+        </div> 
+        <div class="globe-container">
+            <img src="img/sol.svg" alt="Sol" class="sun wow slideInUp">
+            <img src="img/solpil.svg" alt="Solpil" class="sun-arrow wow slideInLeft" data-wow-duration="2s" data-wow-delay="0s">
+            <img src="img/varmepil1.svg" alt="Värmepil" class="heat-arrow1 wow bounceInUp" data-wow-duration="2s" data-wow-delay="3s">
+            <img src="img/varmepil2.svg" alt="Värmepil" class="heat-arrow2 wow bounceInUp" data-wow-duration="2s" data-wow-delay="6s">
+            <img src="img/jordglob.svg" alt="Jordglob" class="globe wow fadeInUp">
+        </div> 
 </section>
     
  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -107,10 +82,9 @@
               <script>
               new WOW().init();
               </script>
-            <script src="js/scripts.js"></script>  
+<script src="js/scripts.js"></script>  
     
-    
-   <div id="overlay"></div> 
+<div id="overlay"></div> 
     
     </body>
 </html>

@@ -10,7 +10,6 @@ body {
     background-color: #f6ead5;
     font-family: "roboto";
     font-weight: 400; 
-    box-sizing: border-box; 
 }
 
 
@@ -22,7 +21,6 @@ Header
 header {
     background-color: #4d4d4d;
     border: 15px solid #4d4d4d; 
-    
 }
 
 
@@ -38,6 +36,7 @@ ul {
     max-width: 780px;
     text-align: center;
 }
+
 ul li {
     display: inline-block;
     padding: 8px;
@@ -45,9 +44,11 @@ ul li {
     margin:10px;
     margin-top: 20px;
 }
+
 ul li img {
     display: block;
 }
+
 a {
     text-decoration: none;
 }
@@ -72,10 +73,6 @@ a {
 }
 
 
-
-
-
-
 /*********************************
 Font styling
 **********************************/
@@ -85,7 +82,6 @@ h1 {
     font-weight: 400;
     font-size: 1.4em;
     margin: 0; 
-    
 }
 
 
@@ -94,8 +90,6 @@ h2 {
     font-weight: 400; 
     font-size: 1em;
     margin-top: 30px;
-   
-    
 }
 
 
@@ -107,7 +101,7 @@ h3 {
     margin: 0;
     padding: 10px; 
     
-    }
+}
 
 p {
     color: #4d4d4d;
@@ -116,10 +110,7 @@ p {
     margin: 0 auto;
     padding: 5px 7% 5px 7%;
     text-align: left;
-   
-
-    
-    }
+}
 
 
 h1, h2, h3 {
@@ -134,21 +125,15 @@ h1, h2, h3 {
 }
 
 
-
-
-
 /*********************************
 First section text
 **********************************/
-
-
 
 .temperaturerise {
     color: #f15a24; 
     text-align: center;
     font-size: 1.2em; 
     padding-top: 20px; 
-    
 }
 
 .degrees {
@@ -156,7 +141,6 @@ First section text
     font-weight: 800; 
     text-align: center;
     font-size: 1.2em; 
-    
 }
 
 
@@ -165,7 +149,6 @@ First section text
     text-align: center;
     font-size: 1.3em; 
     font-size: 1.2em; 
-    
 }
 
 
@@ -187,9 +170,6 @@ First section text
 }
 
 
-
-
-
 /*********************************
 Circle diagram text
 **********************************/
@@ -200,19 +180,13 @@ Circle diagram text
     font-size: 1.2em;
     text-align: center;
     padding-top: 280px;
-   
-    
-
-
 }
+
 .circle-text{
     color: #00a99d;
     font-weight: 700;  
-    font-size: 1.2em;
+    font-size: 0.9em;
     text-align: center;
-    
-
-
 }
 
 
@@ -226,44 +200,17 @@ Circle diagram text
 
 
 
-.buildings{
-    
-    
-}
-
 .buildings span{
     font-size: 1em;
        
 }
 
-.production{
-       
-}
-
-.agriculture{
-       
-}
 
 .wood, .hectars{
     font-size: 0.8em;
     display: block; 
-       
 }
 
-
-.industry{
-       
-}
-
-
-.transports{
-       
-}
-
-
-.energy{
-       
-}
 
 .energy span{
        font-size: 1em;
@@ -278,19 +225,17 @@ Section styling
 
 .third-section {
     height: 33%;
-    
 }
 
 
 
 .second-section {
-   
-height: 33%;
-    }
+    height: 33%;
+}
 
 
 .third-section {
-  height: 33%;
+    height: 33%;
 
     }
 
@@ -336,32 +281,28 @@ Second section
 
 
 .circle-container {
-    
-width: 100%; 
-text-align: center; 
-position: relative;
-margin-top: 70px;
-
-
+    width: 100%; 
+    text-align: center; 
+    position: relative;
+    margin-top: 70px;
 }
 
 
 
 .circle {
     width: 200px;
-     position:absolute;
+    position:absolute;
     left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
-   z-index: 1;
-
+    z-index: 1;
 }
 
 
 
 .circle-icon {
-  width: 120px;
+    width: 120px;
     height: auto;
     position: absolute;
     left:0;
@@ -369,82 +310,56 @@ margin-top: 70px;
     margin-left:auto;
     margin-right:auto;
     z-index: 0;
-
 }
-
-
-
 
 
 .home {
-
-width: 46px;
-height: 77.345px;
-top: -12.5px; 
-left: -49px;
-
-    
-
+    width: 46px;
+    height: 77.345px;
+    top: -12.5px; 
+    left: -49px;
 }
-
-
-
 
 
 .industritorn {
-width: 116px;
-height: 119.663px;
-top: -12px; 
-left: 115px;
-
- 
-
+    width: 116px;
+    height: 119.663px;
+    top: -13px; 
+    left: 116px;
 }
-
-
-
 
 
 .tractor6 {
-width: 102px;
-height: 114.448px;
-top: 105px; 
-left: 129px; 
-
-    
+    width: 102px;
+    height: 114.448px;
+    top: 104px; 
+    left: 129px; 
 }
 
 
-
-
 .industries{
-width: 102px;
-height: 89.3012px;
-top: 133px; 
-left: -62px;
-
-    
+    width: 102px;
+    height: 89.3012px;
+    top: 133px; 
+    left: -62px;
 }
 
 
 
 .truck{ 
-width: 92px;
-height: 80.448px;
-top: 83px; 
-left: -154px;
+    width: 92px;
+    height: 80.448px;
+    top: 83px; 
+    left: -154px;
 
 }
 
 
-
-
-
 .industrial26{
-width: 100px;
-height: 72.016px;
-top: 23px; 
-left: -147px;
+    width: 100px;
+    height: 72.016px;
+    top: 23px; 
+    left: -147px;
 
     
 }
@@ -457,55 +372,54 @@ Third section
 
 
 .showme {
-background-color: #00a99d;
-color: white;
-border: none;
-padding: 10px; 
-text-align: center;
-margin: 20px auto;
-display: block; 
-width: 250px;
-border-radius: 5px;
+    background-color: #00a99d;
+    color: #f6ead5;
+    border: none;
+    padding: 10px; 
+    text-align: center;
+    margin: 20px auto;
+    display: block; 
+    width: 250px;
+    border-radius: 5px;
 }
 
 
 
 .third-section-facts {
-display: none;
+    display: none;
 }
 
 .globe-container {
-    
-overflow:hidden;
-margin-top: 30px;
-position: relative;
-height: 270px; 
-display: none;
+    overflow:hidden;
+    margin-top: 30px;
+    position: relative;
+    height: 270px; 
+    display: none;
 }
 
 
 
 .globe {
-width: 100%;
+    width: 100%;
 }
 
 
 
 .sun {
-height:120px; 
-width: 50%;
+    height:120px; 
+    width: 50%;
 
     
 }
 
 
 .sun-arrow {
-height: 100px; 
-position: absolute; 
-z-index: 1;
-left: 30px; 
-top: 60px; 
-width: 50%;
+    height: 100px; 
+    position: absolute; 
+    z-index: 1;
+    left: 30px; 
+    top: 60px; 
+    width: 50%;
     
 
     
@@ -514,26 +428,24 @@ width: 50%;
 
 
 .heat-arrow1 {
-
-height: 130px; 
-width: 50%;
-position: absolute;
-z-index: 1;
-left: 100px; 
-top: -20px; 
+    height: 130px; 
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 100px; 
+    top: -20px; 
 }
 
 
 .heat-arrow2 {
-    
-height: 60px; 
-width: 50%;
-text-align: right;
-display: inline;
-position: absolute; 
-z-index: 1;
-left: 120px; 
-top: 50px; 
+    height: 60px; 
+    width: 50%;
+    text-align: right;
+    display: inline;
+    position: absolute; 
+    z-index: 1;
+    left: 120px; 
+    top: 50px; 
 }
 
 
@@ -547,8 +459,7 @@ Media queries tablet size
 lightbox
 **********************************/
 
-    #overlay {
-    
+#overlay {
     height: 150%;
  
 }
@@ -567,30 +478,23 @@ Font styling
 h1 {
   
     font-size: 3.5em;
-    
-    
 }
 
 
 h2 {
 
     font-size: 2em;
-   
-    
 }
 
 
 h3 {
     
     font-size: 1.5em; 
-
-  
-    }
+}
 
 p {
   
     font-size: 1.2em; 
-   
 }
 
 
@@ -612,38 +516,30 @@ Section styling
 
 
 .second-section {
-   height: 550px;
+    height: 550px;
     background-image: url("../img/bubble2.svg");
     background-repeat: no-repeat;
     background-position: 60% 60%;
     background-size: 200px;
- 
-
-    }
+ }
 
 
-    .third-section {
- 
-
-    }
 
 
 /*********************************
 First section text
 **********************************/
- .termometer-section {
-width: 100%; 
-margin: 0 auto;
-padding-top: 50px;
-padding-bottom: 70px; 
-
-     
-    }
+.termometer-section {
+    width: 100%; 
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 70px; 
+}
     
-    .termometer-section::after {
-       content:""; 
+.termometer-section::after {
+    content:""; 
     display: table; 
-     clear:both;     
+    clear:both;     
     }
 
 .termometer-section1 {
@@ -664,11 +560,9 @@ padding-bottom: 70px;
 
 }
 
-
-   
 .temperaturerise {
     padding:0;  
-      padding-top: 30px; 
+    padding-top: 30px; 
 }
     
 .twodegreesgoal {
@@ -686,14 +580,10 @@ Second section
 **********************************/
 
 .circle-container {
-    
-width: 50%;
-text-align: left; 
-position: relative;
-margin-top: 30px;
-
-
-
+    width: 50%;
+    text-align: left; 
+    position: relative;
+    margin-top: 30px;
 }
 
  
@@ -705,21 +595,9 @@ Circle diagram text
     padding-top: 0px;
     float: right;
     margin-right: 40px; 
-     background-color: #4d4d4d;
     border-radius: 8px; 
 
 }
-
-
-
-    
-
-
-.circle-text{
-
-
-}
-
 
 
 .percent-text{
@@ -742,19 +620,17 @@ Circle diagram text
 
 .buildings span{
     font-size: 1em;
-  
-  
-}
+  }
 
 .production{
      top: -100px; 
-    left: 300px;
+     left: 300px;
   
 } 
 
 
 .agriculture{
-  top: 450px; 
+    top: 450px; 
     left: 200px;
   
 }
@@ -763,12 +639,12 @@ Circle diagram text
 .wood, .hectars{
     font-size: 0.8em;
     display: block; 
-       padding: 0; 
+    padding: 0; 
 }
 
 
 .industry{
-      top: 200px; 
+    top: 200px; 
     left: -100px;
   
 } 
@@ -783,7 +659,7 @@ Circle diagram text
 
 
 .energy{
-      top: 50px; 
+    top: 50px; 
     left: -30px;
   
 }
@@ -796,12 +672,6 @@ Circle diagram text
 }  
 
     
-/*********************************
-Section styling
-**********************************/
-
-
-
 
 /*********************************
 Third section
@@ -810,64 +680,56 @@ Third section
 
 
 .globe-container {
-    
-overflow:hidden;
-margin-top: 30px;
-position: relative;
-height: 500px; 
+    overflow:hidden;
+    margin-top: 30px;
+    position: relative;
+    height: 500px; 
 }
 
 
 
 .globe {
-width: 100%;
+    width: 100%;
 }
 
 
 
 .sun {
-height:200px; 
-width: 50%;
-
-    
+    height:200px; 
+    width: 50%;
 }
 
 
 .sun-arrow {
-height: 200px; 
-position: absolute; 
-z-index: 1;
-left: 50px; 
-top: 230px; 
-width: 50%;
-    
-
-    
+    height: 200px; 
+    position: absolute; 
+    z-index: 1;
+    left: 50px; 
+    top: 230px; 
+    width: 50%;
 }
 
 
 
 .heat-arrow1 {
-
-height: 210px; 
-width: 50%;
-position: absolute;
-z-index: 1;
-left: 200px; 
-top: 50px; 
+    height: 210px; 
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 200px; 
+    top: 50px; 
 }
 
 
 .heat-arrow2 {
-    
-height: 120px; 
-width: 50%;
-text-align: right;
-display: inline;
-position: absolute; 
-z-index: 1;
-left: 250px; 
-top: 200px; 
+    height: 120px; 
+    width: 50%;
+    text-align: right;
+    display: inline;
+    position: absolute; 
+    z-index: 1;
+    left: 250px; 
+    top: 200px; 
 }
 
 
@@ -887,7 +749,7 @@ Media queries desktop size
 }
     
 body {
-   width: 80%;
+    width: 80%;
     margin: 0 auto; 
 }
     
@@ -899,30 +761,20 @@ p {
     margin: 0 auto;
     padding: 5px 17% 5px 17%;
     text-align: center;
-   
-
-    
-    }
+}
     
     
 h2 {
     
     padding-top: 40px;
-    
-   
-
-    
-    }
+}
 
 
 /*********************************
 lightbox
 **********************************/
-
-    #overlay {
-    
+#overlay {
     height: 190%;
- 
 }
 
 #overlay img {
@@ -931,12 +783,6 @@ lightbox
 
 
 
-/****************************************
-section styling
-***************************************/
-
-
- 
 /*********************************
 Circle diagram text
 **********************************/
@@ -945,11 +791,6 @@ Circle diagram text
     padding-top: 0px;
     float: right;
     margin-right: 150px; 
-
-
-    
-
-
 }
 
 
@@ -958,96 +799,68 @@ Second section
 **********************************/
 
 .second-section {
-   height: 550px;
+    height: 550px;
     background-image: url("../img/bubble2.svg");
     background-repeat: no-repeat;
     background-position: 55% 70%;
     background-size: 200px;
-
-
- 
-
-    }
+}
     
 
 /*********************************
 Third section
 **********************************/
 
-
-
 .globe-container {
-    
-overflow:hidden;
-margin-top: 30px;
-position: relative;
-height: 700px; 
+    overflow:hidden;
+    margin-top: 30px;
+    position: relative;
+    height: 700px; 
 }
 
 
-
 .globe {
-width: 100%;
+    width: 100%;
 }
 
 
 
 .sun {
-height:200px; 
-width: 50%;
-
-    
+    height:200px; 
+    width: 50%;
 }
 
 
 .sun-arrow {
-height: 220px; 
-position: absolute; 
-z-index: 1;
-left: 50px; 
-top: 230px; 
-width: 50%;
-    
-
-    
+    height: 220px; 
+    position: absolute; 
+    z-index: 1;
+    left: 50px; 
+    top: 230px; 
+    width: 50%;
 }
 
 
 
 .heat-arrow1 {
-
-height: 230px; 
-width: 50%;
-position: absolute;
-z-index: 1;
-left: 200px; 
-top: 50px; 
+    height: 230px; 
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 200px; 
+    top: 50px; 
 }
 
 
 .heat-arrow2 {
-    
-height: 140px; 
-width: 50%;
-text-align: right;
-display: inline;
-position: absolute; 
-z-index: 1;
-left: 259px; 
-top: 200px; 
+    height: 140px; 
+    width: 50%;
+    text-align: right;
+    display: inline;
+    position: absolute; 
+    z-index: 1;
+    left: 259px; 
+    top: 200px; 
 }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
