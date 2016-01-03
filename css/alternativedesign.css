@@ -142,6 +142,10 @@ body {
 
 /* MAIN */
 
+a {
+  text-decoration: none;
+}
+
 main {
   margin: 0;
   padding: 20px 0 40px 0;
