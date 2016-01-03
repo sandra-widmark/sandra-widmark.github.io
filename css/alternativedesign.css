@@ -25,7 +25,6 @@ body {
   font-size: 72px;
   font-weight: 400;
   padding: 50px;
-
 }
 
 .main-nav .logo,
@@ -33,7 +32,6 @@ body {
 .main-nav .logo:active {
   display: block;
   color: #deded4;
-
 }
 
 .main-nav .menu {
@@ -183,7 +181,7 @@ section ul {
 
 .contact-page p {
   display: inline-block;
- margin: 20px; 
+  margin: 20px; 
 }
 
 .contact-page img {
@@ -213,9 +211,9 @@ Media queries mobile size
 ************************************************************/
 @media screen and (max-width: 767px) {
 
-.main-nav .logo {
-  font-size: 32px;
-  padding: 25px;
+  .main-nav .logo {
+    font-size: 32px;
+    padding: 25px;
 }
 
 .main-nav .menu {

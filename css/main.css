@@ -167,12 +167,12 @@ Media queries tablet size
 ************************************************************/
 @media screen and (max-width: 992px) {
 
-.main-nav .menu a {
-  font-family: 'Bitter';
-  font-size: 18px;
-  display: block;
-  padding: 88px;
-  text-align: center;
+  .main-nav .menu a {
+    font-family: 'Bitter';
+    font-size: 18px;
+    display: block;
+    padding: 89px;
+    text-align: center;
 }
 
 }
@@ -186,7 +186,6 @@ Media queries mobile size
 .main-nav .logo {
   font-size: 52px;
   padding: 50px;
-
 }
 
 
@@ -213,7 +212,10 @@ Media queries mobile size
 }
 
 
-
+.main-nav .menu .contact a:hover {
+  background-size: 200px; 
+  background-position: 10% 45%;
+}
 
 
 }
