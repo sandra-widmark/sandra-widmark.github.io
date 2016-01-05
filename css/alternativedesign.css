@@ -119,7 +119,7 @@ body {
 
 .main-nav .menu .contact a:hover {
   color: black;
-  background: url("../img/telefon.svg");
+  background: url("../img/telefon.png");
   background-color: white;
   background-size: 150px; 
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@ body {
 
 .main-nav .menu .contact-selected a {
   color: black;
-  background: url("../img/telefon.svg");
+  background: url("../img/telefon.png");
   background-color: white;
   background-size: 150px; 
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@ h3 {
 
 .main-nav .menu .contact a:hover {
   color: black;
-  background: url("../img/telefon.svg");
+  background: url("../img/telefon.png");
   background-color: white;
   background-size: 100px; 
   background-repeat: no-repeat;
@@ -346,7 +346,7 @@ h3 {
 
 .main-nav .menu .contact-selected a {
   color: black;
-  background: url("../img/telefon.svg");
+  background: url("../img/telefon.png");
   background-color: white;
   background-size: 100px; 
   background-repeat: no-repeat;

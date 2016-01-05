@@ -93,7 +93,7 @@ body {
 
 .main-nav .menu .contact a:hover {
   color: black;
-  background: url("../img/telefon.svg");
+  background: url("../img/telefon.png");
   background-color: white;
   background-size: 300px; 
   background-repeat: no-repeat;
