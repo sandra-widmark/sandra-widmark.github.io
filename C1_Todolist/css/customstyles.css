@@ -1,0 +1,154 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  display: block;
+  width: 500px;
+  margin: 100px auto;
+  background-color: #D299CD;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+header {
+  color: #A760A1;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+
+.btn-default {
+  background-color: #D299CD;
+  background-color: #A760A1;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.btn-default.new-task-button {
+  margin-left: 0px;
+}
+
+.btn-default:hover, .btn-default:active, .btn-default:focus {
+  background-color: #A760A1;
+}
+
+/* Ul, Li*/
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+/* Input */
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5px;
+ 
+
+}
+
+input[type="checkbox"] {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: 0;
+  background: white;
+}
+
+label {
+  width: 200px;
+}
+
+label.new-task {
+  width: auto;
+}
+
+/* Font styling*/
+
+h3 {
+  color: white;
+  background-color: #A760A1;
+  font-size: 18px;
+  padding: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+ }
+
+ /* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:inline-block;
+  width: 200px;
+  margin: 0; 
+}
+
+ul li.editMode label {
+  display:none;
+}
+
+
+
+/********************************************************
+Media queries mobile size
+************************************************************/
+@media screen and (max-width: 767px) {
+
+
+.container {
+  display: block;
+  width: 300px;
+  margin: 50px auto;
+  background-color: #D299CD;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+label {
+  width: 130px;
+}
+
+ul li.editMode input[type=text] {
+  display:inline-block;
+  width: 130px;
+ 
+}
+
+#new-task {
+  margin: 0;
+  width: 210px;
+}
+
+.btn-default.new-task-button {
+  margin-left: 10px;
+}
+
+}
+
+
+
