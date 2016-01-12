@@ -79,6 +79,7 @@ label {
 label.new-task {
   width: auto;
   color: white;
+  margin-left: 15px;
 }
 
 /* Font styling*/
