@@ -9,23 +9,26 @@ body {
   width: 500px;
   margin: 100px auto;
   background-color: #D299CD;
+  background: url("../img/data.jpg");
   border-radius: 10px;
   padding: 30px;
 }
 
 header {
   color: #A760A1;
+  color: white;
   margin-bottom: 20px;
 }
 
 /* Buttons */
 
 .btn-default {
-  background-color: #D299CD;
-  background-color: #A760A1;
+  background: rgba(255, 255, 255, 0.8); 
   border: none;
   margin-left: 10px;
+  margin-top: -2px;
   border-radius: 5px;
+
 }
 
 .btn-default.new-task-button {
@@ -33,7 +36,7 @@ header {
 }
 
 .btn-default:hover, .btn-default:active, .btn-default:focus {
-  background-color: #A760A1;
+  background-color: white;
 }
 
 /* Ul, Li*/
@@ -75,14 +78,16 @@ label {
 
 label.new-task {
   width: auto;
+  color: white;
 }
 
 /* Font styling*/
 
 h3 {
-  color: white;
-  background-color: #A760A1;
+  color: #333333;
+  background: rgba(255, 255, 255, 0.8); 
   font-size: 18px;
+  font-weight: bold;
   padding: 8px;
 }
 
@@ -111,6 +116,8 @@ ul li.editMode input[type=text] {
 ul li.editMode label {
   display:none;
 }
+
+
 
 
 
