@@ -89,6 +89,7 @@ h3 {
   font-size: 18px;
   font-weight: bold;
   padding: 8px;
+  margin: 10px;
 }
 
 h1 {
@@ -116,9 +117,6 @@ ul li.editMode input[type=text] {
 ul li.editMode label {
   display:none;
 }
-
-
-
 
 
 /********************************************************
