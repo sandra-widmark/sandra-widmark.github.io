@@ -125,6 +125,16 @@ Media queries mobile size
 @media screen and (max-width: 767px) {
 
 
+h3 {
+  color: #333333;
+  background: rgba(255, 255, 255, 0.8); 
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 10px 0px;
+}
+
+
 .container {
   display: block;
   width: 300px;
