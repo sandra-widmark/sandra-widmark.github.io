@@ -57,3 +57,74 @@ function shuffleImgs() {
         thisImg = thisImg.next();
     }
 }
+
+////game elements
+
+// reset
+function startAgain() {
+    
+    shuffleImgs();
+    
+    $(mainBoard + " div img").hide();
+    $(mainBoard + " div").css("visibility", "visible");
+    
+    $("#success").remove();
+    
+    counter = 0;
+    $("#counter").html("" + counter);
+    
+    cardOpened = "";
+    imageOpened = "";
+    imgFound = 0;
+    
+    return false;
+}
+
+// open card - show an image after user's click. 
+function openCard() {
+    
+    var id = $(this).attr("id");
+    
+    if ($("#" + id + " img").is(":hidden")) {
+        $(mainBoard + " div").unbind("click", openCard);
+        
+        $("#" + id + " img").slideDown('fast');
+        
+        if (imageOpened == "") {
+            cardOpened = id;
+            imageOpened = $("#" + id + " img").attr("src");
+            setTimeout(function() {
+                $(mainBoard + " div").bind("click", openCard)
+            }, 400);
+        } else {
+            current = $("#" + id + " img").attr("src");
+            
+            if (imageOpened != current) {
+                setTimeout(function() {
+                    $("#" + id + " img").slideUp('fast');
+                    $("#" + cardOpened + " img").slideUp('fast');
+                    cardOpened = "";
+                    imageOpened = "";
+                }, 500);
+            } else {
+                $("#" + id + " img").parent().css("visibility", "hidden");
+                $("#" + cardOpened + " img").parent().css("visibility", "hidden");
+                imgFound++;
+                
+                cardOpened = "";
+                imageOpened = "";
+            }
+            setTimeout(function() {
+                $(mainBoard + " div").bind("click", openCard)
+            }, 500);
+        }
+        
+        counter++;
+        $("#counter").html("" + counter);
+        
+        // finished!
+        if (imgFound == gfxBase.length) {
+            $("#counter").prepend('<span id="success">Done! With </span>');
+        }
+    }
+}
