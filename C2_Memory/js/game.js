@@ -123,8 +123,23 @@ function openCard() {
         $("#counter").html("" + counter);
         
         // finished!
-        if (imgFound == gfxBase.length) {
+        if (imgFound == flagIcons.length) {
             $("#counter").prepend('<span id="success">Done! With </span>');
         }
     }
 }
+
+
+// GO!
+$(function() {
+    
+    for (var y = 1; y < 3 ; y++) {
+        $.each(flagIcons, function(i, val) {
+            $(mainBoard).append("<div id=card" + y + i + "><img src=" + val + " />");
+        });
+    }
+    
+    $(mainBoard + " div").click(openCard);
+    shuffleImgs();
+    
+});
