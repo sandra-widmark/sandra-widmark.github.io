@@ -4,9 +4,11 @@
 var mainBoard = "#boxes";
 
 var counter = 0;
+var imgFound = 0;
+
 var cardOpened = "";
 var imageOpened = "";
-var imgFound = 0;
+
 
 var flagIcons = [
     "img/canada.png",
@@ -29,7 +31,7 @@ $(flagIcons).each(function() {
     var image = $('<img />').attr('src', this);
 });
 
-//Functions to place the images randomly 
+////Functions to place the images randomly 
 
 function doRandom(max, min) {
     return Math.round(Math.random() * (max - min) + min);

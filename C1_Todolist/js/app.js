@@ -85,7 +85,8 @@
   
   var containsClass = listItem.classList.contains("editMode");
 
-  //var editButton = document.getElementsByTagName("button");
+  var button = listItem.querySelector("button.edit");
+ 
 
 
 
@@ -96,14 +97,13 @@
     //label text become the input's value
     label.innerText = editInput.value;
   
-    //editButton.className = "edit btn btn-default glyphicon glyphicon-ok";
 
-
-
-  } else {
+    } else {
     //Switch to .editMode
     //input value becomes the label's text
+        
     editInput.value = label.innerText;
+  
 
   }
 
@@ -118,6 +118,7 @@
   //Toggle .editMode on the list item
 
   listItem.classList.toggle("editMode");
+  button.classList.toggle("glyphicon-ok");
 
   
    }
@@ -142,10 +143,21 @@
   //Append the task list item to the #completed-tasks
   var listItem = this.parentNode;
   var editButton = listItem.querySelector("button.edit");
+  var editInput = listItem.querySelector("input[type=text]");
+  var label = listItem.querySelector("label");
+  var containsClass = listItem.classList.contains("editMode");
+
+  
+  if(containsClass) {
+    listItem.classList.remove("editMode");
+    completedTasksHolder.appendChild(listItem);
+    listItem.removeChild(editButton);
+  }else {
   
   completedTasksHolder.appendChild(listItem);
   listItem.removeChild(editButton);
 
+  }
   bindTaskEventsCompleted(listItem, taskIncomplete);
 
   }
