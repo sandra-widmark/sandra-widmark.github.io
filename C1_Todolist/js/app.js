@@ -84,17 +84,27 @@
   var label = listItem.querySelector("label");
   
   var containsClass = listItem.classList.contains("editMode");
-  
+
+  //var editButton = document.getElementsByTagName("button");
+
+
+
   //if the class of the parent is .editMode
   if(containsClass) {
 
     //Switch from .editMode
     //label text become the input's value
     label.innerText = editInput.value;
+  
+    //editButton.className = "edit btn btn-default glyphicon glyphicon-ok";
+
+
+
   } else {
     //Switch to .editMode
     //input value becomes the label's text
     editInput.value = label.innerText;
+
   }
 
 
@@ -104,9 +114,12 @@
 
     else {
     label.innerText = editInput.value;
-      //Toggle .editMode on the list item
+  
+  //Toggle .editMode on the list item
 
   listItem.classList.toggle("editMode");
+
+  
    }
 
   }
