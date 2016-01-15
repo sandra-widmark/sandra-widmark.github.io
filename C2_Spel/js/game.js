@@ -4,10 +4,13 @@
 
 var game = new Phaser.Game(480, 320, Phaser.AUTO, null, {preload: preload, create: create, update: update});
 
-//a variable for creating the mine worker
+//Defining variables
 
 var ball;
 var paddle;
+var bricks;
+var newBrick;
+var brickInfo;
 
  //fix so that it scales to different screen sizes
 
@@ -19,6 +22,7 @@ function preload() {
     game.stage.backgroundColor = '#eee';
     game.load.image('ball', 'img/ball.png');
     game.load.image('paddle', 'img/paddle.png');
+    game.load.image('brick', 'img/brick.png');
 }
 function create() {
     //initialize the Arcade Physics engine
@@ -36,6 +40,15 @@ function create() {
     //make the ball bounce
     ball.body.bounce.set(1);
 
+    //make the ball go through the bottom of the canvas, "game over" when it does!
+    game.physics.arcade.checkCollision.down = false;
+
+    ball.checkWorldBounds = true;
+    ball.events.onOutOfBounds.add(function(){
+    alert('Game over!');
+    location.reload();
+    }, this);
+
     //Init the paddle
     paddle = game.add.sprite(game.world.width*0.5, game.world.height-5, 'paddle');
     //fix position of the paddle to be in the midddle of the canvas
@@ -46,13 +59,54 @@ function create() {
 
     //make the paddle immovable so that the ball doesn't push it of the screen
     paddle.body.immovable = true;
+
+    //init bricks
+    initBricks();
 }
+
+
 function update() {
     //enable collision detection between the paddle and ball
     game.physics.arcade.collide(ball, paddle);
     //fix so that the paddle's x position will adjust accordingly to the input's x position
     paddle.x = game.input.x || game.world.width*0.5;
    
+}
+
+
+
+function initBricks() {
+    brickInfo = {
+        width: 50,
+        height: 20,
+        count: {
+            row: 7,
+            col: 3
+        },
+        offset: {
+            top: 50,
+            left: 60
+        },
+        padding: 10
+    }
+    //A group to contain the bricks. 
+    bricks = game.add.group();
+
+    // loop through the rows and columns to create new brick on each iteration
+    for(c=0; c<brickInfo.count.col; c++) {
+    for(r=0; r<brickInfo.count.row; r++) {
+    // create new brick and add it to the group
+
+        var brickX = (r*(brickInfo.width+brickInfo.padding))+brickInfo.offset.left;
+        var brickY = (c*(brickInfo.height+brickInfo.padding))+brickInfo.offset.top;
+        
+        newBrick = game.add.sprite(brickX, brickY, 'brick');
+        game.physics.enable(newBrick, Phaser.Physics.ARCADE);
+        newBrick.body.immovable = true;
+        newBrick.anchor.set(0.5);
+        bricks.add(newBrick);
+    }
+  }
 }
 
 
