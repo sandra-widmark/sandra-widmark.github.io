@@ -1,10 +1,10 @@
-
-
 //Generate the canvas element with phaser
 
-var game = new Phaser.Game(480, 320, Phaser.AUTO, null, {preload: preload, create: create, update: update});
+var game = new Phaser.Game(780, 600, Phaser.AUTO, null, {preload: preload, create: create, update: update});
+
 
 //Defining variables
+
 
 var ball;
 var paddle;
@@ -28,22 +28,27 @@ var lifeLostText;
 var playing = false;
 var startButton;
 
- //fix so that it scales to different screen sizes
+ 
 
 function preload() {
 
-    game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    //game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+
     game.scale.pageAlignHorizontally = true;
     game.scale.pageAlignVertically = true;
-    game.stage.backgroundColor = '#eee';
-    game.load.image('ball', 'img/ball.png');
-    game.load.image('paddle', 'img/paddle.png');
-    game.load.image('brick', 'img/brick.png');
+    game.stage.backgroundColor = '#000000';
+    
+    game.load.crossOrigin = "anonymous";
+    game.load.image('ball', 'img/yxa.png');
+    game.load.image('paddle', 'img/pingvin.png');
+    game.load.image('brick', 'img/stenblock.png');
+    game.load.image('vaggon', 'img/guldvagn.png');
     //The spritesheet() method's two extra paremeters determine the width and height of each single frame in the 
     //given spritesheet file, indicating to the program how to chop it up to get the individual frames.
-    game.load.spritesheet('ball', 'img/wobble.png', 20, 20);
+    //game.load.spritesheet('ball', 'img/wobble.png', 20, 20);
     //Load start , 120 pixels wide and 40 pixels high.
-    game.load.spritesheet('button', 'img/button.png', 120, 40);
+    game.load.image('button', 'img/startknapp.png', 120, 100);
+
 }
 function create() {
     //initialize the Arcade Physics engine
@@ -51,7 +56,8 @@ function create() {
     //set the balls start position (in the bottom, middle)
     ball = game.add.sprite(game.world.width*0.5, game.world.height-25, 'ball');
     //animate the ball
-    ball.animations.add('wobble', [0,1,0,2,0,1,0,2,0], 24);
+    
+    //ball.animations.add('wobble', [0,1,0,2,0,1,0,2,0], 24);
 
     ball.anchor.set(0.5);
 
@@ -72,12 +78,14 @@ function create() {
     ball.events.onOutOfBounds.add(ballLeaveScreen, this);
 
     //Init the paddle
-    paddle = game.add.sprite(game.world.width*0.5, game.world.height-5, 'paddle');
+    paddle = game.add.sprite(game.world.width*0.5, game.world.height-0, 'paddle');
     //fix position of the paddle to be in the midddle of the canvas
     paddle.anchor.set(0.5,1);
 
     //enable physics for the paddle to make it collide with the ball
     game.physics.enable(paddle, Phaser.Physics.ARCADE);
+
+
 
     //make the paddle immovable so that the ball doesn't push it of the screen
     paddle.body.immovable = true;
@@ -86,12 +94,12 @@ function create() {
     initBricks();
 
     //Display score text
-    scoreText = game.add.text(5, 5, 'Points: 0', { font: '18px Arial', fill: '#0095DD' });
+    scoreText = game.add.text(40, 10, 'Points: 0', { font: '18px Arial', fill: '#bdc3c7' });
 
     //Defining the text about lost lives and how many lives the player have left
-    livesText = game.add.text(game.world.width-5, 5, 'Lives: '+lives, { font: '18px Arial', fill: '#0095DD' });
+    livesText = game.add.text(game.world.width-40, 10, 'Lives: '+lives, { font: '18px Arial', fill: '#bdc3c7' });
     livesText.anchor.set(1,0);
-    lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, click to continue', { font: '18px Arial', fill: '#0095DD' });
+    lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, click to continue', { font: '18px Arial', fill: '#bdc3c7' });
     lifeLostText.anchor.set(0.5);
     lifeLostText.visible = false;
 
@@ -121,7 +129,7 @@ function initBricks() {
         width: 50,
         height: 20,
         count: {
-            row: 7,
+            row: 12,
             col: 3
         },
         offset: {
@@ -180,11 +188,11 @@ function ballLeaveScreen() {
         lifeLostText.visible = true;
         //reset the ball and paddles position
         ball.reset(game.world.width*0.5, game.world.height-25);
-        paddle.reset(game.world.width*0.5, game.world.height-5);
+        paddle.reset(game.world.width*0.5, game.world.height-0);
         //remove the message from the screen
         game.input.onDown.addOnce(function(){
             lifeLostText.visible = false;
-            ball.body.velocity.set(150, -150);
+            ball.body.velocity.set(350, -350);
         }, this);
     }
     else {
