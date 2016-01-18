@@ -24,6 +24,10 @@ var lives = 3;
 var livesText;
 var lifeLostText;
 
+//variables for start game button
+var playing = false;
+var startButton;
+
  //fix so that it scales to different screen sizes
 
 function preload() {
@@ -35,17 +39,23 @@ function preload() {
     game.load.image('ball', 'img/ball.png');
     game.load.image('paddle', 'img/paddle.png');
     game.load.image('brick', 'img/brick.png');
+    //The spritesheet() method's two extra paremeters determine the width and height of each single frame in the 
+    //given spritesheet file, indicating to the program how to chop it up to get the individual frames.
+    game.load.spritesheet('ball', 'img/wobble.png', 20, 20);
+    //Load start , 120 pixels wide and 40 pixels high.
+    game.load.spritesheet('button', 'img/button.png', 120, 40);
 }
 function create() {
     //initialize the Arcade Physics engine
     game.physics.startSystem(Phaser.Physics.ARCADE);
     //set the balls start position (in the bottom, middle)
     ball = game.add.sprite(game.world.width*0.5, game.world.height-25, 'ball');
+    //animate the ball
+    ball.animations.add('wobble', [0,1,0,2,0,1,0,2,0], 24);
+
     ball.anchor.set(0.5);
 
     game.physics.enable(ball, Phaser.Physics.ARCADE);
-    //This makes the ball start from the bottom and go up
-    ball.body.velocity.set(150, -150);
     
     //make the ball feel the walls of the canvas
     ball.body.collideWorldBounds = true;
@@ -84,16 +94,23 @@ function create() {
     lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, click to continue', { font: '18px Arial', fill: '#0095DD' });
     lifeLostText.anchor.set(0.5);
     lifeLostText.visible = false;
+
+    //Add the start button to the game
+    startButton = game.add.button(game.world.width*0.5, game.world.height*0.5, 'button', startGame, this, 1, 0, 2);
+    startButton.anchor.set(0.5);
 }
 
 
 function update() {
     //enable collision detection between the paddle and ball
-    game.physics.arcade.collide(ball, paddle);
+    game.physics.arcade.collide(ball, paddle, ballHitPaddle);
     //check for collision detection between the ball and the bricks
     game.physics.arcade.collide(ball, bricks, ballHitBrick);
-    //fix so that the paddle's x position will adjust accordingly to the input's x position
-    paddle.x = game.input.x || game.world.width*0.5;
+    //fix so that the paddle's x position will adjust accordingly to the input's x position, when playing
+
+     if(playing) {
+        paddle.x = game.input.x || game.world.width*0.5;
+    }
    
 }
 
@@ -175,6 +192,24 @@ function ballLeaveScreen() {
         location.reload();
     }
 }
+
+//function for making the ball wobble when hitting the paddle
+function ballHitPaddle(ball, paddle) {
+    ball.animations.play('wobble');
+    //change the ball's velocity depending on the exact spot it hits the paddle,
+    ball.body.velocity.x = -1*5*(paddle.x-ball.x);
+}
+
+
+
+//Start the game
+function startGame() {
+    startButton.destroy();
+    ball.body.velocity.set(150, -150);
+    playing = true;
+}
+
+
 
 
 
