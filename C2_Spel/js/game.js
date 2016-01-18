@@ -8,9 +8,21 @@ var game = new Phaser.Game(480, 320, Phaser.AUTO, null, {preload: preload, creat
 
 var ball;
 var paddle;
+
+
+//variables for bricks
 var bricks;
 var newBrick;
 var brickInfo;
+
+//variables for score
+var scoreText;
+var score = 0;
+
+//variables for lives: 
+var lives = 3;
+var livesText;
+var lifeLostText;
 
  //fix so that it scales to different screen sizes
 
@@ -43,11 +55,11 @@ function create() {
     //make the ball go through the bottom of the canvas, "game over" when it does!
     game.physics.arcade.checkCollision.down = false;
 
+    //make the ball feel the walls of the canvas
     ball.checkWorldBounds = true;
-    ball.events.onOutOfBounds.add(function(){
-    alert('Game over!');
-    location.reload();
-    }, this);
+
+    //handler for when the ball leaves the screen and a life is lost: 
+    ball.events.onOutOfBounds.add(ballLeaveScreen, this);
 
     //Init the paddle
     paddle = game.add.sprite(game.world.width*0.5, game.world.height-5, 'paddle');
@@ -62,6 +74,16 @@ function create() {
 
     //init bricks
     initBricks();
+
+    //Display score text
+    scoreText = game.add.text(5, 5, 'Points: 0', { font: '18px Arial', fill: '#0095DD' });
+
+    //Defining the text about lost lives and how many lives the player have left
+    livesText = game.add.text(game.world.width-5, 5, 'Lives: '+lives, { font: '18px Arial', fill: '#0095DD' });
+    livesText.anchor.set(1,0);
+    lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, click to continue', { font: '18px Arial', fill: '#0095DD' });
+    lifeLostText.anchor.set(0.5);
+    lifeLostText.visible = false;
 }
 
 
@@ -115,5 +137,44 @@ function initBricks() {
 //when colliding with the ball. 
 function ballHitBrick(ball, brick) {
     brick.kill();
+    //Update the score when the ball hits a brick
+    score += 10;
+    scoreText.setText('Points: '+score);
+    //show an alert message when the player has destroyed all bricks and won the game: 
+    if(score === brickInfo.count.row*brickInfo.count.col*10) {
+        alert('You won the game, congratulations!');
+        //restart the game when the alert is closed
+        location.reload();
+    }
 }
+
+//the function that handles the players lives and displays either the life 
+//lost text or game over text depending on how many lives are left. 
+function ballLeaveScreen() {
+
+    //subtract one life from the current number and check if it's a non-zero value
+    lives--;
+
+
+    if(lives) {
+        livesText.setText('Lives: '+lives);
+
+        //display the life lost text
+        lifeLostText.visible = true;
+        //reset the ball and paddles position
+        ball.reset(game.world.width*0.5, game.world.height-25);
+        paddle.reset(game.world.width*0.5, game.world.height-5);
+        //remove the message from the screen
+        game.input.onDown.addOnce(function(){
+            lifeLostText.visible = false;
+            ball.body.velocity.set(150, -150);
+        }, this);
+    }
+    else {
+        alert('You lost, game over!');
+        location.reload();
+    }
+}
+
+
 
