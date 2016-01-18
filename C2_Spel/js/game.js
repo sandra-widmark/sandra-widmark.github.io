@@ -68,6 +68,8 @@ function create() {
 function update() {
     //enable collision detection between the paddle and ball
     game.physics.arcade.collide(ball, paddle);
+    //check for collision detection between the ball and the bricks
+    game.physics.arcade.collide(ball, bricks, ballHitBrick);
     //fix so that the paddle's x position will adjust accordingly to the input's x position
     paddle.x = game.input.x || game.world.width*0.5;
    
@@ -109,4 +111,9 @@ function initBricks() {
   }
 }
 
+//Make the bricks dissapear when the ball hits them! the kill method removes the brick from the screen, 
+//when colliding with the ball. 
+function ballHitBrick(ball, brick) {
+    brick.kill();
+}
 
