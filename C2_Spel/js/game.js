@@ -5,10 +5,10 @@ var game = new Phaser.Game(780, 600, Phaser.AUTO, null, {preload: preload, creat
 
 //Defining variables
 
+var startText; 
 
 var ball;
 var paddle;
-
 
 //variables for bricks
 var bricks;
@@ -43,16 +43,19 @@ function preload() {
     game.load.image('paddle', 'img/pingvin.png');
     game.load.image('brick', 'img/stenblock.png');
     game.load.image('vaggon', 'img/guldvagn.png');
-    //The spritesheet() method's two extra paremeters determine the width and height of each single frame in the 
-    //given spritesheet file, indicating to the program how to chop it up to get the individual frames.
-    //game.load.spritesheet('ball', 'img/wobble.png', 20, 20);
+  
     //Load start , 120 pixels wide and 40 pixels high.
-    game.load.image('button', 'img/startknapp.png', 120, 100);
+    game.load.image('button', 'img/startknapp.png', 298, 95);
 
 }
 function create() {
     //initialize the Arcade Physics engine
     game.physics.startSystem(Phaser.Physics.ARCADE);
+
+    //display start text
+    startText = game.add.text(game.world.width*0.09, game.world.height*0.4, 
+    'Pingvinen är instängd i gruvan, hjälp honom ut genom att slå sönder stenblocken!', { font: '18px Arial', fill: '#bdc3c7' });
+
     //set the balls start position (in the bottom, middle)
     ball = game.add.sprite(game.world.width*0.5, game.world.height-25, 'ball');
     //animate the ball
@@ -94,17 +97,17 @@ function create() {
     initBricks();
 
     //Display score text
-    scoreText = game.add.text(40, 10, 'Points: 0', { font: '18px Arial', fill: '#bdc3c7' });
+    scoreText = game.add.text(40, 10, 'Poäng: 0', { font: '18px Arial', fill: '#bdc3c7' });
 
     //Defining the text about lost lives and how many lives the player have left
-    livesText = game.add.text(game.world.width-40, 10, 'Lives: '+lives, { font: '18px Arial', fill: '#bdc3c7' });
+    livesText = game.add.text(game.world.width-40, 10, 'Liv: '+lives, { font: '18px Arial', fill: '#bdc3c7' });
     livesText.anchor.set(1,0);
-    lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, click to continue', { font: '18px Arial', fill: '#bdc3c7' });
+    lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Liv förlorat, klicka för att fortsätta.', { font: '18px Arial', fill: '#bdc3c7' });
     lifeLostText.anchor.set(0.5);
     lifeLostText.visible = false;
 
     //Add the start button to the game
-    startButton = game.add.button(game.world.width*0.5, game.world.height*0.5, 'button', startGame, this, 1, 0, 2);
+    startButton = game.add.button(game.world.width*0.5, game.world.height*0.6, 'button', startGame, this, 1, 0, 2);
     startButton.anchor.set(0.5);
 }
 
@@ -164,10 +167,10 @@ function ballHitBrick(ball, brick) {
     brick.kill();
     //Update the score when the ball hits a brick
     score += 10;
-    scoreText.setText('Points: '+score);
+    scoreText.setText('Poäng: '+score);
     //show an alert message when the player has destroyed all bricks and won the game: 
     if(score === brickInfo.count.row*brickInfo.count.col*10) {
-        alert('You won the game, congratulations!');
+        alert('Du vann, grattis!');
         //restart the game when the alert is closed
         location.reload();
     }
@@ -182,7 +185,7 @@ function ballLeaveScreen() {
 
 
     if(lives) {
-        livesText.setText('Lives: '+lives);
+        livesText.setText('Liv: '+lives);
 
         //display the life lost text
         lifeLostText.visible = true;
@@ -196,25 +199,24 @@ function ballLeaveScreen() {
         }, this);
     }
     else {
-        alert('You lost, game over!');
+        alert('Du förlorade, pingvinen blev instängd!');
         location.reload();
     }
 }
 
-//function for making the ball wobble when hitting the paddle
-function ballHitPaddle(ball, paddle) {
-    ball.animations.play('wobble');
-    //change the ball's velocity depending on the exact spot it hits the paddle,
-    ball.body.velocity.x = -1*5*(paddle.x-ball.x);
-}
+    
+    //function for when the ball hits the paddle
+    function ballHitPaddle(ball, paddle) {
+        //change the ball's velocity depending on the exact spot it hits the paddle,
+        ball.body.velocity.x = -1*5*(paddle.x-ball.x);
+    }
 
-
-
-//Start the game
-function startGame() {
-    startButton.destroy();
-    ball.body.velocity.set(150, -150);
-    playing = true;
+    //Start the game
+    function startGame() {
+        startButton.destroy();
+        startText.destroy();
+        ball.body.velocity.set(150, -150);
+        playing = true;
 }
 
 
