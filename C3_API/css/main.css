@@ -1,0 +1,126 @@
+
+/* Font	*/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,300);
+
+
+/* General	*/
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #e74c3c;
+	color: white;
+}
+
+
+/* Font styling	*/
+
+h1 {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 15.3px;
+}
+
+p {
+	font-size: 13px;
+	margin: 10px 0 0 0;
+}
+
+#search-button {
+	background-color: #c0392b;
+	margin: 10px 0;
+}
+
+
+#search-box {
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+#searchInput {
+	max-width: 300px;
+	border: none;
+}
+
+/* Media Queries Tablet */
+
+@media screen and (min-width: 768px) {
+
+	body.container-fluid {
+		padding: 50px;
+
+	}
+
+	.form-inline {
+		text-align: center;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	#search-button {
+	background-color: #c0392b;
+	margin: 10px;
+	}
+
+	label {
+		padding: 10px;
+		font-size: 18px;
+	}
+
+	h1 {
+		font-size: 50px;
+		text-align: center; 
+	}
+
+	h2 {
+		font-size: 30px;
+		text-align: center; 
+	}
+
+	#searchInput {
+	border: none;
+	width: 250px;
+	}
+}
+
+
+/* Media Queries Desktop */
+
+@media screen and (min-width: 992px) {
+
+	h1 {
+		font-size: 53px;
+		text-align: left; 
+		margin-top: 0;
+	}
+
+	h2 {
+		font-size: 25px;
+		text-align: left; 
+	}
+
+		#searchInput {
+	border: none;
+	width: 500px;
+	
+	}
+
+	.form-inline {
+		text-align: left;
+		padding: 10px 0;
+		margin-top: 30px;
+	}
+
+	label {
+		padding: 0 10px 10px 0px; 
+		font-size: 16px;
+	}
+
+
+
+}
