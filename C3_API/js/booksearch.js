@@ -1,9 +1,14 @@
 
+var ajax = new XMLHttpRequest();
+ajax.open('GET', 'https://api.unsplash.com/photos/search/?jsoncallback?');
+ajax.setRequestHeader('8463bf7d27392315948591365816d5f2d1e0950007f6ccbad8d758bbb9f80453', 'test');
+ajax.send();
+
+
 console.log('hej'); 
 $('#search-button').click(function() {
 
- $.get('https://api.unsplash.com/photos/?client_id=8463bf7d27392315948591365816d5f2d1e0950007f6ccbad8d758bbb9f80453');
-$.get("https://api.unsplash.com/photos/search/?jsoncallback?"), function( data ) {
+$.get("https://api.unsplash.com/photos/search/client_id=8463bf7d27392315948591365816d5f2d1e0950007f6ccbad8d758bbb9f80453?jsoncallback?"), function( data ) {
   
   $( "#search-results" ).html( data );
   alert( "Load was performed." );
