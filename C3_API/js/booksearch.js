@@ -1,27 +1,68 @@
 
-var ajax = new XMLHttpRequest();
-ajax.open('GET', 'https://api.unsplash.com/photos/search/?jsoncallback?');
-ajax.setRequestHeader('8463bf7d27392315948591365816d5f2d1e0950007f6ccbad8d758bbb9f80453', 'test');
-ajax.send();
+ 
+/*
 
 
-console.log('hej'); 
+ $('button').click(function () {
+   
+    var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    var animal = $(this).text();
+    var flickrOptions = {
+      tags: animal,
+      format: "json"
+    };
+    function displayPhotos(data) {
+      var photoHTML = '<div>';
+      $.each(data.items,function(i,photo) {
+        photoHTML += '<div id="search-results">';
+        photoHTML += '<a href="' + photo.link + '" class="image">';
+        photoHTML += '<img src="' + photo.media.m + '"></a></li>';
+      }); // end each
+      photoHTML += '</div>';
+      $("#search-results" ).html(photoHTML);
+    }
+    $.getJSON(flickerAPI, flickrOptions, displayPhotos);
+
+  }); // end click
+
+
+
+$('button').click(function() {
+   
+    var unsplashAPI = "https://source.unsplash.com/category/nature/1600x900";
+    var searchResult = $(this).value();
+  
+    
+  function displayPhotos(data) {
+     
+    var photo = new UnsplashPhoto();
+
+    photo.all()
+     .fromCategory("nature")
+     .of(["trees", "water"])
+     .size(1000, 1200)
+     .fetch(); // => "https://source.unsplash.com/category/nature/1000x1200?trees,water"
+    }
+
+    $.getJSON(unsplashAPI, displayPhotos);
+
+  }); // end click
+
+
+
+
+
 $('#search-button').click(function() {
-
-$.get("https://api.unsplash.com/photos/search/client_id=8463bf7d27392315948591365816d5f2d1e0950007f6ccbad8d758bbb9f80453?jsoncallback?"), function( data ) {
+$.get("https://source.unsplash.com/category/nature/1600x900"), function( data ) {
   
   $( "#search-results" ).html( data );
   alert( "Load was performed." );
 };
 
 
-}); //end klick-function
+}); //end click-function
 
 
-
-
-
-/*
 
 Exempel från treehouse 
 

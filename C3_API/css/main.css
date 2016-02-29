@@ -10,9 +10,18 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #e74c3c;
+	background-color: #2ecc71;
 	color: white;
 }
+
+.page-wrapper {
+	margin: 0 auto;
+}
+
+.btn-success:focus, .btn-success:active:focus, .btn-success.active:focus {
+    outline: 0 none;
+}
+
 
 
 /* Font styling	*/
@@ -31,20 +40,43 @@ p {
 	margin: 10px 0 0 0;
 }
 
-#search-button {
-	background-color: #c0392b;
-	margin: 10px 0;
+
+.filter-select {
+	margin: 0 auto;
+	text-align: center;
 }
 
+
+.genre-button {
+	border-radius: 30px; 
+	padding: 20px;
+	margin: 10px;
+	background-color: #27ae60;
+
+}
+
+
+#search-button {
+	margin: 10px 0;
+	background-color: #27ae60;
+	border: 0 none;
+
+}
+ 
 
 #search-box {
 	margin: 10px 0 0 0;
 	padding: 0;
+	outline: none; 
 }
 
 #searchInput {
 	max-width: 300px;
 	border: none;
+}
+
+#search-results {
+	margin-top: 10px;
 }
 
 /* Media Queries Tablet */
@@ -56,6 +88,21 @@ p {
 
 	}
 
+	.filter-select {
+		margin: 50px;
+		text-align: center;
+	}
+
+
+	.genre-button {
+		border-radius: 30px; 
+		padding: 20px;
+		margin: 10px;
+		background-color: #27ae60;
+		font-size: 24px;
+
+	}
+
 	.form-inline {
 		text-align: center;
 		margin: 0 auto;
@@ -63,13 +110,14 @@ p {
 	}
 
 	#search-button {
-	background-color: #c0392b;
 	margin: 10px;
+	font-size: 24px;
 	}
 
 	label {
 		padding: 10px;
-		font-size: 18px;
+		font-size: 24px;
+		margin: 0; 
 	}
 
 	h1 {
@@ -80,47 +128,14 @@ p {
 	h2 {
 		font-size: 30px;
 		text-align: center; 
+		margin-top: 70px;
 	}
 
 	#searchInput {
 	border: none;
-	width: 250px;
+	width: 500px;
+	font-size: 18px;
 	}
 }
 
 
-/* Media Queries Desktop */
-
-@media screen and (min-width: 992px) {
-
-	h1 {
-		font-size: 53px;
-		text-align: left; 
-		margin-top: 0;
-	}
-
-	h2 {
-		font-size: 25px;
-		text-align: left; 
-	}
-
-	#searchInput {
-		border: none;
-		width: 500px;
-	
-	}
-
-	.form-inline {
-		text-align: left;
-		padding: 10px 0;
-		margin-top: 30px;
-	}
-
-	label {
-		padding: 0 10px 10px 0px; 
-		font-size: 16px;
-	}
-
-
-
-}
