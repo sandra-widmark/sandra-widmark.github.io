@@ -1,69 +1,99 @@
 
- 
-/*
+var googleBooksAPI = "https://www.googleapis.com/books/v1/volumes?q=search+subject:keyes&key=AIzaSyBA4Y9BR0QeG79uVcwT2w1B57m0r-zCqtw"; 
 
-
- $('button').click(function () {
-   
-    var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-    var animal = $(this).text();
-    var flickrOptions = {
-      tags: animal,
-      format: "json"
-    };
-    function displayPhotos(data) {
-      var photoHTML = '<div>';
-      $.each(data.items,function(i,photo) {
-        photoHTML += '<div id="search-results">';
-        photoHTML += '<a href="' + photo.link + '" class="image">';
-        photoHTML += '<img src="' + photo.media.m + '"></a></li>';
-      }); // end each
-      photoHTML += '</div>';
-      $("#search-results" ).html(photoHTML);
-    }
-    $.getJSON(flickerAPI, flickrOptions, displayPhotos);
-
-  }); // end click
-
-
-
-$('button').click(function() {
-   
-    var unsplashAPI = "https://source.unsplash.com/category/nature/1600x900";
-    var searchResult = $(this).value();
+var onClick = function() {
+  var content = $('#content');
   
+  // content.empty();
+
+  var searchUrl = "https://www.googleapis.com/books/v1/volumes?q=harry+potter";
+  var genreResults = $(this).text();
+
+  function handleSearchResponse(response) {
+    var books = $('<ul>');
     
-  function displayPhotos(data) {
-     
-    var photo = new UnsplashPhoto();
+    $.each(response.items, function(_, item) {
+      var book = $('<li>');
 
-    photo.all()
-     .fromCategory("nature")
-     .of(["trees", "water"])
-     .size(1000, 1200)
-     .fetch(); // => "https://source.unsplash.com/category/nature/1000x1200?trees,water"
+      var published = $('<p>', {
+        html: 'Publicerad: ' + item.volumeInfo.publishedDate
+      });
+      var identifiers = $('<ul>');
+      $.each(item.volumeInfo.industryIdentifiers, function(_, identifier) {
+        identifiers.append($('<li>', {
+          html: identifier.type + ': ' + identifier.identifier
+        }));
+      });
+      var title = $('<a>', {
+        href: item.volumeInfo.canonicalVolumeLink,
+        html: item.volumeInfo.title
+      });
+      var thumbnailImage = $('<img>', {
+        src: item.volumeInfo.imageLinks.thumbnail
+      });
+      var thumbnail = $('<a>', {
+        href: item.volumeInfo.canonicalVolumeLink,
+        html: thumbnailImage
+      });
+
+      book.append(thumbnail, title, identifiers, published);
+      books.append(book);
+    });
+    content.html(books);
+  }
+
+  $.ajax({
+    url: searchUrl,
+    method: 'get',
+    success: handleSearchResponse,
+    error: function() {
+      $('#content').html('Något gick fel kompis');
     }
-
-    $.getJSON(unsplashAPI, displayPhotos);
-
-  }); // end click
-
-
-
-
-
-$('#search-button').click(function() {
-$.get("https://source.unsplash.com/category/nature/1600x900"), function( data ) {
-  
-  $( "#search-results" ).html( data );
-  alert( "Load was performed." );
+  });
 };
 
+$('button').click(onClick);
 
-}); //end click-function
+/*
+ // Process response from Google booksearch
+      for (i in isbns) {
+        var element = document.getElementById(isbns[i]);
+        var bookInfo = _GBSBookInfo[isbns[i]];
+
+        // Linkify the title
+        element.innerHTML = '<a href="' + bookInfo.info_url  + '">'
+                            + element.innerHTML + '</a>';
+
+
+/*
+
+  var googleBooksAPI = "https://www.googleapis.com/books/v1/volumes?q=search+subject:keyes&key=AIzaSyBA4Y9BR0QeG79uVcwT2w1B57m0r-zCqtw"; 
+
+ google.load("books", "0");
+
+  function initialize() {
+      var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+      viewer.load('ISBN:0738531367');
+      }
+
+  google.setOnLoadCallback(initialize);
 
 
 
+function handleResponse(response) {
+      for (var i = 0; i < response.items.length; i++) {
+        var item = response.items[i];
+        // in production code, item.text should have the HTML entities escaped.
+        document.getElementById("viewerCanvas").innerHTML += '<a href="' + '"></a>';" + item.volumeInfo.title;
+      }
+    }
+
+
+
+
+
+
+/*
 Exempel från treehouse 
 
 $(document).ready(function () {
@@ -98,3 +128,5 @@ $(document).ready(function () {
 }); //avslut på document-ready funktionen. 
 
 */
+
+

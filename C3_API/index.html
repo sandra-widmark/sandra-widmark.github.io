@@ -4,43 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AJAX book search</title>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" media="screen" href="css/normalize.css">
   <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
   <link rel="stylesheet" media="screen" href="css/main.css">
-  <script src="js/jquery-1.11.3.min.js"></script>
 </head>
 <body class="container-fluid">
-
-  
-  
   <div id="row row-centered">
-  <div class="page-wrapper">
-    <H1>Välkommen till boksöket!</h1>
-    <h2>Vad är du intresserad av?</h2>
+    <div class="page-wrapper">
+      <h1>Välkommen till boksöket!</h1>
+      <h2>Vad är du intresserad av?</h2>
       <div class="filter-select">
-                <button type="submit" class="btn btn-secondary-outline genre-button" id="thriller">Thriller</button>
-                <button type="submit" class="btn btn-secondary-outline genre-button" id="karlek">Kärlek</button>
-                <button type="submit" class="btn btn-secondary-outline genre-button" id="fantasy">Fantasy</button>
-                <button type="submit" class="btn btn-secondary-outline genre-button" id="science">Science Fiction</button>
-                <button type="submit" class="btn btn-secondary-outline genre-button" id="romaner">Romaner</button>
-                <button type="submit" class="btn btn-secondary-outline genre-button" id="aventyr">Äventyr</button>
-                </div>
-        <div id="search-box">
-          <form class="form-inline">
-            <div class="form-group">
-              <label for="searchInput">Sök efter bok:</label>
-              <input type="text" class="form-control" id="searchInput" placeholder="Bok eller författare">
-              <button type="submit" class="btn btn-success btn-lg" id="search-button">Sök!</button>
-              
-            </div>
-            </div>
-          <div id="search-results">
-            <div class="image"></div>
-          </div>
-        </div>
+        <button type="submit" class="btn btn-secondary-outline genre-button" id="thriller">Thriller</button>
+        <button type="submit" class="btn btn-secondary-outline genre-button" id="karlek">Kärlek</button>
+        <button type="submit" class="btn btn-secondary-outline genre-button" id="fantasy">Fantasy</button>
+        <button type="submit" class="btn btn-secondary-outline genre-button" id="science">Science Fiction</button>
+        <button type="submit" class="btn btn-secondary-outline genre-button" id="romaner">Romaner</button>
+        <button type="submit" class="btn btn-secondary-outline genre-button" id="aventyr">Äventyr</button>
       </div>
+      <div id="search-box">
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="searchInput">Sök efter bok:</label>
+            <input type="text" class="form-control" id="searchInput" placeholder="Bok eller författare">
+            <button type="submit" class="btn btn-success btn-lg" id="search-button">Sök!</button>
+          </div>
+        </form>
+      </div>
+      <div id="content" style="width: 600px; height: 500px"></div>
+      <div class="image"></div>
     </div>
+  </div>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/booksearch.js"></script>
-  </body>
+
+</body>
 </html>
