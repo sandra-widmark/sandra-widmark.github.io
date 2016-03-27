@@ -3,19 +3,20 @@
 
 var googleBooksAPI = "https://www.googleapis.com/books/v1/volumes?q=search+subject:keyes&key=AIzaSyBA4Y9BR0QeG79uVcwT2w1B57m0r-zCqtw"; 
 
-var content = $('#content');
 
 //function for handling click on the book figure-buttons. 
 
-$('button').click(function() {
+$('button, #search-button').click(function() {
+  var content = $('#content');
   var result = $(this).text();
-  content.empty(); 
+  var searchResult = $( "input[name*='query']" ).val( "" );
+   content.empty(); 
+ 
 
   var searchUrl = "https://www.googleapis.com/books/v1/volumes?q=" + result;
+  var searchUrlCustom = "https://www.googleapis.com/books/v1/volumes?q=" + searchResult;
 
   
-
-
   //Handle search response as a html list
   
   function handleSearchResponse(response) {
@@ -79,17 +80,16 @@ $('button').click(function() {
       $('#content').html('Något gick fel!');
     }
   });
+
+
+
 });
 
 
 
-  //function for performing custom search on books. 
 
-//$('#search-button').click(function() {
- // var searchResult = $('#searchInput').val("");
- // content.empty();
 
-  //var searchUrlCustom = "https://www.googleapis.com/books/v1/volumes?q=" + searchResult;
+
 
 
 
