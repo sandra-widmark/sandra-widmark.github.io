@@ -1,7 +1,7 @@
 
 /* Font	*/
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,300);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,900italic,700italic,600italic,700,600,400italic,300italic,300,200italic,200|Rock+Salt);
 
 
 /* General	*/
@@ -14,35 +14,75 @@ body {
 	color: white;
 }
 
-.page-wrapper {
-	margin: 0 auto;
+#content {
+	margin-top: 30px;
+	background-color: #27ae60;
+	border-radius: 10px;
 }
+
+#content ul {
+	padding: 20px;
+}
+
+
+#content ul li {
+	list-style: none;
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+#content ul li a {
+	color: white;
+	font-size: 25px; 
+	margin-top:30px;
+}
+
+#content ul li p:first-child {
+	margin-top:30px;
+}
+
+
+#content ul li img {
+	border: 5px solid #333; 
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#content ul li img a {
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
 
 .btn-success:focus, .btn-success:active:focus, .btn-success.active:focus {
     outline: 0 none;
 }
 
 
-
 /* Font styling	*/
 
 h1 {
-	font-size: 25px;
-	font-weight: 700;
+	font-family: 'Rock Salt', italic; 
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
 }
 
 h2 {
-	font-size: 15.3px;
+	font-size: 25px;
 }
 
 p {
-	font-size: 13px;
-	margin: 10px 0 0 0;
+	font-size: 16px;
 }
 
 
 .filter-select {
-	margin: 0 auto;
+	margin: 30px auto;
 	text-align: center;
 }
 
@@ -52,90 +92,83 @@ p {
 	padding: 20px;
 	margin: 10px;
 	background-color: #27ae60;
+}
 
+
+.input-group {
+	margin: 20px auto;
+	max-width: 500px;
 }
 
 
 #search-button {
-	margin: 10px 0;
-	background-color: #27ae60;
+	
+	background-color: #e85242;
 	border: 0 none;
-
-}
- 
-
-#search-box {
-	margin: 10px 0 0 0;
-	padding: 0;
-	outline: none; 
+	color: white;
+	cursor:pointer
 }
 
-#searchInput {
-	max-width: 300px;
-	border: none;
+#search-button a {
+
+	color: white;
+	font-weight: 600;
+	
 }
 
-#search-results {
-	margin-top: 10px;
+footer {
+	margin: 20px 0;
+	text-align: center;
+	font-style: italic;
+}
+
+#error {
+	text-align: center;
 }
 
 /* Media Queries Tablet */
 
 @media screen and (min-width: 768px) {
 
-	body.container-fluid {
-		padding: 50px;
-
-	}
-
-	.filter-select {
-		margin: 50px;
-		text-align: center;
-	}
-
-
-	.genre-button {
-		border-radius: 30px; 
-		padding: 20px;
-		margin: 10px;
-		background-color: #27ae60;
-		font-size: 24px;
-
-	}
-
-	.form-inline {
-		text-align: center;
-		margin: 0 auto;
-		padding: 10px;
-	}
-
-	#search-button {
-	margin: 10px;
-	font-size: 24px;
-	}
-
-	label {
-		padding: 10px;
-		font-size: 24px;
-		margin: 0; 
+	#content {
+		margin-top: 80px;
 	}
 
 	h1 {
 		font-size: 50px;
-		text-align: center; 
+		margin-top: 80px;
 	}
 
 	h2 {
 		font-size: 30px;
-		text-align: center; 
-		margin-top: 70px;
+		margin-top: 80px;
+		margin-bottom: 30px;
 	}
 
-	#searchInput {
-	border: none;
-	width: 500px;
-	font-size: 18px;
-	}
 }
 
 
+
+/* Media Queries Tablet */
+
+@media screen and (min-width: 768px) {
+
+	h1 {
+		font-size: 50px;
+		margin-top: 60px;
+	}
+
+	h2 {
+		font-size: 30px;
+		margin-top: 60px;
+		margin-bottom: 20px;
+	}
+
+	.genre-button {
+		border-radius: 30px; 
+		font-size: 22px;
+		padding: 20px;
+		margin: 10px;
+		background-color: #27ae60;
+	}
+}
