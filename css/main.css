@@ -8,6 +8,59 @@ body {
   background-color: #deded4;
 }
 
+/* MENU */
+
+.nav {
+  margin-right: 20px;
+}
+
+.menu {
+  display: flex;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  -webkit-justify-content: flex-end; /* Safari */
+  justify-content:         flex-end;
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #008891;
+  display: block;
+  padding: 30px 10px;
+}
+.menu li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.menu li:hover, .menu li:active {
+  background-color: #008891;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: #fff;
+  font-weight: normal;
+}
+
+.menu p {
+  margin: 0 0 0 0;
+  font-size: 14px;
+}
+
+.active {
+  background-color: #008891;
+}
+
+.active a {
+  color: #fff;
+}
+
 /* HEADER */
 
 .masthead {
