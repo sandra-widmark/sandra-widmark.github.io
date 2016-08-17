@@ -6,7 +6,6 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 body {
   background-color: #deded4;
-  margin: 100px 100px 0 100px;
 }
 
 /* HEADER */
@@ -18,7 +17,7 @@ body {
 }
 
 .main-nav {
-  padding: 50px 0 150px 0;
+  padding: 100px 0;
 }
 
 .main-nav a {
@@ -47,7 +46,7 @@ body {
 .gallery {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -56,6 +55,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   flex-flow: row wrap;
+  max-width: 700px;
 }
 
 .gallery .img {
@@ -67,8 +67,6 @@ body {
 .gallery a {
   font-size: 20px;
   display: block;
-  padding: 150px;
-  text-align: center;
 }
 
 .gallery a,
@@ -79,20 +77,108 @@ body {
   background-size: cover;
 }
 
+.img-text {
+  text-align: center;
+  position: absolute;
+}
+
 /* triangles, common css */
 
-#booksearch, #zengarden, #todo, #infographic, #map, #game {
+.plus {
+  width: 232px;
+  height: 180px;
+  overflow: hidden;
+  margin: 30px 0 0px 83px;
+}
+
+
+.plus2 {
+  width: 232px;
+  height: 180px;
+  overflow: hidden;
+  margin: 200px 0 0px 83px;
+}
+
+.plus:hover {
+  width: 232px;
+  height: 180px;
+  display: block;
+  z-index: 1;
+  background: url("../img/plus.png");
+  background-size: 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.plus2:hover {
+  width: 232px;
+  height: 180px;
+  display: block;
+  z-index: 1;
+  background: url("../img/plus.png");
+  background-size: 75px;
+  background-position: center top;
+  margin-top: 230px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+#booksearch,
+#zengarden,
+#todo,
+#infographic,
+#map,
+#game,
+#black1,
+#black2,
+#black3,
+#about,
+#portfolio,
+#contact {
   width: 232px;
   height: 180px;
   overflow: hidden;
   margin-top: 5px;
 }
 
-#zengarden_bg:hover, #booksearch_bg:hover, #todo_bg:hover, #infographic_bg:hover, #map_bg:hover, #game_bg:hover{
+#zengarden_bg:hover,
+#booksearch_bg:hover,
+#todo_bg:hover,
+#infographic_bg:hover,
+#map_bg:hover,
+#game_bg:hover,
+#about_bg:hover,
+#portfolio_bg:hover,
+#contact_bg:hover {
   background-size: 90%;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  cursor: pointer;
 }
 
-#booksearch2, #zengarden2, #todo2, #infographic2, #map2, #game2 {
+#booksearch2,
+#zengarden2,
+#todo2,
+#infographic2,
+#map2,
+#game2,
+#black1_2,
+#black2_2,
+#black3_2,
+#about2,
+#portfolio2,
+#contact2 {
   position: relative;
   overflow: hidden;
   transform: rotate(45deg) skew(10deg,10deg);
@@ -100,16 +186,28 @@ body {
   height: 200px;
 }
 
-
-#booksearch_bg, #zengarden_bg, #todo_bg, #infographic_bg, #map_bg, #game_bg {
+#booksearch_bg,
+#zengarden_bg,
+#todo_bg,
+#infographic_bg,
+#map_bg,
+#game_bg,
+#black1_bg,
+#black2_bg,
+#black3_bg,
+#about_bg,
+#portfolio_bg,
+#contact_bg {
   position: absolute;
   width: 200%;
   height: 200%;
   top: -50%;
   left: -50%;
   transform: skew(-10deg,-10deg) rotate(-45deg) ;
-  transition: .3s;
+  transition: 2s;
 }
+
+/* Portfolio page */
 
 /* book search */
 
@@ -183,6 +281,80 @@ body {
   background-position: center top;
 }
 
+/* Start page */
+
+/* about */
+
+#about2 {
+  margin:81px 0 0 16px;
+}
+
+#about_bg {
+  background: url("../img/Sandra2small.jpg");
+  background-size: 80%;
+  background-position: center top;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* for chrome & safari */
+}
+
+/* black 1 */
+
+#black1_2 {
+  margin:-100px 0 0 16px;
+}
+
+#black1_bg {
+  background-color: #008891;
+}
+
+/* portfolio */
+
+#portfolio2 {
+  margin:81px 0 0 16px;
+}
+
+#portfolio_bg {
+  background: url("../img/kod.jpg");
+  background-size: 80%;
+  background-position: center top;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* for chrome & safari */
+}
+
+/* black 2 */
+
+#black2_2 {
+  margin:-100px 0 0 16px;
+}
+
+#black2_bg {
+  background-color: #008891;
+}
+
+/* contact */
+
+#contact2 {
+  margin:81px 0 0 16px;
+}
+
+#contact_bg {
+  background: url("../img/dator.jpg");
+  background-size: 75%;
+  background-position: center top;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* for chrome & safari */
+}
+
+/* black 3 */
+
+#black3_2 {
+  margin:-100px 0 0 16px;
+}
+
+#black3_bg {
+  background-color: #008891;
+}
+
 section {
   margin: 0;
   padding:0;
@@ -190,7 +362,7 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'bitter';
-  margin: 20px;
+
 }
 
 h1 {
@@ -231,7 +403,7 @@ section ul {
   color: #008891;;
   font-size: 14px;
   text-align: left;
-  margin: 200px 0 100px 30px;
+  margin: 130px 0 0px 50px;
 }
 
 /********************************************************
