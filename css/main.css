@@ -7,7 +7,7 @@
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
 body {
-  background-color: #deded4;
+  background-color: #fff;
 }
 
 section {
@@ -139,24 +139,25 @@ section ul {
 /* IMAGE GALLERY */
 
 .gallery {
-  list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-flow: row wrap;
-  max-width: 700px;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .gallery .img {
-  flex: auto;               /* NEW, Spec - Firefox, Chrome, Opera */
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
+  width: 500px;
+  height: 300px;
+  text-align: center;
 }
 
 .gallery a {
@@ -172,32 +173,13 @@ section ul {
   background-size: cover;
 }
 
-.img-text {
-  text-align: center;
-  position: absolute;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #008891;
-  margin-left: 20px;
-
-}
-
-/* triangles, common css */
+/* HOVER CSS */
 
 .plus {
   width: 232px;
   height: 180px;
   overflow: hidden;
   margin: 30px 0 0px 83px;
-}
-
-
-.plus2 {
-  width: 232px;
-  height: 180px;
-  overflow: hidden;
-  margin: 200px 0 0px 83px;
 }
 
 .plus:hover {
@@ -215,281 +197,72 @@ section ul {
 }
 
 
-.plus2:hover {
-  width: 232px;
-  height: 180px;
-  display: block;
-  z-index: 1;
-  background: url("../img/plus.png");
-  background-size: 75px;
-  background-position: center top;
-  margin-top: 230px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-
-
-
-#booksearch,
-#zengarden,
-#todo,
-#infographic,
-#map,
-#game,
-#black1,
-#black2,
-#black3,
-#about,
-#portfolio,
-#contact {
-  width: 232px;
-  height: 180px;
-  overflow: hidden;
-  margin-top: 5px;
-}
-
-#zengarden_bg:hover,
-#booksearch_bg:hover,
-#todo_bg:hover,
-#infographic_bg:hover,
-#map_bg:hover,
-#game_bg:hover,
-#about_bg:hover,
-#portfolio_bg:hover,
-#contact_bg:hover {
+.img:hover {
   background-size: 90%;
   display: block;
-  position: absolute;
   z-index: 10;
   background: rgba(0, 0, 0, 0.8);
-  overflow: hidden;
   transition: all 1s;
   -webkit-transition: all 1s;
   cursor: pointer;
 }
 
 
-#aboutpage_bg {
-  background: url("../img/Sandra2small.jpg");
-  background-size: 80%;
-  background-position: center top;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* for chrome & safari */
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-  transform: skew(-10deg,-10deg) rotate(-45deg) ;
-  transition: 2s;
-}
-
-#aboutpage_bg:hover {
-  background-size: 90%;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  overflow: hidden;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-}
-
-#booksearch2,
-#zengarden2,
-#todo2,
-#infographic2,
-#map2,
-#game2,
-#black1_2,
-#black2_2,
-#black3_2,
-#about2,
-#portfolio2,
-#contact2 {
-  position: relative;
-  overflow: hidden;
-  transform: rotate(45deg) skew(10deg,10deg);
-  width: 200px;
-  height: 200px;
-}
-
-#booksearch_bg,
-#zengarden_bg,
-#todo_bg,
-#infographic_bg,
-#map_bg,
-#game_bg,
-#black1_bg,
-#black2_bg,
-#black3_bg,
-#about_bg,
-#portfolio_bg,
-#contact_bg {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-  transform: skew(-10deg,-10deg) rotate(-45deg) ;
-  transition: 2s;
-}
-
-/* Portfolio page */
+/* PORTFOLIO PAGE */
 
 /* book search */
 
-#booksearch2 {
-  margin:81px 0 0 16px;
-}
 
-#booksearch_bg {
+#booksearch {
+  background-repeat: no-repeat;
   background: url("../img/booksearch.png");
-  background-size: 100%;
-  background-position: center top;
+  background-size: cover;
 }
 
 /* zen garden */
 
-#zengarden2 {
-  margin:-100px 0 0 16px;
-}
-
-#zengarden_bg {
+#zengarden {
+  background-repeat: no-repeat;
   background: url("../img/zengarden1.png");
-  background-size: 100%;
-  background-position: center top;
+  background-size: cover;
 }
 
 /* todo */
 
-#todo2 {
-  margin:81px 0 0 16px;
-}
-
-#todo_bg {
-  background: url("../img/todo2.png");
-  background-size: 100%;
-  background-position: center top;
+#todo {
+  background-repeat: no-repeat;
+  background: url("../img/todo1.png");
+  background-size: cover;
 }
 
 /* infographic */
 
-#infographic2 {
-  margin:-100px 0 0 16px;
-}
-
-#infographic_bg {
+#infographic {
+  background-repeat: no-repeat;
   background: url("../img/infographic.png");
-  background-size: 100%;
-  background-position: center top;
+  background-size: cover;
 }
 
 /* map */
 
-#map2 {
-  margin:81px 0 0 16px;
-}
-
-#map_bg {
+#map {
+  background-repeat: no-repeat;
   background: url("../img/map.jpg");
-  background-size: 100%;
-  background-position: center top;
+  background-size: cover;
 }
 
 /* game */
 
-#game2 {
-  margin:-100px 0 0 16px;
-}
-
-#game_bg {
+#game {
+  background-repeat: no-repeat;
   background: url("../img/game.png");
-  background-size: 100%;
-  background-position: center top;
+  background-size: cover;
 }
 
-/* Start page */
-
-/* about */
-
-#about2 {
-  margin:81px 0 0 16px;
-}
-
-#about_bg {
-  background: url("../img/Sandra2small.jpg");
-  background-size: 80%;
-  background-position: center top;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* for chrome & safari */
-}
-
-/* black 1 */
-
-#black1_2 {
-  margin:-100px 0 0 16px;
-}
-
-#black1_bg {
-  background-color: #008891;
-}
-
-/* portfolio */
-
-#portfolio2 {
-  margin:81px 0 0 16px;
-}
-
-#portfolio_bg {
-  background: url("../img/kod.jpg");
-  background-size: 80%;
-  background-position: center top;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* for chrome & safari */
-}
-
-/* black 2 */
-
-#black2_2 {
-  margin:-100px 0 0 16px;
-}
-
-#black2_bg {
-  background-color: #008891;
-}
-
-/* contact */
-
-#contact2 {
-  margin:81px 0 0 16px;
-}
-
-#contact_bg {
-  background: url("../img/dator.jpg");
-  background-size: 75%;
-  background-position: center top;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* for chrome & safari */
-}
-
-/* black 3 */
-
-#black3_2 {
-  margin:-100px 0 0 16px;
-}
-
-#black3_bg {
-  background-color: #008891;
-}
+/* START PAGE */
 
 
 /* ABOUT PAGE */
-
-.about-section {
-  margin-top: 175px;
-}
 
 
 /* FOOTER */
