@@ -51,12 +51,7 @@ section ul {
   font-family: 'bitter';
 }
 
-
 /* MENU */
-
-.nav {
-  padding-right: 20px;
-}
 
 .menu {
   display: flex;
@@ -66,6 +61,7 @@ section ul {
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
   -webkit-justify-content: flex-end; /* Safari */
   justify-content:         flex-end;
+  background-color: white;
   margin: 0;
 }
 
@@ -80,7 +76,6 @@ section ul {
   padding: 0px;
 }
 
-
 .menu li a:hover, .menu li a:active {
   background-color: #008891;
   color: #fff;
@@ -93,7 +88,6 @@ section ul {
   margin: 0 0 0 0;
   font-size: 14px;
 }
-
 
 .active {
   background-color: #008891;
@@ -138,7 +132,7 @@ section ul {
 
 /* IMAGE GALLERY */
 
-.gallery {
+#gallery {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -154,51 +148,13 @@ section ul {
   align-items: baseline;
 }
 
-.gallery .img {
+#gallery .img {
   width: 500px;
   height: 300px;
   text-align: center;
 }
 
-.gallery a {
-  font-size: 20px;
-  display: block;
-}
-
-.gallery a,
-.gallery a:visited,
-.gallery a:active {
-  color: #deded4;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* HOVER CSS */
-
-.plus {
-  width: 232px;
-  height: 180px;
-  overflow: hidden;
-  margin: 30px 0 0px 83px;
-}
-
-.plus:hover {
-  width: 232px;
-  height: 180px;
-  display: block;
-  z-index: 1;
-  background: url("../img/plus.png");
-  background-size: 75px;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 50px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-
-.img:hover {
-  background-size: 90%;
+#gallery .img:hover {
   display: block;
   z-index: 10;
   background: rgba(0, 0, 0, 0.8);
@@ -207,11 +163,42 @@ section ul {
   cursor: pointer;
 }
 
+.portfolio-text {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.portfolio-text:hover {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 80px;
+  background-image: url("../img/plus.png");
+}
+
+#gallery a {
+  font-size: 20px;
+  display: block;
+}
+
+#gallery a,
+#gallery a:visited,
+#gallery a:active {
+  color: #deded4;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* PORTFOLIO PAGE */
-
-/* book search */
-
 
 #booksearch {
   background-repeat: no-repeat;
@@ -219,15 +206,11 @@ section ul {
   background-size: cover;
 }
 
-/* zen garden */
-
 #zengarden {
   background-repeat: no-repeat;
   background: url("../img/zengarden1.png");
   background-size: cover;
 }
-
-/* todo */
 
 #todo {
   background-repeat: no-repeat;
@@ -235,15 +218,11 @@ section ul {
   background-size: cover;
 }
 
-/* infographic */
-
 #infographic {
   background-repeat: no-repeat;
   background: url("../img/infographic.png");
   background-size: cover;
 }
-
-/* map */
 
 #map {
   background-repeat: no-repeat;
@@ -251,26 +230,48 @@ section ul {
   background-size: cover;
 }
 
-/* game */
-
 #game {
   background-repeat: no-repeat;
   background: url("../img/game.png");
   background-size: cover;
 }
 
-/* START PAGE */
+/* ABOUT */
 
+#about {
+  padding: 100px 25%;
+}
 
-/* ABOUT PAGE */
+#about p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #000;
+}
 
+#about .about-img {
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-repeat: no-repeat;
+  background: url("../img/Sandra2small.jpg");
+  background-size: cover;
+}
+
+/* CONTACT */
+
+.social-icon {
+  width: 25px;
+  padding: 10px;
+  text-align: center;
+}
 
 /* FOOTER */
 
-.mastfoot  {
-  color: #008891;;
+#mastfoot  {
+  color: #008891;
   font-size: 12px;
-  text-align: left;
+  text-align: center;
   margin: 130px 0 0px 50px;
 }
 
@@ -278,20 +279,16 @@ section ul {
 Media queries tablet size
 ************************************************************/
 @media screen and (max-width: 992px) {
-
-
-
 }
-
 
 /********************************************************
 Media queries mobile size
 ************************************************************/
 @media screen and (max-width: 767px) {
 
-.main-nav .logo {
-  font-size: 52px;
-  padding: 50px;
-}
+  .main-nav .logo {
+    font-size: 52px;
+    padding: 50px;
+  }
 
 }
