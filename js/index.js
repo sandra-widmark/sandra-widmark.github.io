@@ -53,3 +53,20 @@ contactOverlay.click(function(){
     contactOverlay.hide();
     contactPopup.hide();
 });
+
+
+
+$(document).ready(function($){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 0) {
+            $('.menu').css("background-color", "#008891");
+            $('.menu a').css("color", "#fff");
+            $('.menu').css("transition", "all 1s");
+        } else {
+            $('.menu').css("background-color", "#fff");
+            $('.menu a').css("color", "#008891");
+
+        }
+    });
+});
+
