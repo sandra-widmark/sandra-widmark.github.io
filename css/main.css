@@ -153,6 +153,7 @@ section ul {
   display: flex;
 
   -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: baseline;
 }
