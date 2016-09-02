@@ -1,4 +1,5 @@
 var overlay = $('#overlay');
+var contactOverlay = $('#contact-overlay');
 var popup = $(".popup");
 var bookPopup = $(".book-popup");
 var zenPopup = $(".zen-popup");
@@ -6,6 +7,7 @@ var todoPopup = $(".todo-popup");
 var infographPopup = $(".infograph-popup");
 var mapPopup = $(".map-popup");
 var gamePopup = $(".game-popup");
+var contactPopup = $(".contact-popup");
 
 $("#gallery .book-search").click(function(event){
     overlay.show();
@@ -37,7 +39,17 @@ $("#gallery .game").click(function(event){
     gamePopup.show();
 });
 
+$("#contact").click(function(event){
+    contactOverlay.show();
+    contactPopup.show();
+});
+
 overlay.click(function(){
     overlay.hide();
     popup.hide();
+});
+
+contactOverlay.click(function(){
+    contactOverlay.hide();
+    contactPopup.hide();
 });
