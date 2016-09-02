@@ -39,21 +39,10 @@ $("#gallery .game").click(function(event){
     gamePopup.show();
 });
 
-$("#contact").click(function(event){
-    contactOverlay.show();
-    contactPopup.show();
-});
-
 overlay.click(function(){
     overlay.hide();
     popup.hide();
 });
-
-contactOverlay.click(function(){
-    contactOverlay.hide();
-    contactPopup.hide();
-});
-
 
 $(document).ready(function($){
     $(window).scroll(function(){
